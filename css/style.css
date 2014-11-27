@@ -15,10 +15,10 @@ h3 {
 }
 
 #info {
-    visibility: hidden;
+  visibility: hidden;
  	position: absolute;
  	background-color: #fff;
- 	top: 10px;
+ 	top: 30px;
  	left: 700px;
  	width: 270px;
  	height: 100%;
@@ -46,16 +46,16 @@ h3 {
 /* ********** */
 /* Map styles */
 /* ********** */
-.country.c1 { fill: #edf8e9; }
-.country.c2 { fill: #bae4b3; }
-.country.c3 { fill: #74c476; }
-.country.c4 { fill: #31a354; }
-.country.c5 { fill: #006d2c; }
+.country.c1 { fill: #eff3ff; }
+.country.c2 { fill: #bdd7e7; }
+.country.c3 { fill: #6baed6; }
+.country.c4 { fill: #3182bd; }
+.country.c5 { fill: #08519c; }
 
 .country-boundary {
 	fill: none;
-	stroke: black;
-	stroke-width: 0.2;
+	stroke: #ccc;
+	stroke-width: 0.1;
 	stroke-linejoin: round;
 }
 
@@ -68,7 +68,7 @@ h3 {
 }
 
 .country:hover {
-	fill: #ddc;
+	fill: #fd8d3c;
 }
 
 .city,
