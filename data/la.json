@@ -194,24 +194,1734 @@
 		"cities": {
 			"type": "GeometryCollection",
 			"geometries":[
-				{
+			{
 					"type":"Point",
-					"coordinates":[2200,8500],
+					"coordinates":[6268,1940],
 					"properties": {
-						"name":"México, D.F."
-					},
+						"name":"Bahía Blanca"
+					}},
+
+					{
 					"type":"Point",
-					"coordinates":[2000,8600],
+					"coordinates":[6702,2404],
+					"properties": {
+						"name":"Buenos Aires"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5684,1133],
+					"properties": {
+						"name":"Comodoro Rivadavia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6743,2766],
+					"properties": {
+						"name":"Concordia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6054,2765],
+					"properties": {
+						"name":"Cordoba"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6651,3208],
+					"properties": {
+						"name":"Corrientes"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6726,3353],
+					"properties": {
+						"name":"Formosa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5930,3579],
+					"properties": {
+						"name":"Jujuy"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6750,2368],
+					"properties": {
+						"name":"La Plata"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5756,2989],
+					"properties": {
+						"name":"La Rioja"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6791,2023],
+					"properties": {
+						"name":"Mar del Plata"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5533,2597],
+					"properties": {
+						"name":"Mendoza"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5621,1913],
+					"properties": {
+						"name":"Neuquén"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6464,2727],
+					"properties": {
+						"name":"Paraná"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6980,3221],
+					"properties": {
+						"name":"Posadas"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6635,3211],
+					"properties": {
+						"name":"Resistencia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6036,2570],
+					"properties": {
+						"name":"Río Cuarto"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5492,484],
+					"properties": {
+						"name":"Río Gallegos"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6447,2590],
+					"properties": {
+						"name":"Rosario"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5917,3512],
+					"properties": {
+						"name":"Salta"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5876,3096],
+					"properties": {
+						"name":"San Fernando del Valle de Catamarca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5570,2751],
+					"properties": {
+						"name":"San Juan"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5814,2551],
+					"properties": {
+						"name":"San Luis"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6444,2739],
+					"properties": {
+						"name":"Santa Fé"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6042,2176],
+					"properties": {
+						"name":"Santa Rosa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6045,3173],
+					"properties": {
+						"name":"Santiago del Estero"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5939,3283],
+					"properties": {
+						"name":"Tucumán"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5594,125],
+					"properties": {
+						"name":"Ushuaia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5541,5063],
+					"properties": {
+						"name":"Cobija"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5833,4346],
+					"properties": {
+						"name":"Cochabamba"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5604,4446],
+					"properties": {
+						"name":"El Alto"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5611,4446],
+					"properties": {
+						"name":"La Paz"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5726,4281],
+					"properties": {
+						"name":"Oruro"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5879,4099],
+					"properties": {
+						"name":"Potosí"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6186,4292],
+					"properties": {
+						"name":"Santa Cruz"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5934,4162],
+					"properties": {
+						"name":"Sucre"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5993,3878],
+					"properties": {
+						"name":"Tarija"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5974,4635],
+					"properties": {
+						"name":"Trinidad"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[7808,6143],
+					"properties": {
+						"name":"Belem"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[8317,4060],
+					"properties": {
+						"name":"Belo Horizonte"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[7876,4526],
+					"properties": {
+						"name":"Brasilia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[7721,3440],
+					"properties": {
+						"name":"Curitiba"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[8921,5887],
+					"properties": {
+						"name":"Fortaleza"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[7503,2919],
+					"properties": {
+						"name":"Porto Alegre"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[9329,5400],
+					"properties": {
+						"name":"Recife"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[8399,3723],
+					"properties": {
+						"name":"Rio do Janeiro"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[8924,4844],
+					"properties": {
+						"name":"Salvador"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[8015,3651],
+					"properties": {
+						"name":"Sao Paulo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4977,1584],
+					"properties": {
+						"name":"Ancud"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5101,2043],
+					"properties": {
+						"name":"Angol"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5360,3639],
+					"properties": {
+						"name":"Antofagasta"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5034,2106],
+					"properties": {
+						"name":"Arauco"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5369,4223],
+					"properties": {
+						"name":"Arica"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5321,2502],
+					"properties": {
+						"name":"Buin"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5524,3774],
+					"properties": {
+						"name":"Calama"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4984,1515],
+					"properties": {
+						"name":"Castro"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5142,2250],
+					"properties": {
+						"name":"Cauquenes"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5244,3032],
+					"properties": {
+						"name":"Chañaral"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5169,2177],
+					"properties": {
+						"name":"Chillán"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5174,1167],
+					"properties": {
+						"name":"Coihaique"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5329,2563],
+					"properties": {
+						"name":"Colina"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5064,2154],
+					"properties": {
+						"name":"Concepción (Área Metropolitana)"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5134,2321],
+					"properties": {
+						"name":"Constitución"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5367,3220],
+					"properties": {
+						"name":"Copiapó"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5053,2130],
+					"properties": {
+						"name":"Coronel"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5031,2080],
+					"properties": {
+						"name":"Curanilahue"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5266,2361],
+					"properties": {
+						"name":"Curicó"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5294,2508],
+					"properties": {
+						"name":"El Monte"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5322,2464],
+					"properties": {
+						"name":"Graneros"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5274,2739],
+					"properties": {
+						"name":"Illapel"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5388,4027],
+					"properties": {
+						"name":"Iquique"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5270,2609],
+					"properties": {
+						"name":"La Calera"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5267,2647],
+					"properties": {
+						"name":"La Ligua"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5306,2553],
+					"properties": {
+						"name":"Lampa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5060,1762],
+					"properties": {
+						"name":"La Unión"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5130,1963],
+					"properties": {
+						"name":"Lautaro"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5265,2934],
+					"properties": {
+						"name":"La Serena (Área Metropolitana)"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4997,2065],
+					"properties": {
+						"name":"Lebu"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5226,2264],
+					"properties": {
+						"name":"Linares"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5338,2603],
+					"properties": {
+						"name":"Los Andes"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5141,2080],
+					"properties": {
+						"name":"Los Angeles"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5235,2707],
+					"properties": {
+						"name":"Los Vilos"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5052,2123],
+					"properties": {
+						"name":"Lota"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5331,2452],
+					"properties": {
+						"name":"Machalí"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5355,3702],
+					"properties": {
+						"name":"Mejillones"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5268,2507],
+					"properties": {
+						"name":"Melipilla"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5261,2346],
+					"properties": {
+						"name":"Molina"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5154,2052],
+					"properties": {
+						"name":"Mulchén"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5106,2076],
+					"properties": {
+						"name":"Nacimiento"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5054,1730],
+					"properties": {
+						"name":"Osorno"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5270,2856],
+					"properties": {
+						"name":"Ovalle"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5307,2522],
+					"properties": {
+						"name":"Padre Hurtado"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5322,2493],
+					"properties": {
+						"name":"Paine"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5200,2230],
+					"properties": {
+						"name":"Parral"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5305,2516],
+					"properties": {
+						"name":"Peñaflor"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5076,1629],
+					"properties": {
+						"name":"Puerto Montt"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5071,1646],
+					"properties": {
+						"name":"Puerto Varas"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5302,311],
+					"properties": {
+						"name":"Punta Arenas"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5265,2598],
+					"properties": {
+						"name":"Quillota"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5322,2453],
+					"properties": {
+						"name":"Rancagua"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5307,2426],
+					"properties": {
+						"name":"Rengo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5224,2519],
+					"properties": {
+						"name":"San Antonio"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5184,2198],
+					"properties": {
+						"name":"San Carlos"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5324,2613],
+					"properties": {
+						"name":"San Felipe"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5294,2406],
+					"properties": {
+						"name":"San Fernando"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5211,2292],
+					"properties": {
+						"name":"San Javier"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5333,2532],
+					"properties": {
+						"name":"Santiago"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5276,2419],
+					"properties": {
+						"name":"San Vicente"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5301,2510],
+					"properties": {
+						"name":"Talagante"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5219,2310],
+					"properties": {
+						"name":"Talca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5116,1938],
+					"properties": {
+						"name":"Temuco"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5383,3816],
+					"properties": {
+						"name":"Tocopilla"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5074,2177],
+					"properties": {
+						"name":"Tome"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5042,1815],
+					"properties": {
+						"name":"Valdivia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5320,3084],
+					"properties": {
+						"name":"Vallenar"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5223,2579],
+					"properties": {
+						"name":"Valparaíso (Área Metropolitana)"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5142,1994],
+					"properties": {
+						"name":"Victoria"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5155,1876],
+					"properties": {
+						"name":"Villarrica"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4868,7544],
+					"properties": {
+						"name":"Barranquilla"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4949,6826],
+					"properties": {
+						"name":"Bogotá"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5056,7110],
+					"properties": {
+						"name":"Bucaramanga"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4676,6693],
+					"properties": {
+						"name":"Cali"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4786,7482],
+					"properties": {
+						"name":"Cartagena"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5125,7198],
+					"properties": {
+						"name":"Cúcuta"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4818,6809],
+					"properties": {
+						"name":"Ibagué"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4788,6879],
+					"properties": {
+						"name":"Manizales"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4780,7010],
+					"properties": {
+						"name":"Medellín"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4747,7295],
+					"properties": {
+						"name":"Montería"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4591,6444],
+					"properties": {
+						"name":"Pasto"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4768,6851],
+					"properties": {
+						"name":"Pereira"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4998,6776],
+					"properties": {
+						"name":"Villavicencio"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3791,7480],
+					"properties": {
+						"name":"Alajuela"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3876,7408],
+					"properties": {
+						"name":"Cartago"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3838,7489],
+					"properties": {
+						"name":"Heredia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3948,7434],
+					"properties": {
+						"name":"Limon"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3830,7428],
+					"properties": {
+						"name":"San José"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5359,8445],
+					"properties": {
+						"name":"Bonao"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5548,8408],
+					"properties": {
+						"name":"Higuey"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5519,8387],
+					"properties": {
+						"name":"La Romana"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5393,8385],
+					"properties": {
+						"name":"San Cristobal"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5328,8539],
+					"properties": {
+						"name":"San Felipe de Puerto Plata"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5376,8485],
+					"properties": {
+						"name":"San Francisco de Macoris"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5483,8389],
+					"properties": {
+						"name":"San Pedro de Marcoris"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5281,8362],
+					"properties": {
+						"name":"Santa Cruz de Barahona"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5326,8504],
+					"properties": {
+						"name":"Santiago de los Caballeros"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5410,8391],
+					"properties": {
+						"name":"Santo Domingo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4441,6167],
+					"properties": {
+						"name":"Ambato"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4416,5999],
+					"properties": {
+						"name":"Azogues"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4339,6104],
+					"properties": {
+						"name":"Babahoyo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4398,5980],
+					"properties": {
+						"name":"Cuenca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4306,6062],
+					"properties": {
+						"name":"Eloy Alfaro (Durán)"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4326,6417],
+					"properties": {
+						"name":"Esmeraldas"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4399,6128],
+					"properties": {
+						"name":"Guaranda"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4296,6063],
+					"properties": {
+						"name":"Guayaquil"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4496,6348],
+					"properties": {
+						"name":"Ibarra"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4373,6201],
+					"properties": {
+						"name":"La Mana"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4360,6034],
+					"properties": {
+						"name":"La Troncal"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4442,6202],
+					"properties": {
+						"name":"Latacunga"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4376,5858],
+					"properties": {
+						"name":"Loja"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4292,5940],
+					"properties": {
+						"name":"Machala"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4208,6198],
+					"properties": {
+						"name":"Manta"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4634,6317],
+					"properties": {
+						"name":"Nueva Loja"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4236,6188],
+					"properties": {
+						"name":"Portoviejo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4347,6192],
+					"properties": {
+						"name":"Quevedo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4458,6287],
+					"properties": {
+						"name":"Quito"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4437,6120],
+					"properties": {
+						"name":"Riobamba"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4542,6399],
+					"properties": {
+						"name":"Tulcan"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4322,6411],
+					"properties": {
+						"name":"Vuelta Larga"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3257,7852],
+					"properties": {
+						"name":"San Salvador"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3110,7956],
+					"properties": {
+						"name":"Guatemala Ciudad"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3389,8056],
+					"properties": {
+						"name":"San Pedro Sula"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3481,7896],
+					"properties": {
+						"name":"Tegucigalpa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2066,8210],
+					"properties": {
+						"name":"Acapulco"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1796,8777],
+					"properties": {
+						"name":"Aguascalientes"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3521,8695],
+					"properties": {
+						"name":"Cancun"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3360,8395],
+					"properties": {
+						"name":"Chetumal"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1374,9538],
+					"properties": {
+						"name":"Chihuahua"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1335,9883],
+					"properties": {
+						"name":"Ciudad Juarez"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1636,8479],
+					"properties": {
+						"name":"Colima"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2139,8442],
+					"properties": {
+						"name":"Cuernavaca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1227,9106],
+					"properties": {
+						"name":"Culiacán Rosales"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1532,9018],
+					"properties": {
+						"name":"Durango"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1678,8638],
 					"properties": {
 						"name":"Guadalajara"
-					},
+					}},
+
+					{
 					"type":"Point",
-					"coordinates":[2200,9000],
+					"coordinates":[828,9587],
+					"properties": {
+						"name":"Hermosillo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1901,8640],
+					"properties": {
+						"name":"Irapuato"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1864,8691],
+					"properties": {
+						"name":"León"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3211,8673],
+					"properties": {
+						"name":"Mérida"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[326,9988],
+					"properties": {
+						"name":"Mexicali"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2149,8500],
+					"properties": {
+						"name":"México Ciudad"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2017,9205],
 					"properties": {
 						"name":"Monterrey"
-					}
+					}},
 
-				}
+					{
+					"type":"Point",
+					"coordinates":[1919,8531],
+					"properties": {
+						"name":"Morelia"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2419,8232],
+					"properties": {
+						"name":"Oaxaca de Juárez"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2253,8456],
+					"properties": {
+						"name":"Puebla"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1941,9176],
+					"properties": {
+						"name":"Saltillo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3111,8547],
+					"properties": {
+						"name":"San Francisco de Campeche"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1942,8807],
+					"properties": {
+						"name":"San Luis de Potosí"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2009,8630],
+					"properties": {
+						"name":"Santiago de Querétaro"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2291,8816],
+					"properties": {
+						"name":"Tampico"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1505,8734],
+					"properties": {
+						"name":"Tepic"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[149,9976],
+					"properties": {
+						"name":"Tijuana"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2091,8483],
+					"properties": {
+						"name":"Toluca de Lerdo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1672,9189],
+					"properties": {
+						"name":"Torreón"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2823,8197],
+					"properties": {
+						"name":"Tuxtla Gutierrez"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2484,8471],
+					"properties": {
+						"name":"Veracruz"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[2840,8337],
+					"properties": {
+						"name":"Villahermosa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[1764,8876],
+					"properties": {
+						"name":"Zacatecas"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3489,7761],
+					"properties": {
+						"name":"Chinandega"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3578,7784],
+					"properties": {
+						"name":"Estelí"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3622,7654],
+					"properties": {
+						"name":"Granada"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3543,7719],
+					"properties": {
+						"name":"León"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3589,7677],
+					"properties": {
+						"name":"Managua"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3605,7658],
+					"properties": {
+						"name":"Masaya"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[3790,7626],
+					"properties": {
+						"name":"Nueva Guinea"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4239,7206],
+					"properties": {
+						"name":"Chitre"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4298,7360],
+					"properties": {
+						"name":"Colón"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4015,7259],
+					"properties": {
+						"name":"David"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4341,7321],
+					"properties": {
+						"name":"Panamá Ciudad"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6786,3455],
+					"properties": {
+						"name":"Asunción"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5233,4456],
+					"properties": {
+						"name":"Arequipa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4954,4735],
+					"properties": {
+						"name":"Ayacucho"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4461,5658],
+					"properties": {
+						"name":"Bagua Grande"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4417,5579],
+					"properties": {
+						"name":"Cajamarca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4705,5103],
+					"properties": {
+						"name":"Cerro de Pasco"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4304,5543],
+					"properties": {
+						"name":"Chiclayo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4445,5285],
+					"properties": {
+						"name":"Chimbote"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5185,4781],
+					"properties": {
+						"name":"Cusco"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4848,4865],
+					"properties": {
+						"name":"Huancavelica"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4822,4946],
+					"properties": {
+						"name":"Huancayo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4707,5187],
+					"properties": {
+						"name":"Huanuco"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4756,4735],
+					"properties": {
+						"name":"Ica"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5254,4317],
+					"properties": {
+						"name":"Ilo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5041,5885],
+					"properties": {
+						"name":"Iquitos"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5390,4559],
+					"properties": {
+						"name":"Juliaca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4462,5675],
+					"properties": {
+						"name":"Lapeca"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4617,4949],
+					"properties": {
+						"name":"Lima"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5300,4368],
+					"properties": {
+						"name":"Moquegua"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4626,5627],
+					"properties": {
+						"name":"Moyobamba"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4236,5707],
+					"properties": {
+						"name":"Piura"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4892,5361],
+					"properties": {
+						"name":"Pucallpa"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4210,5754],
+					"properties": {
+						"name":"Sullana"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5377,4276],
+					"properties": {
+						"name":"Tacna"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4708,5186],
+					"properties": {
+						"name":"Tambo Pata"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4692,5576],
+					"properties": {
+						"name":"Tarapoto"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4396,5393],
+					"properties": {
+						"name":"Trujillo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[4226,5864],
+					"properties": {
+						"name":"Tumbes"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[6950,2370],
+					"properties": {
+						"name":"Montevideo"
+					}},
+
+					{
+					"type":"Point",
+					"coordinates":[5761,7489],
+					"properties": {
+						"name":"Caracas"
+					}}
 			]
 		}
 	},
