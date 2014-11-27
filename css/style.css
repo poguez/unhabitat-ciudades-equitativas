@@ -1,0 +1,132 @@
+* {
+	font-family: Sintony;
+}
+
+h1 {
+
+}
+
+h2 {
+ 	font-size:2em;
+ 	color:#333;
+}
+
+h3 {
+}
+
+#info {
+    visibility: hidden;
+ 	position: absolute;
+ 	background-color: #fff;
+ 	top: 10px;
+ 	left: 700px;
+ 	width: 270px;
+ 	height: 100%;
+ 	border-left: 1px solid #0098d8;
+ 	padding: 10px;
+}
+
+#info2 {
+	/* visibility: none; */
+}
+
+/* ************ */
+/* Chart styles */
+/* ************ */
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+/* ********** */
+/* Map styles */
+/* ********** */
+.country.c1 { fill: #edf8e9; }
+.country.c2 { fill: #bae4b3; }
+.country.c3 { fill: #74c476; }
+.country.c4 { fill: #31a354; }
+.country.c5 { fill: #006d2c; }
+
+.country-boundary {
+	fill: none;
+	stroke: black;
+	stroke-width: 0.2;
+	stroke-linejoin: round;
+}
+
+.country-label {
+	fill: #666;
+	fill-opacity: .5;
+	font-size: 12px;
+	font-weight: 300;
+	text-anchor: middle;
+}
+
+.country:hover {
+	fill: #ddc;
+}
+
+.city,
+.city-label {
+	fill: #444;
+}
+
+/* .states {
+	fill: #e5e5e5;
+	stroke: #fff;
+	stroke-width:2px;
+} */
+
+text {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	pointer-events: none;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.feature {
+  fill: #ddc;
+  cursor: pointer;
+}
+
+.feature.active {
+  fill: orange;
+}
+
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Income chart style */
+.axis path {
+  display: none;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.group-label {
+  font-weight: bold;
+  text-anchor: end;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
