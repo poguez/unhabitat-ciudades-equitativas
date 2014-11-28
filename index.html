@@ -94,21 +94,10 @@
 					<h3>Relación de salarios</h3>
 					<div id="wages">
 						<div id="viz2">
-							<script>
-							  var data = [
-							    {"name":"Ingreso Primer Decil", "  ":1, " ": 1},
-							    {"name":"Ingreso Último Decil", "  ":1," ": 32.5},
-							  ]
-							 
-							  var visualization = d3plus.viz()
-							    .container("#viz2")
-							    .data(data)
-							    .type("bar")
-							    .id("name")
-							    .x("  ")
-							    .y(" ")
-							    .draw()
-							</script>
+							<svg>
+							  <circle cx="10" cy="75" r="10" fill="blue" />	
+							  <circle cx="100" cy="75" r="57" fill="red" />
+							</svg>
 						</div>
 					</div>
 					
@@ -125,13 +114,17 @@
 							    {"name":"Otros", "Porcentaje del Ingreso":31.9,"  ": 1},
 							  ]
 							 
-							  var visualization = d3plus.viz()
+							   var visualization = d3plus.viz()
 							    .container("#viz3")
 							    .data(data)
-							    .type("tree_map")
+							    .type("bar")
 							    .id("name")
-							    .size("Porcentaje del Ingreso")
+							    .x({"stacked": true, "value": "Porcentaje del Ingreso"})
+							    .y("  ")
+							    .time("  ")
 							    .draw()
+
+
 							 
 							</script>
 						</div>
