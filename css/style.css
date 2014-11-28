@@ -1,3 +1,23 @@
+#viz {
+  width: 150px;
+  height: 150px;
+}
+
+#viz2 {
+  width: 150px;
+  height: 150px; 
+}
+
+#viz3 {
+  width: 150px;
+  height: 150px; 
+}
+
+#viz4 {
+  width: 150px;
+  height: 150px; 
+}
+
 * {
 	font-family: Sintony;
 }
@@ -7,25 +27,29 @@ h1 {
 }
 
 h2 {
- 	font-size:2em;
- 	color:#333;
+ 	font-size: 2em;
+  color:#333;
 }
 
 h3 {
+  font-size: 12px;
 }
 
 #info {
   visibility: hidden;
  	position: absolute;
  	background-color: #fff;
- 	top: 30px;
+ 	top: 835px;
  	left: 700px;
- 	width: 270px;
- 	height: 100%;
- 	border-left: 1px solid #0098d8;
+ 	width: 500px;
+ 	height: 700px;
+ 	/*border-left: 1px solid #0098d8;*/
  	padding: 10px;
 }
 
+#info h3 {
+  font-size: 1em;
+}
 #info2 {
 	/* visibility: none; */
 }
@@ -129,4 +153,18 @@ form {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.intro {
+  width: 100%;
+  background-color: #000;
+  height: 800px;
+  background-image: url("../img/intro.png");
+  background-size:contain;
+}
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  height: 80px;  
 }
