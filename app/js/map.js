@@ -183,7 +183,12 @@ function clicked_city(d) {
 	document.getElementById('title1').innerHTML='Gini';
 	document.getElementById('title2').innerHTML='Ingreso per cápita';
 	
-	d3.csv("../data/mex/mex.csv", function(error, csv) {
+	var country_code = d.properties.country;
+	country_code = country_code.toLowerCase();
+	var giniDataURL = "../data/" + country_code + "/" + country_code + "_gini.csv";
+	var ipcDataURL = "../data/" + country_code + "/" + country_code + "_ipc.csv";
+
+	d3.csv(giniDataURL, function(error, csv) {
 		var years = d3.keys(csv[0]);
 		years.splice(years.indexOf("city"));
 		years.sort();
@@ -246,6 +251,73 @@ function clicked_city(d) {
 		}
 
     	graphGiniCity(giniCityData);
+
+	});
+
+	d3.csv(ipcDataURL, function(error, csv) {
+
+		var years = d3.keys(csv[0]);
+		years.splice(years.indexOf("city"));
+		years.sort();
+
+		var year;
+		var ipc;
+		var ipcCityData = [];
+
+        csv = csv.filter(function(row) {
+        	return row['city'] == city_name;
+    	});
+
+    	if(years[0]) {
+    		year = years[0];
+    		ipc = csv[0][year];
+    		if(ipc) {
+    			ipcData = { year: year, ipc: ipc };
+    			ipcCityData.push(ipcData);
+    		}
+    	}
+		if(years[1]) {
+			year = years[1];
+    		ipc = csv[0][year];
+    		if(ipc) {
+    			ipcData = { year: year, ipc: ipc };
+    			ipcCityData.push(ipcData);
+    		}
+		}
+		if(years[2]) {
+			year = years[2];
+    		ipc = csv[0][year];
+    		if(ipc) {
+    			ipcData = { year: year, ipc: ipc };
+    			ipcCityData.push(ipcData);
+    		}
+		}
+		if(years[3]) {
+			year = years[3];
+    		ipc = csv[0][year];
+    		if(ipc) {
+    			ipcData = { year: year, ipc: ipc };
+    			ipcCityData.push(ipcData);
+    		}
+		}
+		if(years[4]) {
+			year = years[4];
+    		ipc = csv[0][year];
+    		if(ipc) {
+    			ipcData = { year: year, ipc: ipc };
+    			ipcCityData.push(ipcData);
+    		}
+		}
+		if(years[5]) {
+			year = years[5];
+    		ipc = csv[0][year];
+    		if(ipc) {
+    			ipcData = { year: year, ipc: ipc };
+    			ipcCityData.push(ipcData);
+    		}
+		}
+
+    	graphIpcCity(ipcCityData);		
 	});
 
 }
@@ -318,6 +390,10 @@ function graphGiniCity(giniCityData) {
 	giniChart.appendChild(document.createTextNode(visualization));
 
 	document.getElementById('data1').appendChild(giniChart);
+}
+
+function graphIpcCity(ipcCityData) {
+
 }
 
 d3.select(self.frameElement).style("height", height + "px");

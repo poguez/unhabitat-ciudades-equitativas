@@ -200,7 +200,8 @@
 						"properties": {
 							"name":"Bahía Blanca",
 							"pos": "SE", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -210,7 +211,8 @@
 							"name":"Buenos Aires",
 							"pos": "N", 
 							"dist": "short",
-							"type": "capital"
+							"type": "capital",
+							"country": "ARG"
 						}
 					},
 					{
@@ -219,7 +221,8 @@
 						"properties": {
 							"name":"Comodoro Rivadavia",
 							"pos": "E", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -228,7 +231,8 @@
 						"properties": {
 							"name":"Concordia",
 							"pos": "N", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -237,7 +241,8 @@
 						"properties": {
 							"name":"Cordoba",
 							"pos": "N", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -246,7 +251,8 @@
 						"properties": {
 							"name":"Corrientes",
 							"pos": "SE", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -255,7 +261,8 @@
 						"properties": {
 							"name":"Formosa",
 							"pos": "W", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -264,7 +271,8 @@
 						"properties": {
 							"name":"Jujuy",
 							"pos": "E", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -273,7 +281,8 @@
 						"properties": {
 							"name":"La Plata",
 							"pos": "S", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -282,7 +291,8 @@
 						"properties": {
 							"name":"La Rioja",
 							"pos": "",
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -291,7 +301,8 @@
 						"properties": {
 							"name":"Mar de Plata",
 							"pos": "E", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -300,7 +311,8 @@
 						"properties": {
 							"name":"Mendoza",
 							"pos": "S", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -309,7 +321,8 @@
 						"properties": {
 							"name":"Neuquén",
 							"pos": "N", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -318,7 +331,8 @@
 						"properties": {
 							"name":"Paraná",
 							"pos": "E", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -327,16 +341,18 @@
 						"properties": {
 							"name":"Posadas",
 							"pos": "E", 
-							"dist": "short"
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
-					"type":"Point",
-					"coordinates":[6635,3211],
-					"properties": {
-						"name":"Resistencia",
-						"pos": "SW", 
-						"dist": "short"
+						"type":"Point",
+						"coordinates":[6635,3211],
+						"properties": {
+							"name":"Resistencia",
+							"pos": "SW", 
+							"dist": "short",
+							"country": "ARG"
 						}
 					},
 					{
@@ -345,7 +361,8 @@
 					"properties": {
 						"name":"Río Cuarto",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -354,7 +371,8 @@
 					"properties": {
 						"name":"Río Gallegos",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -363,7 +381,8 @@
 					"properties": {
 						"name":"Rosario",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -372,7 +391,8 @@
 					"properties": {
 						"name":"Salta",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -381,7 +401,8 @@
 					"properties": {
 						"name":"San Fernando del Valle de Catamarca",
 						"pos": "SE", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -390,7 +411,8 @@
 					"properties": {
 						"name":"San Juan",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -399,7 +421,8 @@
 					"properties": {
 						"name":"San Luis",
 						"pos": "S", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -408,7 +431,8 @@
 					"properties": {
 						"name":"Santa Fé",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -417,7 +441,8 @@
 					"properties": {
 						"name":"Santa Rosa",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -426,7 +451,8 @@
 					"properties": {
 						"name":"Santiago del Estero",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -435,7 +461,8 @@
 					"properties": {
 						"name":"Tucumán",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -444,7 +471,8 @@
 					"properties": {
 						"name":"Ushuaia",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "ARG"
 						}
 					},
 					{
@@ -453,7 +481,8 @@
 					"properties": {
 						"name":"Cobija",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -462,7 +491,8 @@
 					"properties": {
 						"name":"Cochabamba",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -471,7 +501,8 @@
 					"properties": {
 						"name":"El Alto",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -481,7 +512,8 @@
 						"name":"La Paz",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "BOL"
 						}
 					},
 					{
@@ -490,7 +522,8 @@
 					"properties": {
 						"name":"Oruro",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -499,7 +532,8 @@
 					"properties": {
 						"name":"Potosí",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -508,7 +542,8 @@
 					"properties": {
 						"name":"Santa Cruz",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -517,7 +552,8 @@
 					"properties": {
 						"name":"Sucre",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -526,7 +562,8 @@
 					"properties": {
 						"name":"Tarija",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -535,7 +572,8 @@
 					"properties": {
 						"name":"Trinidad",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -544,7 +582,8 @@
 					"properties": {
 						"name":"Belem",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BOL"
 						}
 					},
 					{
@@ -553,7 +592,8 @@
 					"properties": {
 						"name":"Belo Horizonte",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -563,7 +603,8 @@
 						"name":"Brasilia",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "BRA"
 						}
 					},
 					{
@@ -572,7 +613,8 @@
 					"properties": {
 						"name":"Curitiba",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -581,7 +623,8 @@
 					"properties": {
 						"name":"Fortaleza",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -590,7 +633,8 @@
 					"properties": {
 						"name":"Porto Alegre",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -599,7 +643,8 @@
 					"properties": {
 						"name":"Recife",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -608,7 +653,8 @@
 					"properties": {
 						"name":"Rio do Janeiro",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -618,7 +664,8 @@
 						"id": "sal",
 						"name":"Salvador",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -627,7 +674,8 @@
 					"properties": {
 						"name":"Sao Paulo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "BRA"
 						}
 					},
 					{
@@ -636,7 +684,8 @@
 					"properties": {
 						"name":"Ancud",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -645,7 +694,8 @@
 					"properties": {
 						"name":"Angol",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -654,7 +704,8 @@
 					"properties": {
 						"name":"Antofagasta",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -663,7 +714,8 @@
 					"properties": {
 						"name":"Arauco",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -681,7 +733,8 @@
 					"properties": {
 						"name":"Buin",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -690,7 +743,8 @@
 					"properties": {
 						"name":"Calama",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -699,7 +753,8 @@
 					"properties": {
 						"name":"Castro",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -708,7 +763,8 @@
 					"properties": {
 						"name":"Cauquenes",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -717,7 +773,8 @@
 					"properties": {
 						"name":"Chañaral",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -726,7 +783,8 @@
 					"properties": {
 						"name":"Chillán",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -735,7 +793,8 @@
 					"properties": {
 						"name":"Coihaique",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -744,7 +803,8 @@
 					"properties": {
 						"name":"Colina",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -753,7 +813,8 @@
 					"properties": {
 						"name":"Concepción (Área Metropolitana)",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -762,7 +823,8 @@
 					"properties": {
 						"name":"Constitución",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -771,7 +833,8 @@
 					"properties": {
 						"name":"Copiapó",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -780,7 +843,8 @@
 					"properties": {
 						"name":"Coronel",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -789,7 +853,8 @@
 					"properties": {
 						"name":"Curanilahue",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -798,7 +863,8 @@
 					"properties": {
 						"name":"Curicó",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -807,7 +873,8 @@
 					"properties": {
 						"name":"El Monte",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -816,7 +883,8 @@
 					"properties": {
 						"name":"Graneros",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -825,7 +893,8 @@
 					"properties": {
 						"name":"Illapel",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -834,7 +903,8 @@
 					"properties": {
 						"name":"Iquique",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -843,7 +913,8 @@
 					"properties": {
 						"name":"La Calera",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -852,7 +923,8 @@
 					"properties": {
 						"name":"La Ligua",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -861,7 +933,8 @@
 					"properties": {
 						"name":"Lampa",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -870,7 +943,8 @@
 					"properties": {
 						"name":"La Unión",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -879,7 +953,8 @@
 					"properties": {
 						"name":"Lautaro",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -888,7 +963,8 @@
 					"properties": {
 						"name":"La Serena (Área Metropolitana)",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -897,7 +973,8 @@
 					"properties": {
 						"name":"Lebu",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -906,7 +983,8 @@
 					"properties": {
 						"name":"Linares",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -915,7 +993,8 @@
 					"properties": {
 						"name":"Los Andes",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -924,7 +1003,8 @@
 					"properties": {
 						"name":"Los Angeles",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -933,7 +1013,8 @@
 					"properties": {
 						"name":"Los Vilos",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -942,7 +1023,8 @@
 					"properties": {
 						"name":"Lota",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -951,7 +1033,8 @@
 					"properties": {
 						"name":"Machalí",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -960,7 +1043,8 @@
 					"properties": {
 						"name":"Mejillones",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -969,7 +1053,8 @@
 					"properties": {
 						"name":"Melipilla",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -978,7 +1063,8 @@
 					"properties": {
 						"name":"Molina",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -987,7 +1073,8 @@
 					"properties": {
 						"name":"Mulchén",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -996,7 +1083,8 @@
 					"properties": {
 						"name":"Nacimiento",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1005,7 +1093,8 @@
 					"properties": {
 						"name":"Osorno",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1014,7 +1103,8 @@
 					"properties": {
 						"name":"Ovalle",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1023,7 +1113,8 @@
 					"properties": {
 						"name":"Padre Hurtado",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1032,7 +1123,8 @@
 					"properties": {
 						"name":"Paine",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1041,7 +1133,8 @@
 					"properties": {
 						"name":"Parral",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1050,7 +1143,8 @@
 					"properties": {
 						"name":"Peñaflor",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1059,7 +1153,8 @@
 					"properties": {
 						"name":"Puerto Montt",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1068,7 +1163,8 @@
 					"properties": {
 						"name":"Puerto Varas",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1077,7 +1173,8 @@
 					"properties": {
 						"name":"Punta Arenas",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1086,7 +1183,8 @@
 					"properties": {
 						"name":"Quillota",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1095,7 +1193,8 @@
 					"properties": {
 						"name":"Rancagua",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1104,7 +1203,8 @@
 					"properties": {
 						"name":"Rengo",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1113,7 +1213,8 @@
 					"properties": {
 						"name":"San Antonio",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1122,7 +1223,8 @@
 					"properties": {
 						"name":"San Carlos",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1131,7 +1233,8 @@
 					"properties": {
 						"name":"San Felipe",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1140,7 +1243,8 @@
 					"properties": {
 						"name":"San Fernando",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1149,7 +1253,8 @@
 					"properties": {
 						"name":"San Javier",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1159,7 +1264,8 @@
 						"name":"Santiago",
 						"pos": "W", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1168,7 +1274,8 @@
 					"properties": {
 						"name":"San Vicente",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1177,7 +1284,8 @@
 					"properties": {
 						"name":"Talagante",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1186,7 +1294,8 @@
 					"properties": {
 						"name":"Talca",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1195,7 +1304,8 @@
 					"properties": {
 						"name":"Temuco",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1204,7 +1314,8 @@
 					"properties": {
 						"name":"Tocopilla",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1213,7 +1324,8 @@
 					"properties": {
 						"name":"Tome",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1222,7 +1334,8 @@
 					"properties": {
 						"name":"Valdivia",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1231,7 +1344,8 @@
 					"properties": {
 						"name":"Vallenar",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1240,7 +1354,8 @@
 					"properties": {
 						"name":"Valparaíso (Área Metropolitana)",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1249,7 +1364,8 @@
 					"properties": {
 						"name":"Victoria",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1258,7 +1374,8 @@
 					"properties": {
 						"name":"Villarrica",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "CHI"
 						}
 					},
 					{
@@ -1267,7 +1384,8 @@
 					"properties": {
 						"name":"Barranquilla",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1277,7 +1395,8 @@
 						"name":"Bogotá",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "COL"
 						}
 					},
 					{
@@ -1286,7 +1405,8 @@
 					"properties": {
 						"name":"Bucaramanga",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1295,7 +1415,8 @@
 					"properties": {
 						"name":"Cali",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1304,7 +1425,8 @@
 					"properties": {
 						"name":"Cartagena",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1313,7 +1435,8 @@
 					"properties": {
 						"name":"Cúcuta",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1322,7 +1445,8 @@
 					"properties": {
 						"name":"Ibagué",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1331,7 +1455,8 @@
 					"properties": {
 						"name":"Manizales",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1340,7 +1465,8 @@
 					"properties": {
 						"name":"Medellín",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1349,7 +1475,8 @@
 					"properties": {
 						"name":"Montería",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1358,7 +1485,8 @@
 					"properties": {
 						"name":"Pasto",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1367,7 +1495,8 @@
 					"properties": {
 						"name":"Pereira",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1376,7 +1505,8 @@
 					"properties": {
 						"name":"Villavicencio",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COL"
 						}
 					},
 					{
@@ -1385,7 +1515,8 @@
 					"properties": {
 						"name":"Alajuela",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COR"
 						}
 					},
 					{
@@ -1394,7 +1525,8 @@
 					"properties": {
 						"name":"Cartago",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COR"
 						}
 					},
 					{
@@ -1403,7 +1535,8 @@
 					"properties": {
 						"name":"Heredia",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COR"
 						}
 					},
 					{
@@ -1412,7 +1545,8 @@
 					"properties": {
 						"name":"Limon",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "COR"
 						}
 					},
 					{
@@ -1422,7 +1556,8 @@
 						"name":"San José",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "COR"
 						}
 					},
 					{
@@ -1431,7 +1566,8 @@
 					"properties": {
 						"name":"Bonao",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1440,7 +1576,8 @@
 					"properties": {
 						"name":"Higuey",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1449,7 +1586,8 @@
 					"properties": {
 						"name":"La Romana",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1458,7 +1596,8 @@
 					"properties": {
 						"name":"San Cristobal",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1467,7 +1606,8 @@
 					"properties": {
 						"name":"San Felipe de Puerto Plata",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1476,7 +1616,8 @@
 					"properties": {
 						"name":"San Francisco de Macoris",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1485,7 +1626,8 @@
 					"properties": {
 						"name":"San Pedro de Marcoris",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1494,7 +1636,8 @@
 					"properties": {
 						"name":"Santa Cruz de Barahona",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1503,7 +1646,8 @@
 					"properties": {
 						"name":"Santiago de los Caballeros",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1513,7 +1657,8 @@
 						"name":"Santo Domingo",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "DOM"
 						}
 					},
 					{
@@ -1522,7 +1667,8 @@
 					"properties": {
 						"name":"Ambato",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1531,7 +1677,8 @@
 					"properties": {
 						"name":"Azogues",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1540,7 +1687,8 @@
 					"properties": {
 						"name":"Babahoyo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1549,7 +1697,8 @@
 					"properties": {
 						"name":"Cuenca",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1558,7 +1707,8 @@
 					"properties": {
 						"name":"Eloy Alfaro (Durán)",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1567,7 +1717,8 @@
 					"properties": {
 						"name":"Esmeraldas",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1576,7 +1727,8 @@
 					"properties": {
 						"name":"Guaranda",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1585,7 +1737,8 @@
 					"properties": {
 						"name":"Guayaquil",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1594,7 +1747,8 @@
 					"properties": {
 						"name":"Ibarra",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1603,7 +1757,8 @@
 					"properties": {
 						"name":"La Mana",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1612,7 +1767,8 @@
 					"properties": {
 						"name":"La Troncal",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1621,7 +1777,8 @@
 					"properties": {
 						"name":"Latacunga",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1630,7 +1787,8 @@
 					"properties": {
 						"name":"Loja",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1639,7 +1797,8 @@
 					"properties": {
 						"name":"Machala",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1648,7 +1807,8 @@
 					"properties": {
 						"name":"Manta",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1657,7 +1817,8 @@
 					"properties": {
 						"name":"Nueva Loja",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1666,7 +1827,8 @@
 					"properties": {
 						"name":"Portoviejo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1675,7 +1837,8 @@
 					"properties": {
 						"name":"Quevedo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1685,7 +1848,8 @@
 						"name":"Quito",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1694,7 +1858,8 @@
 					"properties": {
 						"name":"Riobamba",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1703,7 +1868,8 @@
 					"properties": {
 						"name":"Tulcan",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1712,7 +1878,8 @@
 					"properties": {
 						"name":"Vuelta Larga",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1721,7 +1888,8 @@
 					"properties": {
 						"name":"San Salvador",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "ECU"
 						}
 					},
 					{
@@ -1731,7 +1899,8 @@
 						"name":"Guatemala",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "GUA"
 						}
 					},
 					{
@@ -1740,7 +1909,8 @@
 					"properties": {
 						"name":"San Pedro Sula",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "HON"
 						}
 					},
 					{
@@ -1750,7 +1920,8 @@
 						"name":"Tegucigalpa",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "HON"
 						}
 					},
 					{
@@ -1759,7 +1930,8 @@
 					"properties": {
 						"name":"Acapulco",
 						"pos": "SW", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1768,7 +1940,8 @@
 					"properties": {
 						"name":"Aguascalientes",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1777,7 +1950,8 @@
 					"properties": {
 						"name":"Cancun",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1786,7 +1960,8 @@
 					"properties": {
 						"name":"Chetumal",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1795,7 +1970,8 @@
 					"properties": {
 						"name":"Chihuahua",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1804,7 +1980,8 @@
 					"properties": {
 						"name":"Ciudad Juarez",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1813,7 +1990,8 @@
 					"properties": {
 						"name":"Colima",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1822,7 +2000,8 @@
 					"properties": {
 						"name":"Cuernavaca",
 						"pos": "SW", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1831,7 +2010,8 @@
 					"properties": {
 						"name":"Culiacán",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1840,7 +2020,8 @@
 					"properties": {
 						"name":"Durango",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1849,7 +2030,8 @@
 					"properties": {
 						"name":"Guadalajara",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1858,7 +2040,8 @@
 					"properties": {
 						"name":"Hermosillo",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1867,7 +2050,8 @@
 					"properties": {
 						"name":"Irapuato",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1876,7 +2060,8 @@
 					"properties": {
 						"name":"León",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1885,7 +2070,8 @@
 					"properties": {
 						"name":"Mérida",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1894,7 +2080,8 @@
 					"properties": {
 						"name":"Mexicali",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1904,7 +2091,8 @@
 						"name":"México, D.F.",
 						"pos": "NE", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1913,7 +2101,8 @@
 					"properties": {
 						"name":"Monterrey",
 						"pos": "NE", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1922,7 +2111,8 @@
 					"properties": {
 						"name":"Morelia",
 						"pos": "SW", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1931,7 +2121,8 @@
 					"properties": {
 						"name":"Oaxaca",
 						"pos": "S", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1940,7 +2131,8 @@
 					"properties": {
 						"name":"Puebla",
 						"pos": "NE", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1949,7 +2141,8 @@
 					"properties": {
 						"name":"Saltillo",
 						"pos": "S", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1958,7 +2151,8 @@
 					"properties": {
 						"name":"Campeche",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1967,7 +2161,8 @@
 					"properties": {
 						"name":"San Luis Potosí",
 						"pos": "NE", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1976,7 +2171,8 @@
 					"properties": {
 						"name":"Querétaro",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1985,7 +2181,8 @@
 					"properties": {
 						"name":"Tampico",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -1994,7 +2191,8 @@
 					"properties": {
 						"name":"Tepic",
 						"pos": "W", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2003,7 +2201,8 @@
 					"properties": {
 						"name":"Tijuana",
 						"pos": "NW", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2012,7 +2211,8 @@
 					"properties": {
 						"name":"Toluca",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2021,7 +2221,8 @@
 					"properties": {
 						"name":"Torreón",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2030,7 +2231,8 @@
 					"properties": {
 						"name":"Tuxtla Gutierrez",
 						"pos": "S", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2039,7 +2241,8 @@
 					"properties": {
 						"name":"Veracruz",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2048,7 +2251,8 @@
 					"properties": {
 						"name":"Villahermosa",
 						"pos": "E", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2057,7 +2261,8 @@
 					"properties": {
 						"name":"Zacatecas",
 						"pos": "N", 
-						"dist": "short"
+						"dist": "short",
+						"country": "MEX"
 						}
 					},
 					{
@@ -2066,7 +2271,8 @@
 					"properties": {
 						"name":"Chinandega",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2075,7 +2281,8 @@
 					"properties": {
 						"name":"Estelí",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2084,7 +2291,8 @@
 					"properties": {
 						"name":"Granada",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2093,7 +2301,8 @@
 					"properties": {
 						"name":"León",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2103,7 +2312,8 @@
 						"name":"Managua",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2112,7 +2322,8 @@
 					"properties": {
 						"name":"Masaya",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2121,7 +2332,8 @@
 					"properties": {
 						"name":"Nueva Guinea",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "NIC"
 						}
 					},
 					{
@@ -2130,7 +2342,8 @@
 					"properties": {
 						"name":"Chitre",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PAN"
 						}
 					},
 					{
@@ -2139,7 +2352,8 @@
 					"properties": {
 						"name":"Colón",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PAN"
 						}
 					},
 					{
@@ -2148,7 +2362,8 @@
 					"properties": {
 						"name":"David",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PAN"
 						}
 					},
 					{
@@ -2158,7 +2373,8 @@
 						"name":"Panamá",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "PAN"
 						}
 					},
 					{
@@ -2168,7 +2384,8 @@
 						"name":"Asunción",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "PAR"
 						}
 					},
 					{
@@ -2177,7 +2394,8 @@
 					"properties": {
 						"name":"Arequipa",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PAR"
 						}
 					},
 					{
@@ -2186,7 +2404,8 @@
 					"properties": {
 						"name":"Ayacucho",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2195,7 +2414,8 @@
 					"properties": {
 						"name":"Bagua Grande",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2204,7 +2424,8 @@
 					"properties": {
 						"name":"Cajamarca",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2213,7 +2434,8 @@
 					"properties": {
 						"name":"Cerro de Pasco",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2222,7 +2444,8 @@
 					"properties": {
 						"name":"Chiclayo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2231,7 +2454,8 @@
 					"properties": {
 						"name":"Chimbote",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2240,7 +2464,8 @@
 					"properties": {
 						"name":"Cusco",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2249,7 +2474,8 @@
 					"properties": {
 						"name":"Huancavelica",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2258,7 +2484,8 @@
 					"properties": {
 						"name":"Huancayo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2267,7 +2494,8 @@
 					"properties": {
 						"name":"Huanuco",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2276,7 +2504,8 @@
 					"properties": {
 						"name":"Ica",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2285,7 +2514,8 @@
 					"properties": {
 						"name":"Ilo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2294,7 +2524,8 @@
 					"properties": {
 						"name":"Iquitos",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2303,7 +2534,8 @@
 					"properties": {
 						"name":"Juliaca",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2312,7 +2544,8 @@
 					"properties": {
 						"name":"Lapeca",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2322,7 +2555,8 @@
 						"name":"Lima",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "PER"
 						}
 					},
 					{
@@ -2331,7 +2565,8 @@
 					"properties": {
 						"name":"Moquegua",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2340,7 +2575,8 @@
 					"properties": {
 						"name":"Moyobamba",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2349,7 +2585,8 @@
 					"properties": {
 						"name":"Piura",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2358,7 +2595,8 @@
 					"properties": {
 						"name":"Pucallpa",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2367,7 +2605,8 @@
 					"properties": {
 						"name":"Sullana",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2376,7 +2615,8 @@
 					"properties": {
 						"name":"Tacna",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2385,7 +2625,8 @@
 					"properties": {
 						"name":"Tambo Pata",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2394,7 +2635,8 @@
 					"properties": {
 						"name":"Tarapoto",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2403,7 +2645,8 @@
 					"properties": {
 						"name":"Trujillo",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2412,7 +2655,8 @@
 					"properties": {
 						"name":"Tumbes",
 						"pos": "",
-						"dist": "short"
+						"dist": "short",
+						"country": "PER"
 						}
 					},
 					{
@@ -2422,7 +2666,8 @@
 						"name":"Montevideo",
 						"pos": "E", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "URU"
 						}
 					},
 					{
@@ -2432,7 +2677,8 @@
 						"name":"Caracas",
 						"pos": "", 
 						"dist": "short",
-						"type": "capital"
+						"type": "capital",
+						"country": "VEN"
 						}
 					}
 			]
