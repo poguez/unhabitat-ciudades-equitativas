@@ -20,6 +20,7 @@
 		<![endif]-->
 		<script src="js/d3.min.js"></script>
 		<script src="js/d3plus.js"></script>
+		
 		<script>
 		function toggle(idtabla) {
 			 if( document.getElementById(idtabla).style.display=='none' ){
@@ -29,6 +30,7 @@
 			 }
 			}
 		</script>
+
 	</head>
 
 	<body>
@@ -53,7 +55,7 @@
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
-		<div class="intro">dasda
+		<div class="intro">&nbsp;
 		</div>
 
 		<div class="container">
@@ -62,11 +64,11 @@
 				<!-- <h1>Bootstrap starter template</h1>
 				<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
 				<div id="info">
-					<h2 id="country"></h2>
+					<h2 id="entity"></h2>
 					
-					<h3>Coeficiente de Gini Nacional</h3>
-					<div id="gini">
-						<div id="viz">
+					<h3 id="title1">Coeficiente de Gini Nacional</h3>
+					<div id="data1">
+						<div id="viz1">
 							<script>
 							  // sample data array
 							  var sample_data = [
@@ -78,7 +80,7 @@
 							 
 							  // instantiate d3plus
 							  var visualization = d3plus.viz()
-							    .container("#viz")  // container DIV to hold the visualization
+							    .container("#viz1")  // container DIV to hold the visualization
 							    .data(sample_data)  // data to use with the visualization
 							    .type("line")       // visualization type
 							    .id("name")         // key for which our data is unique on
@@ -91,8 +93,8 @@
 					</div>
 					
 
-					<h3>Relación de salarios</h3>
-					<div id="wages">
+					<h3 id="title2">Relación de salarios</h3>
+					<div id="data2">
 						<div id="viz2">
 							<svg>
 							  <circle cx="10" cy="75" r="10" fill="blue" />	
@@ -101,11 +103,10 @@
 						</div>
 					</div>
 					
-					<h3>Distribución del ingreso</h3>
-					<div id="income">
+					<h3 id="title3">Distribución del ingreso</h3>
+					<div id="data3">
 						<div id="viz3">
 							<script>
-							 
 							  var data = [
 							    {"name":"Salarios", "Porcentaje del Ingreso":53.1, "  ": 1},
 							    {"name":"Ganancias", "Porcentaje del Ingreso":9.1,"  ": 1},
@@ -122,10 +123,7 @@
 							    .x({"stacked": true, "value": "Porcentaje del Ingreso"})
 							    .y("  ")
 							    .time("  ")
-							    .draw()
-
-
-							 
+							    .draw()							 
 							</script>
 						</div>
 					</div>
@@ -134,7 +132,6 @@
 
 		</div><!-- /.container -->
 
-		
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
@@ -142,179 +139,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-		<script>
-
-		var width = 680,
-			height = 750,
-			active = d3.select(null);
-
-	    /* Map properties */
-		var projection = d3.geo.mercator()
-			.scale(375)
-			.translate([width / 2, height / 2])
-			.center([-75,-10])
-			.precision(.1);
-
-		var path = d3.geo.path()
-			.projection(projection);
-
-		var svg = d3.select("body").append("svg")
-			.attr("width", width)
-			.attr("height", height);
-
-		svg.append("rect")
-		    .attr("class", "background")
-	    	.attr("width", width)
-	    	.attr("height", height)
-	    	.on("click", reset);
-
-	    var g = svg.append("g")
-	    	.style("stroke-width", ".5px");
-
-		d3.json("data/la.json", function(error, la) {
-
-			var countries = topojson.feature(la, la.objects.countries);
-			var cities = topojson.feature(la, la.objects.cities);
-
-			g.selectAll(".country")
-				.data(topojson.feature(la, la.objects.countries).features)
-				.enter().append("path")
-				/*.attr("class", "feature")*/
-				.attr("class", function(d) { return "country " + d.properties.category; })
-				.attr("d", path)
-				.on("mouseover", function(d) {
-					/*var name = d.properties.gini;
-					return document.getElementById('gini').innerHTML=name;*/
-				})
-	      		.on("click", clicked);
-
-			g.append("path")
-				.datum(topojson.mesh(la, la.objects.countries, function(a, b) { return a !== b }))
-				.attr("class", "mesh")
-				.attr("d", path)
-				.attr("class", "country-boundary");
-
-			/*
-			g.selectAll(".country-label")
-				.data(countries.features)
-				.enter().append("text")
-				.attr("class", function(d) { return "country-label " + d.id; })
-				.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-				.attr("dy", ".35em")
-				.text(function(d) { return d.properties.name; });
-			*/
-
-			g.selectAll(".cities")
-	      		.data(topojson.feature(la, la.objects.cities).features)
-				.enter().append("path")
-				.attr("class", "feature")
-				.attr('d', path.pointRadius(0.5))
-				.attr("d", path)
-				.on("mouseover", function(d) {
-				});
-
-			g.append("path")
-				.datum(cities)
-				.attr("d", path)
-				.attr("class", "city");
-
-			/* 
-			g.selectAll(".city-label")
-				.data(cities.features)
-				.enter().append("text")
-				.attr("class", "city-label")
-				.attr("transform", function(d) { return "translate(" + projection(d.geometry.coordinates) + ")"; })
-				.attr("x", function(d) { return d.geometry.coordinates[0] > -1 ? 6 : -6; })
-				.attr("dy", ".35em")
-				.style("text-anchor", function(d) { return d.geometry.coordinates[0] > -1 ? "start" : "end"; })
-				.text(function(d) { return d.properties.name; }); 
-			*/
-		});
-
-		/* Chart properties */
-		/*var chart_width = 200,
-	    	chart_height = 150;
-
-	    var y = d3.scale.linear().range([height, 0]);
-
-	    var chart = d3.select(".chart")
-	    	.attr("width", chart_width)
-	    	.attr("height", chart_height);
-
-	    d3.tsv("data.tsv", type, function(error, data) {
-		 	y.domain([0, d3.max(data, function(d) { return d.value; })]);
-
-		 	var barWidth = chart_width / data.length;
-
-		 	var bar = chart.selectAll("g")
-						.data(data)
-						.enter().append("g")
-						.attr("transform", function(d, i) { return "translate(" + i * barWidth + ",0)"; });
-
-			bar.append("rect")
-				.attr("y", function(d) { return y(d.value); })
-				.attr("height", function(d) { return height - y(d.value); })
-				.attr("width", barWidth - 1);
-
-			bar.append("text")
-				.attr("x", barWidth / 2)
-				.attr("y", function(d) { return y(d.value) + 3; })
-				.attr("dy", ".75em")
-				.text(function(d) { return d.value; });
-		});
-
-		function type(d) {
-		  d.value = +d.value; // coerce to number
-		  return d;
-		}*/
-
-
-		/* */
-		function clicked(d) {
-			if (active.node() === this) {
-				document.getElementById('country').innerHTML='';
-				document.getElementById('gini').innerHTML='';
-				document.getElementById('info').style.visibility="hidden";
-				return reset();
-			}
-
-			document.getElementById('info').style.visibility="visible";
-
-			active.classed("active", false);
-			active = d3.select(this).classed("active", true);
-
-	  		var bounds = path.bounds(d),
-	    		dx = bounds[1][0] - bounds[0][0],
-	    		dy = bounds[1][1] - bounds[0][1],
-	    		x = (bounds[0][0] + bounds[1][0]) / 2,
-	    		y = (bounds[0][1] + bounds[1][1]) / 2,
-	    		scale = .9 / Math.max(dx / width, dy / height),
-	    		translate = [width / 2 - scale * x, height / 2 - scale * y];
-
-	  		g.transition()
-	    		.duration(750)
-	    		.style("stroke-width", 1.5 / scale + "px")
-	    		.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-	    	
-	    	var country = d.properties.name;
-			document.getElementById('country').innerHTML=country;
-			//var gini = d.properties.gini;
-			//document.getElementById('gini').innerHTML=gini;
-		}
-
-		function reset() {
-			active.classed("active", false);
-	  		active = d3.select(null);
-
-	  		g.transition()
-	    		.duration(750)
-	    		.style("stroke-width", "1.5px")
-	    		.attr("transform", "");
-		}
-
-		d3.select(self.frameElement).style("height", height + "px");
-
-		</script>
+		<script src="js/map.js"></script>
 		<div class="footer"></div>
 	</body>
 </html>

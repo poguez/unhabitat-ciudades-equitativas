@@ -1,0 +1,22 @@
+{
+	"type":"Topology",
+	"transform": {
+		"scale":[0.00895006890689069,0.008864020402040205],
+		"translate":[-118.368804,-55.918504]
+	},
+	"objects":{
+		"cities": {
+			"type": "GeometryCollection",
+			"geometries":[
+				{
+					"type":"Point",
+					"coordinates":[6702,2404],
+					"properties": {
+						"name" : "Rio de Janeiro",
+						"gini" : "12345"
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,180 @@
+pais,nivel,fecha,gini urbano,gini rural
+Bolivia (Estado Plurinacional de)  ,nacional,1989,0.53639,
+Bolivia (Estado Plurinacional de)  ,nacional,1994,0.51328,
+Bolivia (Estado Plurinacional de)  ,nacional,1999,0.50409,
+Bolivia (Estado Plurinacional de)  ,nacional,2004,0.51098,
+Bolivia (Estado Plurinacional de)  ,nacional,2007,0.50606,
+Bolivia (Estado Plurinacional de)  ,nacional,1989,,na
+Bolivia (Estado Plurinacional de)  ,nacional,1994,,na
+Bolivia (Estado Plurinacional de)  ,nacional,1999,,0.63968
+Bolivia (Estado Plurinacional de)  ,nacional,2004,,0.52193
+Bolivia (Estado Plurinacional de)  ,nacional,2007,,0.60686
+Chile,nacional,1990,0.54283,
+Chile,nacional,1994,0.54615,
+Chile,nacional,2000,0.55853,
+Chile,nacional,2003,0.54744,
+Chile,nacional,2006,0.51732,
+Chile,nacional,2009,0.52415,
+Chile,nacional,1990,,0.58516
+Chile,nacional,1994,,0.50369
+Chile,nacional,2000,,0.51079
+Chile,nacional,2003,,0.50715
+Chile,nacional,2006,,0.50639
+Chile,nacional,2009,,0.46578
+Brasil ,nacional,1990,0.60562,
+Brasil ,nacional,1993,0.60436,
+Brasil ,nacional,1999,0.62532,
+Brasil ,nacional,2003,0.61222,
+Brasil ,nacional,2005,0.60432,
+Brasil ,nacional,2009,0.56852,
+Brasil ,nacional,1990,,0.54799
+Brasil ,nacional,1993,,0.58872
+Brasil ,nacional,1999,,0.57658
+Brasil ,nacional,2003,,0.56388
+Brasil ,nacional,2005,,0.54203
+Brasil ,nacional,2009,,0.52329
+Colombia,nacional,1991,0.48433,
+Colombia,nacional,1994,0.57865,
+Colombia,nacional,1999,0.56362,
+Colombia,nacional,2002,0.57148,
+Colombia,nacional,2005,0.5614,
+Colombia,nacional,2010,0.55485,
+Colombia,nacional,1991,,0.58726
+Colombia,nacional,1994,,0.57166
+Colombia,nacional,1999,,0.52536
+Colombia,nacional,2002,,0.54192
+Colombia,nacional,2005,,0.47454
+Colombia,nacional,2010,,0.49359
+Costa Rica,nacional,1994,0.44296,
+Costa Rica,nacional,1999,0.47212,
+Costa Rica,nacional,2002,0.49033,
+Costa Rica,nacional,2005,0.4822,
+Costa Rica,nacional,2010,0.47958,
+Costa Rica,nacional,1990,,0.37485
+Costa Rica,nacional,1994,,0.3797
+Costa Rica,nacional,1999,,0.42093
+Costa Rica,nacional,2002,,0.49615
+Costa Rica,nacional,2005,,0.46902
+Costa Rica,nacional,2010,,0.48795
+República Dominicana,nacional,1990,na,
+República Dominicana,nacional,1994,na,
+República Dominicana,nacional,1997,0.50992,
+República Dominicana,nacional,2002,0.54808,
+República Dominicana,nacional,2005,0.56794,
+República Dominicana,nacional,2010,0.55917,
+República Dominicana,nacional,1990,,na
+República Dominicana,nacional,1994,,na
+República Dominicana,nacional,1997,,0.48689
+República Dominicana,nacional,2002,,0.4728
+República Dominicana,nacional,2005,,0.54164
+República Dominicana,nacional,2010,,0.51175
+Ecuador,nacional,1990,0.46077,
+Ecuador,nacional,1994,0.47931,
+Ecuador,nacional,1999,0.52562,
+Ecuador,nacional,2002,0.5132,
+Ecuador,nacional,2005,0.51258,
+Ecuador,nacional,2010,0.48501,
+Ecuador,nacional,1990,,na
+Ecuador,nacional,1994,,na
+Ecuador,nacional,1999,,na
+Ecuador,nacional,2002,,na
+Ecuador,nacional,2005,,0.46846
+Ecuador,nacional,2010,,0.42017
+El Salvador,nacional,1990,na,
+El Salvador,nacional,1997,0.4672,
+El Salvador,nacional,1999,0.44994,
+El Salvador,nacional,2002,na,
+El Salvador,nacional,2004,0.45504,
+El Salvador,nacional,2010,0.45351,
+El Salvador,nacional,1990,,na
+El Salvador,nacional,1997,,0.42326
+El Salvador,nacional,1999,,0.46182
+El Salvador,nacional,2002,,na
+El Salvador,nacional,2004,,0.45568
+El Salvador,nacional,2010,,0.4021
+Guatemala ,nacional,1989,0.55702,
+Guatemala ,nacional,1994,na,
+Guatemala ,nacional,1998,0.52516,
+Guatemala ,nacional,2002,0.52314,
+Guatemala ,nacional,2006,0.54732,
+Guatemala ,nacional,2010,na,
+Guatemala ,nacional,1989,,0.51942
+Guatemala ,nacional,1994,,na
+Guatemala ,nacional,1998,,0.51038
+Guatemala ,nacional,2002,,0.47009
+Guatemala ,nacional,2006,,0.526
+Guatemala ,nacional,2010,,na
+Honduras,nacional,1990,0.56058,
+Honduras,nacional,1994,0.53301,
+Honduras,nacional,1999,0.51745,
+Honduras,nacional,2002,0.53267,
+Honduras,nacional,2006,0.51476,
+Honduras,nacional,2010,0.49206,
+Honduras,nacional,1990,,0.55799
+Honduras,nacional,1994,,0.5382
+Honduras,nacional,1999,,0.51176
+Honduras,nacional,2002,,0.51859
+Honduras,nacional,2006,,0.6012
+Honduras,nacional,2010,,0.56027
+México,nacional,1989,0.52986,
+México,nacional,1994,0.5116,
+México,nacional,2002,0.47637,
+México,nacional,2005,0.49729,
+México,nacional,2010,0.45578,
+México,nacional,1989,,0.45285
+México,nacional,1994,,0.44982
+México,nacional,2002,,0.49766
+México,nacional,2005,,0.48607
+México,nacional,2010,,0.44953
+Nicaragua,nacional,1993,0.54906,
+Nicaragua,nacional,1998,0.5514,
+Nicaragua,nacional,2001,0.56083,
+Nicaragua,nacional,2005,0.49961,
+Nicaragua,nacional,1993,,0.53604
+Nicaragua,nacional,1998,,0.55824
+Nicaragua,nacional,2001,,0.5073
+Nicaragua,nacional,2005,,0.49699
+Panamá,nacional,1991,0.54449,
+Panamá,nacional,1994,0.54947,
+Panamá,nacional,1999,0.51434,
+Panamá,nacional,2002,0.56078,
+Panamá,nacional,2005,0.47961,
+Panamá,nacional,2010,0.47086,
+Panamá,nacional,1991,,0.53472
+Panamá,nacional,1994,,0.52249
+Panamá,nacional,1999,,0.51141
+Panamá,nacional,2002,,0.58085
+Panamá,nacional,2005,,0.52425
+Panamá,nacional,2010,,0.50892
+Perú,nacional,1999,0.50822,
+Perú,nacional,2003,0.48289,
+Perú,nacional,2006,0.42116,
+Perú,nacional,2010,0.40861,
+Perú,nacional,1999,,0.42821
+Perú,nacional,2003,,0.38136
+Perú,nacional,2006,,0.42205
+Perú,nacional,2010,,0.40311
+Uruguay,nacional,1990,0.49175,
+Uruguay,nacional,1994,0.42309,
+Uruguay,nacional,1999,0.44039,
+Uruguay,nacional,2002,0.45563,
+Uruguay,nacional,2005,0.45236,
+Uruguay,nacional,2010,0.42239,
+Uruguay,nacional,1990,,na
+Uruguay,nacional,1994,,na
+Uruguay,nacional,1999,,na
+Uruguay,nacional,2002,,na
+Uruguay,nacional,2005,,na
+Uruguay,nacional,2010,,0.38396
+Venezuela (República Bolivariana de),nacional,1990,0.46398,
+Venezuela (República Bolivariana de),nacional,1994,0.47599,
+Venezuela (República Bolivariana de),nacional,1999,na,
+Venezuela (República Bolivariana de),nacional,2002,na,
+Venezuela (República Bolivariana de),nacional,2005,na,
+Venezuela (República Bolivariana de),nacional,2010,na,
+Venezuela (República Bolivariana de),nacional,1990,,0.43124
+Venezuela (República Bolivariana de),nacional,1994,,0.45974
+Venezuela (República Bolivariana de),nacional,1999,,na
+Venezuela (República Bolivariana de),nacional,2002,,na
+Venezuela (República Bolivariana de),nacional,2005,,na
+Venezuela (República Bolivariana de),nacional,2010,,na
