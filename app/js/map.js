@@ -26,6 +26,8 @@ svg.append("rect")
 var g = svg.append("g")
 	.style("stroke-width", ".5px");
 
+var activeCountry;
+
 d3.json("data/la.json", function(error, la) {
 
 	var countries = topojson.feature(la, la.objects.countries);
@@ -41,6 +43,10 @@ d3.json("data/la.json", function(error, la) {
 		.on("mouseover", function(d) {
 			/*var name = d.properties.gini;
 			return document.getElementById('gini').innerHTML=name;*/
+		})
+		.on("click", function(d) {
+			activeCountry = d.properties.name;
+			console.log(activeCountry);
 		})
   		.on("click", clicked_country);
 
@@ -165,13 +171,10 @@ d3.json("data/la.json", function(error, la) {
 
 function clicked_city(d) {
 	document.getElementById('entity').innerHTML='';
-
 	document.getElementById('title1').innerHTML='';
 	document.getElementById('viz1').innerHTML='';
-
 	document.getElementById('title2').innerHTML='';
 	document.getElementById('viz2').innerHTML='';
-	
 	document.getElementById('title3').innerHTML='';
 	document.getElementById('viz3').innerHTML='';
 	
@@ -180,14 +183,71 @@ function clicked_city(d) {
 	document.getElementById('title1').innerHTML='Gini';
 	document.getElementById('title2').innerHTML='Ingreso per cápita';
 	
-	d3.csv("../data/mex/mex.csv", function(error, data) {
-		var link = document.createElement("script");
-		link.setAttribute("src", "js/chart.js");
-		//document.getElementById('viz').innerHTML=appendChild(link);
-		document.getElementById('data1').appendChild(link);
+	d3.csv("../data/mex/mex.csv", function(error, csv) {
+		var years = d3.keys(csv[0]);
+		years.splice(years.indexOf("city"));
+		years.sort();
+
+		var year;
+		var gini;
+		var giniCityData = [];
+
+        csv = csv.filter(function(row) {
+        	return row['city'] == city_name;
+    	});
+
+    	if(years[0]) {
+    		year = years[0];
+    		gini = csv[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini };
+    			giniCityData.push(giniData);
+    		}
+    	}
+		if(years[1]) {
+			year = years[1];
+    		gini = csv[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini };
+    			giniCityData.push(giniData);
+    		}
+		}
+		if(years[2]) {
+			year = years[2];
+    		gini = csv[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini };
+    			giniCityData.push(giniData);
+    		}
+		}
+		if(years[3]) {
+			year = years[3];
+    		gini = csv[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini };
+    			giniCityData.push(giniData);
+    		}
+		}
+		if(years[4]) {
+			year = years[4];
+    		gini = csv[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini };
+    			giniCityData.push(giniData);
+    		}
+		}
+		if(years[5]) {
+			year = years[5];
+    		gini = csv[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini };
+    			giniCityData.push(giniData);
+    		}
+		}
+
+    	graphGiniCity(giniCityData);
 	});
-		//.row(function(d) { return {key: d.key, value: +d.value}; })
-		//.get(function(error, rows) { console.log(rows); });
+
 }
 
 function clicked_country(d) {
@@ -199,6 +259,8 @@ function clicked_country(d) {
 		return reset();
 	}
 
+	activeCountry = "Mexico";
+	alert(activeCountry);
 	document.getElementById('info').style.visibility="visible";
 
 	active.classed("active", false);
@@ -233,6 +295,29 @@ function reset() {
 		.duration(750)
 		.style("stroke-width", "1.5px")
 		.attr("transform", "");
+}
+
+function graphGiniCity(giniCityData) {
+	
+	var giniChart = document.createElement("script");
+	//giniChart.type = "text/javascript";
+
+	//link.setAttribute("src", "js/chart.js");
+	// instantiate d3plus
+	var visualization = d3plus.viz()
+		.container("#viz1")  // container DIV to hold the visualization
+		.data(giniCityData)  // data to use with the visualization
+		.type("line")       // visualization type
+		.id("gini")         // key for which our data is unique on
+		//.text("name")       // key to use for display text
+		.y("gini")         // key to use for y-axis
+		.x("year")          // key to use for x-axis
+		.draw();             // finally, draw the
+
+	giniChart.appendChild(document.createTextNode(giniCityData));
+	giniChart.appendChild(document.createTextNode(visualization));
+
+	document.getElementById('data1').appendChild(giniChart);
 }
 
 d3.select(self.frameElement).style("height", height + "px");
