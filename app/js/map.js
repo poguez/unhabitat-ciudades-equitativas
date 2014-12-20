@@ -195,10 +195,74 @@ function clicked_city(d) {
 		var year;
 		var gini;
 		var giniCityData = [];
+		var giniNacionalData = [];
+
+		//Empieza Sección Nacional
+
+		csvnacional = csv.filter(function(row) {
+        	return row['city'] == "Nacional";
+    	});
+
+
+    	if(years[0]) {
+    		year = years[0];
+    		gini = csvnacional[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini, city: "Nacional" };
+    			giniNacionalData.push(giniData);
+    		}
+    	}
+		if(years[1]) {
+			year = years[1];
+    		gini = csvnacional[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini, city: "Nacional" };
+    			giniNacionalData.push(giniData);
+    		}
+		}
+		if(years[2]) {
+			year = years[2];
+    		gini = csvnacional[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini, city: "Nacional" };
+    			giniNacionalData.push(giniData);
+    		}
+		}
+		if(years[3]) {
+			year = years[3];
+    		gini = csvnacional[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini, city: "Nacional" };
+    			giniNacionalData.push(giniData);
+    		}
+		}
+		if(years[4]) {
+			year = years[4];
+    		gini = csvnacional[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini, city: "Nacional" };
+    			giniNacionalData.push(giniData);
+    		}
+		}
+		if(years[5]) {
+			year = years[5];
+    		gini = csvnacional[0][year];
+    		if(gini) {
+    			giniData = { year: year, gini: gini, city: "Nacional" };
+    			giniNacionalData.push(giniData);
+    		}
+		}
+
+		console.log(giniNacionalData);
+
+
+		//Aqui termina codigo nacional
+
 
         csv = csv.filter(function(row) {
         	return row['city'] == city_name;
     	});
+
 
     	if(years[0]) {
     		year = years[0];
@@ -249,7 +313,7 @@ function clicked_city(d) {
     		}
 		}
 
-    	graphGiniCity(giniCityData);
+    	graphGiniCity(giniCityData,giniNacionalData);
 
 	});
 
@@ -366,10 +430,10 @@ function reset() {
 		.attr("transform", "");
 }
 
-function graphGiniCity(data) {
+function graphGiniCity(data,datanacional) {
 
-	var	margin = {top: 30, right: 20, bottom: 30, left: 50},
-	width = 300 - margin.left - margin.right,
+	var	margin = {top: 30, right: 150, bottom: 30, left: 50},
+	width = 450 - margin.left - margin.right,
 	height = 200 - margin.top - margin.bottom;
  
 	// Parse the date / time
@@ -404,10 +468,16 @@ function graphGiniCity(data) {
 		d.year = parseDate(d["year"]);
 		d.gini = +d["gini"];
 	});
+
+	datanacional.forEach(function(d) {
+		d.year = parseDate(d["year"]);
+		d.gini = +d["gini"];
+	});
 	
 
 	// Scale the range of the data
 	x.domain([d3.time.year.offset(d3.min(data, function(d) { return d["year"]; }),-1),d3.time.year.offset(d3.max(data, function(d) { return d["year"]; }),+0)]);
+	//Deje el offset para el top value para que no sea dificil modificarlo al gusto.
 	y.domain([0, 0.60000001]);
 	//Se pone ese .0000001 para que muestre el label de ese tick
 
@@ -436,15 +506,18 @@ function graphGiniCity(data) {
 		.attr("class", "linegini")
 		.attr("d", valueline(data));
 
-	svg.select('linechartline').style({ 'stroke-width': '0px'});
+	svg.append("path")	
+		.attr("class", "linegini_nacional")
+		.attr("d", valueline(datanacional));
 
-	var dataCirclesGroup = svg.append('svg:g');
+	//svg.select('linechartline').style({ 'stroke-width': '0px'});
 
 	var tooltip = d3.select("body")
     	.append("div")
     	.attr("class", "tooltip")
 		.style("opacity", 0);
 
+	var dataCirclesGroup = svg.append('svg:g');
 	var circles = dataCirclesGroup.selectAll('.data-point')
 				.data(data);
 
@@ -477,6 +550,73 @@ function graphGiniCity(data) {
 				.transition()
   					.duration(750);
 		});
+
+	//pintar bolitas nacionales
+
+	var dataCirclesGroup = svg.append('svg:g');
+	var circles = dataCirclesGroup.selectAll('.data-point')
+				.data(datanacional);
+
+	circles
+		.enter()
+		.append('svg:circle')
+		
+		.attr('class', 'dot')
+		.attr('fill', function() { return "lightblue"; })
+		.attr('cx', function(d) { return x(d["year"]); })
+		.attr('cy', function(d) { return y(d["gini"]); })
+		.attr('r', function() { return 3; })
+		.on("mouseover", function(d) {
+			d3.select(this)
+				.attr("r", 8)
+				.attr("class", "dot-selected")
+				.transition()
+  				.duration(750);
+  			d3.select(this)
+  				.append('svg:title')
+  				.text(function(d) {
+					return d.gini;
+				});
+			return tooltip.style("visibility", "visible");	
+		})
+		.on("mouseout", function(d) {
+				d3.select(this)
+				.attr("r", 3)
+				.attr("class", "dot")
+				.transition()
+  					.duration(750);
+		});
+
+	// empiezan labels
+
+	
+    svg.append('text')
+        .attr('fill', 'black')
+        .attr('x', 1.07*width+20*1.2)
+        .attr('y', height/4 + 14)
+        .text("Local")
+        .style("font-family","sans-serif")
+        .style("font-size","14px");
+    svg.append('rect')
+        .attr('fill', "steelblue")
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x', 1.07*width)
+        .attr('y', height/4);
+
+    svg.append('text')
+        .attr('fill', 'black')
+        .attr('x', 1.07*width+20*1.2)
+        .attr('y', height/4 + 14 + 20*1.5)
+        .text("Nacional")
+        .style("font-family","sans-serif")
+        .style("font-size","14px");
+    svg.append('rect')
+        .attr('fill', "lightblue")
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x', 1.07*width)
+        .attr('y', height/4 + 20*1.5);
 
 	/*
 	var giniChart = document.createElement("script");

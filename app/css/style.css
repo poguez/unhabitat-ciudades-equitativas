@@ -151,6 +151,12 @@ text:hover {
   stroke-width: 2;
   fill: none;
 }
+
+.linegini_nacional { 
+  stroke: lightblue;
+  stroke-width: 2;
+  fill: none;
+}
  
 
 .axis {
