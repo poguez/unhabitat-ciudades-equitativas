@@ -407,7 +407,7 @@ function graphGiniCity(data) {
 	
 
 	// Scale the range of the data
-	x.domain([d3.time.year.offset(d3.min(data, function(d) { return d["year"]; }),-1),d3.time.year.offset(d3.max(data, function(d) { return d["year"]; }),+1)]);
+	x.domain([d3.time.year.offset(d3.min(data, function(d) { return d["year"]; }),-1),d3.time.year.offset(d3.max(data, function(d) { return d["year"]; }),+0)]);
 	y.domain([0, 0.60000001]);
 	//Se pone ese .0000001 para que muestre el label de ese tick
 
