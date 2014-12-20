@@ -1,3 +1,7 @@
+#data1 {
+  width: 200px;
+  height: 200px;
+} 
 #viz1 {
   width: 150px;
   height: 150px;
@@ -101,8 +105,7 @@ h3 {
 
 .city-label {
 	fill: #444;
-  background-color: #000;
-  /* isibility: hidden; */
+  /* visibility: hidden; */
 }
 
 /* .states {
@@ -117,7 +120,7 @@ text {
 }
 
 text:hover {
-  color: #fff;
+  color: #9C5308;
 }
 
 .background {
@@ -142,6 +145,24 @@ text:hover {
 }
 
 /* Income chart style */
+
+linechartpath { 
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+ 
+.axis linechartpath {
+  stroke: lightgrey;
+}
+
+.axis linechartline {
+  fill: none;
+  stroke: lightgrey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
 .axis path {
   display: none;
 }

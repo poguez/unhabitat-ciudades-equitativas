@@ -56,7 +56,6 @@ d3.json("data/la.json", function(error, la) {
 		.attr("d", path)
 		.attr("class", "country-boundary");
 
-
 	/*
 	g.selectAll(".country-label")
 		.data(countries.features)
@@ -156,8 +155,8 @@ d3.json("data/la.json", function(error, la) {
 		// Cjange to left, middle or right, depending on the label cardinal direction.
 		.text(function(d) { return d.properties.name; })
 		.on("mouseover", function(d) {
-			var nodeSelection = d3.select(this).style("fill", "white");
-			nodeSelection.select("text").style("fill", "white");
+			var nodeSelection = d3.select(this).style("fill", "#9C5308");
+			nodeSelection.select("text").style("fill", "#9C5308");
 		})
 		.on("mouseout", function(d) {
 			var nodeSelection = d3.select(this).style("fill", "#444");
@@ -205,7 +204,7 @@ function clicked_city(d) {
     		year = years[0];
     		gini = csv[0][year];
     		if(gini) {
-    			giniData = { year: year, gini: gini };
+    			giniData = { year: year, gini: gini, city: city_name };
     			giniCityData.push(giniData);
     		}
     	}
@@ -213,7 +212,7 @@ function clicked_city(d) {
 			year = years[1];
     		gini = csv[0][year];
     		if(gini) {
-    			giniData = { year: year, gini: gini };
+    			giniData = { year: year, gini: gini, city: city_name };
     			giniCityData.push(giniData);
     		}
 		}
@@ -221,7 +220,7 @@ function clicked_city(d) {
 			year = years[2];
     		gini = csv[0][year];
     		if(gini) {
-    			giniData = { year: year, gini: gini };
+    			giniData = { year: year, gini: gini, city: city_name };
     			giniCityData.push(giniData);
     		}
 		}
@@ -229,7 +228,7 @@ function clicked_city(d) {
 			year = years[3];
     		gini = csv[0][year];
     		if(gini) {
-    			giniData = { year: year, gini: gini };
+    			giniData = { year: year, gini: gini, city: city_name };
     			giniCityData.push(giniData);
     		}
 		}
@@ -237,7 +236,7 @@ function clicked_city(d) {
 			year = years[4];
     		gini = csv[0][year];
     		if(gini) {
-    			giniData = { year: year, gini: gini };
+    			giniData = { year: year, gini: gini, city: city_name };
     			giniCityData.push(giniData);
     		}
 		}
@@ -245,7 +244,7 @@ function clicked_city(d) {
 			year = years[5];
     		gini = csv[0][year];
     		if(gini) {
-    			giniData = { year: year, gini: gini };
+    			giniData = { year: year, gini: gini, city: city_name };
     			giniCityData.push(giniData);
     		}
 		}
@@ -331,8 +330,6 @@ function clicked_country(d) {
 		return reset();
 	}
 
-	activeCountry = "Mexico";
-	alert(activeCountry);
 	document.getElementById('info').style.visibility="visible";
 
 	active.classed("active", false);
@@ -369,27 +366,117 @@ function reset() {
 		.attr("transform", "");
 }
 
-function graphGiniCity(giniCityData) {
-	
-	var giniChart = document.createElement("script");
-	//giniChart.type = "text/javascript";
+function graphGiniCity(data) {
 
-	//link.setAttribute("src", "js/chart.js");
+	var	margin = {top: 30, right: 20, bottom: 30, left: 50},
+	width = 300 - margin.left - margin.right,
+	height = 200 - margin.top - margin.bottom;
+ 
+	// Parse the date / time
+	var	parseDate = d3.time.format("%Y").parse;
+
+	// Set the ranges
+	var	x = d3.time.scale().range([0, width]);
+	var	y = d3.scale.linear().range([height, 0]);
+	 
+	// Define the axes
+	var	xAxis = d3.svg.axis().scale(x)
+		.orient("bottom");
+	 
+	var	yAxis = d3.svg.axis().scale(y)
+		.orient("left").ticks(6);
+
+	// Define the line
+	var	valueline = d3.svg.line()
+		.x(function(d) { return x(d.date); })
+		.y(function(d) { return y(d.gini); });
+
+	// Adds the svg canvas
+	var	svg = d3.select("#viz1")
+		.append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	// Get the data
+	data.forEach(function(d) {
+		d.year = parseDate(d.year);
+		d.gini = +d.gini;
+	});
+	 
+	// Scale the range of the data
+	x.domain(d3.extent(data, function(d) { return d.year; }));
+	y.domain([0, d3.max(data, function(d) { return d.gini; })]);
+
+	// Add the valueline path.
+	svg.append("linechartpath")	
+		.attr("class", "linechartline")
+		.attr("d", valueline(data));
+
+	xAxis.tickValues(data.map(function(d){return d.year;}));
+
+	// Add the X Axis
+	svg.append("g")		
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(xAxis);
+
+	// Add the Y Axis
+	svg.append("g")		
+		.attr("class", "y axis")
+		.call(yAxis);
+
+	svg.select('linechartline').style({ 'stroke-width': '0px'});
+
+	var dataCirclesGroup = svg.append('svg:g');
+
+	var circles = dataCirclesGroup.selectAll('.data-point')
+				.data(data);
+
+	circles
+		.enter()
+		.append('svg:circle')
+		.attr('class', 'dot')
+		.attr('fill', function() { return "steelblue"; })
+		.attr('cx', function(d) { return x(d["year"]); })
+		.attr('cy', function(d) { return y(d["gini"]); })
+		.attr('r', function() { return 3; })
+		.on("mouseover", function(d) {
+				d3.select(this)
+				.attr("r", 8)
+				.attr("class", "dot-selected")
+				.transition()
+  					.duration(750);
+		})
+		.on("mouseout", function(d) {
+				d3.select(this)
+				.attr("r", 3)
+				.attr("class", "dot")
+				.transition()
+  					.duration(750);
+		});
+ 
+	/*
+	var giniChart = document.createElement("script");
+	giniChart.type = "text/javascript";
+
 	// instantiate d3plus
 	var visualization = d3plus.viz()
-		.container("#viz1")  // container DIV to hold the visualization
-		.data(giniCityData)  // data to use with the visualization
-		.type("line")       // visualization type
-		.id("gini")         // key for which our data is unique on
-		//.text("name")       // key to use for display text
-		.y("gini")         // key to use for y-axis
-		.x("year")          // key to use for x-axis
-		.draw();             // finally, draw the
+		.container("#viz1")	// container DIV to hold the visualization
+		.data(giniCityData)	// data to use with the visualization
+		.type("line")		// visualization type
+		.id("city")			// key for which our data is unique on
+		.text("gini")		// key to use for display text
+		.y("gini")			// key to use for y-axis
+		.x("year")			// key to use for x-axis
+		.draw();
 
 	giniChart.appendChild(document.createTextNode(giniCityData));
 	giniChart.appendChild(document.createTextNode(visualization));
 
 	document.getElementById('data1').appendChild(giniChart);
+	*/
 }
 
 function graphIpcCity(ipcCityData) {
