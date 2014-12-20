@@ -146,37 +146,26 @@ text:hover {
 
 /* Income chart style */
 
-linechartpath { 
+.linegini { 
   stroke: steelblue;
   stroke-width: 2;
   fill: none;
 }
  
-.axis linechartpath {
-  stroke: lightgrey;
-}
 
-.axis linechartline {
+.axis {
   fill: none;
   stroke: lightgrey;
   stroke-width: 1;
   shape-rendering: crispEdges;
 }
-
-.axis path {
-  display: none;
+ 
+.axis text {
+  font-size: 16px;
+  fill: black;
+  stroke: black;
 }
 
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.group-label {
-  font-weight: bold;
-  text-anchor: end;
-}
 
 form {
   position: absolute;

@@ -388,8 +388,8 @@ function graphGiniCity(data) {
 
 	// Define the line
 	var	valueline = d3.svg.line()
-		.x(function(d) { return x(d.date); })
-		.y(function(d) { return y(d.gini); });
+		.x(function(d) { return x(d["year"]); })
+		.y(function(d) { return y(d["gini"]); });
 
 	// Adds the svg canvas
 	var	svg = d3.select("#viz1")
@@ -401,20 +401,17 @@ function graphGiniCity(data) {
 
 	// Get the data
 	data.forEach(function(d) {
-		d.year = parseDate(d.year);
-		d.gini = +d.gini;
+		d.year = parseDate(d["year"]);
+		d.gini = +d["gini"];
 	});
-	 
+	
+
 	// Scale the range of the data
-	x.domain(d3.extent(data, function(d) { return d.year; }));
-	y.domain([0, d3.max(data, function(d) { return d.gini; })]);
+	x.domain([d3.time.year.offset(d3.min(data, function(d) { return d["year"]; }),-1),d3.time.year.offset(d3.max(data, function(d) { return d["year"]; }),+1)]);
+	y.domain([0, 0.60000001]);
+	//Se pone ese .0000001 para que muestre el label de ese tick
 
-	// Add the valueline path.
-	svg.append("linechartpath")	
-		.attr("class", "linechartline")
-		.attr("d", valueline(data));
-
-	xAxis.tickValues(data.map(function(d){return d.year;}));
+	xAxis.tickValues(data.map(function(d){return d["year"];}));
 
 	// Add the X Axis
 	svg.append("g")		
@@ -422,10 +419,22 @@ function graphGiniCity(data) {
 		.attr("transform", "translate(0," + height + ")")
 		.call(xAxis);
 
+	svg.append("text")
+	    .attr("class", "x label")
+	    .attr("text-anchor", "end")
+	    .attr("x", width)
+	    .attr("y", height - 6)
+	    .text("Año");
+
 	// Add the Y Axis
 	svg.append("g")		
 		.attr("class", "y axis")
 		.call(yAxis);
+
+	// Add the valueline path. El path es inevitable, pero no el tipo.
+	svg.append("path")	
+		.attr("class", "linegini")
+		.attr("d", valueline(data));
 
 	svg.select('linechartline').style({ 'stroke-width': '0px'});
 
