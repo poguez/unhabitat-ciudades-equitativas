@@ -203,11 +203,17 @@ function clicked_city(d) {
         	return row['city'] == "Nacional";
     	});
 
+    	csv = csv.filter(function(row) {
+        	return row['city'] == city_name;
+    	});
+
+
 
     	if(years[0]) {
     		year = years[0];
     		gini = csvnacional[0][year];
-    		if(gini) {
+    		ginilocal = csv[0][year];
+    		if(ginilocal) {
     			giniData = { year: year, gini: gini, city: "Nacional" };
     			giniNacionalData.push(giniData);
     		}
@@ -215,7 +221,8 @@ function clicked_city(d) {
 		if(years[1]) {
 			year = years[1];
     		gini = csvnacional[0][year];
-    		if(gini) {
+    		ginilocal = csv[0][year];
+    		if(ginilocal) {
     			giniData = { year: year, gini: gini, city: "Nacional" };
     			giniNacionalData.push(giniData);
     		}
@@ -223,7 +230,8 @@ function clicked_city(d) {
 		if(years[2]) {
 			year = years[2];
     		gini = csvnacional[0][year];
-    		if(gini) {
+    		ginilocal = csv[0][year];
+    		if(ginilocal) {
     			giniData = { year: year, gini: gini, city: "Nacional" };
     			giniNacionalData.push(giniData);
     		}
@@ -231,7 +239,8 @@ function clicked_city(d) {
 		if(years[3]) {
 			year = years[3];
     		gini = csvnacional[0][year];
-    		if(gini) {
+    		ginilocal = csv[0][year];
+    		if(ginilocal) {
     			giniData = { year: year, gini: gini, city: "Nacional" };
     			giniNacionalData.push(giniData);
     		}
@@ -239,7 +248,8 @@ function clicked_city(d) {
 		if(years[4]) {
 			year = years[4];
     		gini = csvnacional[0][year];
-    		if(gini) {
+    		ginilocal = csv[0][year];
+    		if(ginilocal) {
     			giniData = { year: year, gini: gini, city: "Nacional" };
     			giniNacionalData.push(giniData);
     		}
@@ -247,7 +257,8 @@ function clicked_city(d) {
 		if(years[5]) {
 			year = years[5];
     		gini = csvnacional[0][year];
-    		if(gini) {
+    		ginilocal = csv[0][year];
+    		if(ginilocal) {
     			giniData = { year: year, gini: gini, city: "Nacional" };
     			giniNacionalData.push(giniData);
     		}
@@ -257,12 +268,6 @@ function clicked_city(d) {
 
 
 		//Aqui termina codigo nacional
-
-
-        csv = csv.filter(function(row) {
-        	return row['city'] == city_name;
-    	});
-
 
     	if(years[0]) {
     		year = years[0];
