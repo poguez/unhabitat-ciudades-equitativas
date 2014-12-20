@@ -431,23 +431,35 @@ function graphGiniCity(data) {
 
 	var dataCirclesGroup = svg.append('svg:g');
 
+	var tooltip = d3.select("body")
+    	.append("div")
+    	.attr("class", "tooltip")
+		.style("opacity", 0);
+
 	var circles = dataCirclesGroup.selectAll('.data-point')
 				.data(data);
 
 	circles
 		.enter()
 		.append('svg:circle')
+		
 		.attr('class', 'dot')
 		.attr('fill', function() { return "steelblue"; })
 		.attr('cx', function(d) { return x(d["year"]); })
 		.attr('cy', function(d) { return y(d["gini"]); })
 		.attr('r', function() { return 3; })
 		.on("mouseover", function(d) {
-				d3.select(this)
+			d3.select(this)
 				.attr("r", 8)
 				.attr("class", "dot-selected")
 				.transition()
-  					.duration(750);
+  				.duration(750);
+  			d3.select(this)
+  				.append('svg:title')
+  				.text(function(d) {
+					return d.gini;
+				});
+			return tooltip.style("visibility", "visible");	
 		})
 		.on("mouseout", function(d) {
 				d3.select(this)
@@ -456,7 +468,7 @@ function graphGiniCity(data) {
 				.transition()
   					.duration(750);
 		});
- 
+
 	/*
 	var giniChart = document.createElement("script");
 	giniChart.type = "text/javascript";
