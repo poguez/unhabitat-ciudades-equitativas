@@ -42,7 +42,6 @@ function compare() {
 }
 
 d3.json("data/la.json", function(error, la) {
-
 	var countries = topojson.feature(la, la.objects.countries);
 	var cities = topojson.feature(la, la.objects.cities);
 	var cityRadius = 1;
