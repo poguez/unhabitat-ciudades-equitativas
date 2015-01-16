@@ -1,0 +1,63 @@
+/* Gini chart */
+gini-path { 
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+ 
+.axis gini-path {
+  stroke: lightgrey;
+}
+
+.axis gini-line {
+  fill: none;
+  stroke: lightgrey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+/* */
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+/* Income chart style */
+
+linechartpath { 
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+ 
+.axis linechartpath {
+  stroke: lightgrey;
+}
+
+.axis linechartline {
+  fill: none;
+  stroke: lightgrey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+/* Map edges */
+.axis path {
+  display: none;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.group-label {
+  font-weight: bold;
+  text-anchor: end;
+}

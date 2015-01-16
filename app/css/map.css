@@ -1,0 +1,93 @@
+/* ********** */
+/* Map styles */
+/* ********** */
+.country.c1 { fill: #eff3ff; }
+.country.c2 { fill: #bdd7e7; }
+.country.c3 { fill: #6baed6; }
+.country.c4 { fill: #3182bd; }
+.country.c5 { fill: #08519c; }
+
+.country-boundary {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 0.1;
+	stroke-linejoin: round;
+}
+
+.country-label {
+	fill: #666;
+	fill-opacity: .5;
+	font-size: 12px;
+	font-weight: 300;
+	text-anchor: middle;
+}
+
+.country:hover {
+	fill: #fd8d3c;
+}
+
+.city {
+  fill: #444;
+}
+
+.city-label {
+	fill: #444;
+  /* visibility: hidden; */
+}
+
+/* .states {
+	fill: #e5e5e5;
+	stroke: #fff;
+	stroke-width:2px;
+} */
+
+/* Map edges */
+.axis path {
+  display: none;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 4px;
+}
+
+text:hover {
+  color: #fff;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.feature {
+  fill: #ddc;
+  cursor: pointer;
+}
+
+.feature.active {
+  fill: orange;
+}
+
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+div.tooltip {
+    position: absolute; /*very important*/
+    text-align: left;    
+    padding: 5px 10px 5px 10px;
+    font: bold 11px sans-serif;
+    color: black;
+    background: yellow;
+    border-radius: 8px;  
+    pointer-events: none;

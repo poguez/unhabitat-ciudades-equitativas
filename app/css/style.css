@@ -1,204 +1,92 @@
-#data1 {
-  width: 200px;
-  height: 200px;
-} 
-#viz1 {
-  width: 150px;
-  height: 150px;
-}
-
-#viz2 {
-  width: 150px;
-  height: 150px; 
-}
-
-#viz3 {
-  width: 150px;
-  height: 150px; 
-}
-
-#viz4 {
-  width: 150px;
-  height: 150px; 
-}
-
-* {
-	font-family: Sintony;
-}
-
-h1 {
-
-}
-
-h2 {
- 	font-size: 2em;
-  color:#333;
-}
-
-h3 {
-  font-size: 12px;
-}
-
-#info {
-  visibility: hidden;
- 	position: absolute;
- 	background-color: #fff;
- 	top: 835px;
- 	left: 700px;
- 	width: 500px;
- 	height: 700px;
- 	/*border-left: 1px solid #0098d8;*/
- 	padding: 10px;
-}
-
-#info h3 {
-  font-size: 1em;
-}
-#info2 {
-	/* visibility: none; */
-}
-
-/* ************ */
-/* Chart styles */
-/* ************ */
-.chart rect {
-  fill: steelblue;
-}
-
-.chart text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: middle;
-}
-
-/* ********** */
-/* Map styles */
-/* ********** */
-.country.c1 { fill: #eff3ff; }
-.country.c2 { fill: #bdd7e7; }
-.country.c3 { fill: #6baed6; }
-.country.c4 { fill: #3182bd; }
-.country.c5 { fill: #08519c; }
-
-.country-boundary {
-	fill: none;
-	stroke: #ccc;
-	stroke-width: 0.1;
-	stroke-linejoin: round;
-}
-
-.country-label {
-	fill: #666;
-	fill-opacity: .5;
-	font-size: 12px;
-	font-weight: 300;
-	text-anchor: middle;
-}
-
-.country:hover {
-	fill: #fd8d3c;
-}
-
-.city {
-  fill: #444;
-}
-
-.city-label {
-	fill: #444;
-  /* visibility: hidden; */
-}
-
-/* .states {
-	fill: #e5e5e5;
-	stroke: #fff;
-	stroke-width:2px;
-} */
-
-text {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 4px;
-}
-
-text:hover {
-  color: #fff;
-}
-
-.background {
-  fill: none;
-  pointer-events: all;
-}
-
-.feature {
-  fill: #ddc;
-  cursor: pointer;
-}
-
-.feature.active {
-  fill: orange;
-}
-
-.mesh {
-  fill: none;
-  stroke: #fff;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* Income chart style */
-
-.linegini { 
-  stroke: steelblue;
-  stroke-width: 2;
-  fill: none;
-}
-
-.linegini_nacional { 
-  stroke: lightblue;
-  stroke-width: 2;
-  fill: none;
-}
- 
-
-.axis {
-  fill: none;
-  stroke: lightgrey;
-  stroke-width: 1;
-  shape-rendering: crispEdges;
-}
- 
-.axis text {
-  font-size: 16px;
-  fill: black;
-  stroke: black;
-}
-
-
-form {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.intro {
+.wrapper {
   width: 100%;
-  background-color: #000;
-  height: 800px;
-  background-image: url("../img/intro.png");
-  background-size:contain;
+  height: 640px;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+.map {
+  width: 60%;
+  margin: 0 auto;
+  display: inline;
+}
+
+.panels {
+  width: 35%;
+  float: right;
+  height: 640px;
+  display: block;
+  padding: 0;
+}
+
+.entity-panel {
+  width: 50%;
+  height: 640px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-left: 1px solid #ebecec;
+}
+
+.entity-panel h1 {
+  font-size: 1.4em;
+  color: #0098d8;
+  margin: 10px 0px 10px 0;
+  text-align: center;
+}
+
+.entity-panel h2 {
+  font-size: 1em;
+  color: #9d9d9d;
+  margin: 15px 0 5px 0;
+  text-align: center;
+}
+
+#panel-left {
+  float: left;
+  visibility: hidden;
+}
+
+#panel-right {
+  float: right;
+  visibility: hidden;
+}
+
+.chart {
+  width: 100%;
+  background-color: #fff;
+  height: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.compare {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.compare button {
+  color: #0098d8;
+  width: 150px;
+  font-size: 1em;
+  background-color: #fff;
+  border: 1px solid #0098d8;
+  border-radius: 7px;
+}
+
+.compare button:hover {
+  background-color: #0098d8;
+  color: #ebecec;
+}
+
+.compare-button {
 }
 
 .footer {
   width: 100%;
-  background-color: #000;
+  background-color: green;
   height: 80px;  
 }
-
-div.tooltip {
-    position: absolute; /*very important*/
-    text-align: left;    
-    padding: 5px 10px 5px 10px;
-    font: bold 11px sans-serif;
-    color: black;
-    background: yellow;
-    border-radius: 8px;  
-    pointer-events: none;

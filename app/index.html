@@ -7,8 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>UN Habitat - Construcción de ciudades más equitativas</title>
 
-		<link rel="stylesheet" href="css/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" href="css/map.css">
+		<link rel="stylesheet" href="css/charts.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700' rel='stylesheet' type='text/css'>
+		 
 		 <!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -54,92 +57,49 @@
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
-		</nav>
-		<div class="intro">&nbsp;
-		</div>
-
-		<div class="container">
-
-			<div class="starter-template">
-				<!-- <h1>Bootstrap starter template</h1>
-				<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
-				<div id="info">
-					<h2 id="entity"></h2>
-					
-					<h3 id="title1">Coeficiente de Gini Nacional</h3>
-					<div id="data1">
-						<div id="viz1">
-							<script>
-							  // sample data array
-							  var sample_data = [
-							    {"Year": 1989, "name":"GINI de México", "Valor": 0.536},
-							    {"Year": 1994, "name":"GINI de México", "Valor": 0.539},
-							    {"Year": 2002, "name":"GINI de México", "Valor": 0.514},
-							    {"Year": 2005, "name":"GINI de México", "Valor": 0.528},
-							  ]
-							 
-							  // instantiate d3plus
-							  var visualization = d3plus.viz()
-							    .container("#viz1")  // container DIV to hold the visualization
-							    .data(sample_data)  // data to use with the visualization
-							    .type("line")       // visualization type
-							    .id("name")         // key for which our data is unique on
-							    .text("name")       // key to use for display text
-							    .y("Valor")         // key to use for y-axis
-							    .x("Year")          // key to use for x-axis
-							    .draw()             // finally, draw the visualization!
-							</script>
-						</div>
+		</nav>			
+				
+		<div class="wrapper">
+			<div class="map">
+				<script src="js/map2.js"></script>
+			</div>
+			<div class="panels">
+				<div class="entity-panel" id="panel-left">
+					<h1 id="entity-a">Entity 1</h1>
+					<h2 id="title-1a">Índice de Gini</h2>
+					<div id="chart-1a" class="chart">
 					</div>
-					
-
-					<h3 id="title2">Relación de salarios</h3>
-					<div id="data2">
-						<div id="viz2">
-							<svg>
-							  <circle cx="10" cy="75" r="10" fill="blue" />	
-							  <circle cx="100" cy="75" r="57" fill="red" />
-							</svg>
-						</div>
+					<h2 id="title-2a">Ingreso per cápita</h2>
+					<div id="chart-2a" class="chart">
 					</div>
-					
-					<h3 id="title3">Distribución del ingreso</h3>
-					<div id="data3">
-						<div id="viz3">
-							<script>
-							  var data = [
-							    {"name":"Salarios", "Porcentaje del Ingreso":53.1, "  ": 1},
-							    {"name":"Ganancias", "Porcentaje del Ingreso":9.1,"  ": 1},
-							    {"name":"Capital", "Porcentaje del Ingreso":0.2,"  ": 1},  
-							    {"name":"Transferencias", "Porcentaje del Ingreso":8.9,"  ": 1},
-							    {"name":"Otros", "Porcentaje del Ingreso":31.9,"  ": 1},
-							  ]
-							 
-							   var visualization = d3plus.viz()
-							    .container("#viz3")
-							    .data(data)
-							    .type("bar")
-							    .id("name")
-							    .x({"stacked": true, "value": "Porcentaje del Ingreso"})
-							    .y("  ")
-							    .time("  ")
-							    .draw()							 
-							</script>
-						</div>
+					<h2 id="title-3a">Distribución de consumo</h2>
+					<div id="chart-3a" class="chart">
+					</div>
+					<div class="compare">
+						<button class="compare-button" onclick="compare()">Comparar</button>
+					</div>
+				</div>
+				<div class="entity-panel" id="panel-right">
+					<h1 id="entity-b">Entity 2</h1>
+					<h2 id="title-1b">Chart 1</h2>
+					<div id="chart-1b" class="chart">
+					</div>
+					<h2 id="title-2b">Chart 2</h2>
+					<div id="chart-2b" class="chart">
+					</div>
+					<h2 id="title-3b">Chart 3</h2>
+					<div id="chart-3b" class="chart">
 					</div>
 				</div>
 			</div>
-
-		</div><!-- /.container -->
-
+		</div>
+				
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		
 		<script src="js/topojson.v1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-		<script src="js/map.js"></script>
-		<div class="footer"></div>
+		
+		
 	</body>
 </html>

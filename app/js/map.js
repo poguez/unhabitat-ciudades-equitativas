@@ -1,19 +1,19 @@
 // Canvas size
-var width = 680,
-	height = 750,
+var width = 832,
+	height = 640,
 	active = d3.select(null);
 
 // Map properties
 var projection = d3.geo.mercator()
-	.scale(375)
-	.translate([width / 2, height / 2])
-	.center([-75,-10])
+	.scale(320)
+	.translate([width / 2, 280])
+	.center([-80,-10])
 	.precision(.1);
 
 var path = d3.geo.path()
 	.projection(projection);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".map").append("svg")
 	.attr("width", width)
 	.attr("height", height);
 
@@ -27,6 +27,19 @@ var g = svg.append("g")
 	.style("stroke-width", ".5px");
 
 var activeCountry;
+
+var compareFlag = false;
+
+function toggleCompareFlag() {
+	if(compareFlag == true) compareFlag = false;
+	else if (compareFlag == false) compareFlag = true;
+}
+
+function compare() {
+	console.log(compareFlag);
+	toggleCompareFlag();
+	console.log(compareFlag);
+}
 
 d3.json("data/la.json", function(error, la) {
 
@@ -56,7 +69,6 @@ d3.json("data/la.json", function(error, la) {
 		.attr("d", path)
 		.attr("class", "country-boundary");
 
-	/*
 	g.selectAll(".country-label")
 		.data(countries.features)
 		.enter().append("text")
@@ -64,8 +76,7 @@ d3.json("data/la.json", function(error, la) {
 		.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
 		.attr("dy", ".35em")
 		.text(function(d) { return d.properties.name; });
-	*/
-
+	
 	g.selectAll(".cities")
   		.data(topojson.feature(la, la.objects.cities).features)
 		.enter().append("path")
@@ -168,19 +179,21 @@ d3.json("data/la.json", function(error, la) {
 	
 });
 
+//
 function clicked_city(d) {
-	document.getElementById('entity').innerHTML='';
-	document.getElementById('title1').innerHTML='';
-	document.getElementById('viz1').innerHTML='';
-	document.getElementById('title2').innerHTML='';
-	document.getElementById('viz2').innerHTML='';
-	document.getElementById('title3').innerHTML='';
-	document.getElementById('viz3').innerHTML='';
+	document.getElementById('entity-a').innerHTML='';
+	document.getElementById('title-1a').innerHTML='';
+	document.getElementById('chart-1a').innerHTML='';
+	document.getElementById('title-2a').innerHTML='';
+	document.getElementById('chart-2a').innerHTML='';
+	document.getElementById('title-3a').innerHTML='';
+	document.getElementById('chart-3a').innerHTML='';
 	
 	var city_name = d.properties.name;
-	document.getElementById('entity').innerHTML= city_name;
-	document.getElementById('title1').innerHTML='Gini';
-	document.getElementById('title2').innerHTML='Ingreso per cápita';
+	document.getElementById('entity-a').innerHTML= city_name;
+	document.getElementById('title-1a').innerHTML='Índice de Gini';
+	document.getElementById('title-2a').innerHTML='Ingreso per cápita';
+	document.getElementById('title-3a').innerHTML='Distribución de ingreso';
 	
 	var country_code = d.properties.country;
 	country_code = country_code.toLowerCase();
@@ -195,80 +208,11 @@ function clicked_city(d) {
 		var year;
 		var gini;
 		var giniCityData = [];
-		var giniNacionalData = [];
 
-		//Empieza Sección Nacional
-
-		csvnacional = csv.filter(function(row) {
-        	return row['city'] == "Nacional";
-    	});
-
-    	csv = csv.filter(function(row) {
+        csv = csv.filter(function(row) {
         	return row['city'] == city_name;
     	});
 
-
-
-    	if(years[0]) {
-    		year = years[0];
-    		gini = csvnacional[0][year];
-    		ginilocal = csv[0][year];
-    		if(ginilocal) {
-    			giniData = { year: year, gini: gini, city: "Nacional" };
-    			giniNacionalData.push(giniData);
-    		}
-    	}
-		if(years[1]) {
-			year = years[1];
-    		gini = csvnacional[0][year];
-    		ginilocal = csv[0][year];
-    		if(ginilocal) {
-    			giniData = { year: year, gini: gini, city: "Nacional" };
-    			giniNacionalData.push(giniData);
-    		}
-		}
-		if(years[2]) {
-			year = years[2];
-    		gini = csvnacional[0][year];
-    		ginilocal = csv[0][year];
-    		if(ginilocal) {
-    			giniData = { year: year, gini: gini, city: "Nacional" };
-    			giniNacionalData.push(giniData);
-    		}
-		}
-		if(years[3]) {
-			year = years[3];
-    		gini = csvnacional[0][year];
-    		ginilocal = csv[0][year];
-    		if(ginilocal) {
-    			giniData = { year: year, gini: gini, city: "Nacional" };
-    			giniNacionalData.push(giniData);
-    		}
-		}
-		if(years[4]) {
-			year = years[4];
-    		gini = csvnacional[0][year];
-    		ginilocal = csv[0][year];
-    		if(ginilocal) {
-    			giniData = { year: year, gini: gini, city: "Nacional" };
-    			giniNacionalData.push(giniData);
-    		}
-		}
-		if(years[5]) {
-			year = years[5];
-    		gini = csvnacional[0][year];
-    		ginilocal = csv[0][year];
-    		if(ginilocal) {
-    			giniData = { year: year, gini: gini, city: "Nacional" };
-    			giniNacionalData.push(giniData);
-    		}
-		}
-
-		console.log(giniNacionalData);
-
-
-		//Aqui termina codigo nacional
-
     	if(years[0]) {
     		year = years[0];
     		gini = csv[0][year];
@@ -318,7 +262,7 @@ function clicked_city(d) {
     		}
 		}
 
-    	graphGiniCity(giniCityData,giniNacionalData);
+    	graphGiniCity(giniCityData);
 
 	});
 
@@ -391,55 +335,102 @@ function clicked_city(d) {
 }
 
 function clicked_country(d) {
-	if (active.node() === this) {
-		document.getElementById('entity').innerHTML='';
-		document.getElementById('gini').innerHTML='';
-		document.getElementById('info').style.visibility="hidden";
-		d3.selectAll(".city-label").attr("visibility","hidden");
-		return reset();
+
+	if(compareFlag == false) {
+		if (active.node() === this) {
+			document.getElementById('entity-a').innerHTML='';
+			//document.getElementById('gini').innerHTML='';
+			document.getElementById('panel-left').style.visibility="hidden";
+			d3.selectAll(".city-label").attr("visibility","hidden");
+			return reset();
+		}
+
+		document.getElementById('panel-left').style.visibility="visible";
+
+		active.classed("active", false);
+		active = d3.select(this).classed("active", true);
+		d3.selectAll(".city-label").attr("visibility","visible");
+
+
+			var bounds = path.bounds(d),
+			dx = bounds[1][0] - bounds[0][0],
+			dy = bounds[1][1] - bounds[0][1],
+			x = (bounds[0][0] + bounds[1][0]) / 2,
+			y = (bounds[0][1] + bounds[1][1]) / 2,
+			scale = .9 / Math.max(dx / width, dy / height),
+			translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+			g.transition()
+			.duration(750)
+			.style("stroke-width", 1.5 / scale + "px")
+			.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+		
+		var country = d.properties.name;
+		document.getElementById('entity-a').innerHTML=country;
+		//var gini = d.properties.gini;
+		//document.getElementById('gini').innerHTML=gini;
+	} 
+
+	else if (compareFlag == true) {
+		if (active.node() === this) {
+			document.getElementById('entity-b').innerHTML='';
+			//document.getElementById('gini').innerHTML='';
+			document.getElementById('panel-right').style.visibility="hidden";
+			d3.selectAll(".city-label").attr("visibility","hidden");
+			return reset();
+		}
+		document.getElementById('panel-right').style.visibility="visible";
+
+		active.classed("active", false);
+		active = d3.select(this).classed("active", true);
+		d3.selectAll(".city-label").attr("visibility","visible");
+
+
+			var bounds = path.bounds(d),
+			dx = bounds[1][0] - bounds[0][0],
+			dy = bounds[1][1] - bounds[0][1],
+			x = (bounds[0][0] + bounds[1][0]) / 2,
+			y = (bounds[0][1] + bounds[1][1]) / 2,
+			scale = .9 / Math.max(dx / width, dy / height),
+			translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+			g.transition()
+			.duration(750)
+			.style("stroke-width", 1.5 / scale + "px")
+			.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+		
+		var country = d.properties.name;
+		document.getElementById('entity-b').innerHTML=country;
+		toggleCompareFlag();
+		//var gini = d.properties.gini;
+		//document.getElementById('gini').innerHTML=gini;
 	}
-
-	document.getElementById('info').style.visibility="visible";
-
-	active.classed("active", false);
-	active = d3.select(this).classed("active", true);
-	d3.selectAll(".city-label").attr("visibility","visible");
-
-
-		var bounds = path.bounds(d),
-		dx = bounds[1][0] - bounds[0][0],
-		dy = bounds[1][1] - bounds[0][1],
-		x = (bounds[0][0] + bounds[1][0]) / 2,
-		y = (bounds[0][1] + bounds[1][1]) / 2,
-		scale = .9 / Math.max(dx / width, dy / height),
-		translate = [width / 2 - scale * x, height / 2 - scale * y];
-
-		g.transition()
-		.duration(750)
-		.style("stroke-width", 1.5 / scale + "px")
-		.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-	
-	var country = d.properties.name;
-	document.getElementById('entity').innerHTML=country;
-	//var gini = d.properties.gini;
-	//document.getElementById('gini').innerHTML=gini;
+	graphGiniCountry();
 }
 
 function reset() {
-	active.classed("active", false);
-		active = d3.select(null);
+	if(compareFlag == false) {
+		document.getElementById('panel-left').style.visibility="hidden";
+		document.getElementById('panel-right').style.visibility="hidden";
+	} 
+	else if(compareFlag == true) {
+		document.getElementById('panel-right').style.visibility="hidden";
+	}
 
-		g.transition()
+	active.classed("active", false);
+	active = d3.select(null);
+	g.transition()
 		.duration(750)
 		.style("stroke-width", "1.5px")
 		.attr("transform", "");
+
 }
 
-function graphGiniCity(data,datanacional) {
+function graphGiniCity(data) {
 
-	var	margin = {top: 30, right: 150, bottom: 30, left: 50},
-	width = 450 - margin.left - margin.right,
-	height = 200 - margin.top - margin.bottom;
+	var	margin = {top: 5, right: 5, bottom: 5, left: 5},
+	width = 220 - margin.left - margin.right,
+	height = 140 - margin.top - margin.bottom;
  
 	// Parse the date / time
 	var	parseDate = d3.time.format("%Y").parse;
@@ -457,11 +448,11 @@ function graphGiniCity(data,datanacional) {
 
 	// Define the line
 	var	valueline = d3.svg.line()
-		.x(function(d) { return x(d["year"]); })
-		.y(function(d) { return y(d["gini"]); });
+		.x(function(d) { return x(d.date); })
+		.y(function(d) { return y(d.gini); });
 
 	// Adds the svg canvas
-	var	svg = d3.select("#viz1")
+	var	svg = d3.select("chart-1a")
 		.append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)
@@ -470,23 +461,20 @@ function graphGiniCity(data,datanacional) {
 
 	// Get the data
 	data.forEach(function(d) {
-		d.year = parseDate(d["year"]);
-		d.gini = +d["gini"];
+		d.year = parseDate(d.year);
+		d.gini = +d.gini;
 	});
-
-	datanacional.forEach(function(d) {
-		d.year = parseDate(d["year"]);
-		d.gini = +d["gini"];
-	});
-	
-
+	 
 	// Scale the range of the data
-	x.domain([d3.time.year.offset(d3.min(data, function(d) { return d["year"]; }),-1),d3.time.year.offset(d3.max(data, function(d) { return d["year"]; }),+0)]);
-	//Deje el offset para el top value para que no sea dificil modificarlo al gusto.
-	y.domain([0, 0.60000001]);
-	//Se pone ese .0000001 para que muestre el label de ese tick
+	x.domain(d3.extent(data, function(d) { return d.year; }));
+	y.domain([0, d3.max(data, function(d) { return d.gini; })]);
 
-	xAxis.tickValues(data.map(function(d){return d["year"];}));
+	// Add the valueline path.
+	svg.append("linechartpath")	
+		.attr("class", "linechartline")
+		.attr("d", valueline(data));
+
+	xAxis.tickValues(data.map(function(d){return d.year;}));
 
 	// Add the X Axis
 	svg.append("g")		
@@ -494,35 +482,20 @@ function graphGiniCity(data,datanacional) {
 		.attr("transform", "translate(0," + height + ")")
 		.call(xAxis);
 
-	svg.append("text")
-	    .attr("class", "x label")
-	    .attr("text-anchor", "end")
-	    .attr("x", width)
-	    .attr("y", height - 6)
-	    .text("Año");
-
 	// Add the Y Axis
 	svg.append("g")		
 		.attr("class", "y axis")
 		.call(yAxis);
 
-	// Add the valueline path. El path es inevitable, pero no el tipo.
-	svg.append("path")	
-		.attr("class", "linegini")
-		.attr("d", valueline(data));
+	svg.select('linechartline').style({ 'stroke-width': '0px'});
 
-	svg.append("path")	
-		.attr("class", "linegini_nacional")
-		.attr("d", valueline(datanacional));
-
-	//svg.select('linechartline').style({ 'stroke-width': '0px'});
+	var dataCirclesGroup = svg.append('svg:g');
 
 	var tooltip = d3.select("body")
     	.append("div")
     	.attr("class", "tooltip")
 		.style("opacity", 0);
 
-	var dataCirclesGroup = svg.append('svg:g');
 	var circles = dataCirclesGroup.selectAll('.data-point')
 				.data(data);
 
@@ -555,98 +528,106 @@ function graphGiniCity(data,datanacional) {
 				.transition()
   					.duration(750);
 		});
-
-	//pintar bolitas nacionales
-
-	var dataCirclesGroup = svg.append('svg:g');
-	var circles = dataCirclesGroup.selectAll('.data-point')
-				.data(datanacional);
-
-	circles
-		.enter()
-		.append('svg:circle')
-		
-		.attr('class', 'dot')
-		.attr('fill', function() { return "lightblue"; })
-		.attr('cx', function(d) { return x(d["year"]); })
-		.attr('cy', function(d) { return y(d["gini"]); })
-		.attr('r', function() { return 3; })
-		.on("mouseover", function(d) {
-			d3.select(this)
-				.attr("r", 8)
-				.attr("class", "dot-selected")
-				.transition()
-  				.duration(750);
-  			d3.select(this)
-  				.append('svg:title')
-  				.text(function(d) {
-					return d.gini;
-				});
-			return tooltip.style("visibility", "visible");	
-		})
-		.on("mouseout", function(d) {
-				d3.select(this)
-				.attr("r", 3)
-				.attr("class", "dot")
-				.transition()
-  					.duration(750);
-		});
-
-	// empiezan labels
-
-	
-    svg.append('text')
-        .attr('fill', 'black')
-        .attr('x', 1.07*width+20*1.2)
-        .attr('y', height/4 + 14)
-        .text("Local")
-        .style("font-family","sans-serif")
-        .style("font-size","14px");
-    svg.append('rect')
-        .attr('fill', "steelblue")
-        .attr('width', 20)
-        .attr('height', 20)
-        .attr('x', 1.07*width)
-        .attr('y', height/4);
-
-    svg.append('text')
-        .attr('fill', 'black')
-        .attr('x', 1.07*width+20*1.2)
-        .attr('y', height/4 + 14 + 20*1.5)
-        .text("Nacional")
-        .style("font-family","sans-serif")
-        .style("font-size","14px");
-    svg.append('rect')
-        .attr('fill', "lightblue")
-        .attr('width', 20)
-        .attr('height', 20)
-        .attr('x', 1.07*width)
-        .attr('y', height/4 + 20*1.5);
-
-	/*
-	var giniChart = document.createElement("script");
-	giniChart.type = "text/javascript";
-
-	// instantiate d3plus
-	var visualization = d3plus.viz()
-		.container("#viz1")	// container DIV to hold the visualization
-		.data(giniCityData)	// data to use with the visualization
-		.type("line")		// visualization type
-		.id("city")			// key for which our data is unique on
-		.text("gini")		// key to use for display text
-		.y("gini")			// key to use for y-axis
-		.x("year")			// key to use for x-axis
-		.draw();
-
-	giniChart.appendChild(document.createTextNode(giniCityData));
-	giniChart.appendChild(document.createTextNode(visualization));
-
-	document.getElementById('data1').appendChild(giniChart);
-	*/
 }
 
 function graphIpcCity(ipcCityData) {
 
+}
+
+function graphGiniCountry() {
+	var	margin = {top: 0, right: 0, bottom: 0, left: 0},
+	width = 210 - margin.left - margin.right,
+	height = 120 - margin.top - margin.bottom;
+ 
+	// Parse the date / time
+	var	parseDate = d3.time.format("%y").parse;
+	 
+	// Set the ranges
+	var	x = d3.time.scale().range([0, width]);
+	var	y = d3.scale.linear().range([height, 0]);
+	 
+	// Define the axes
+	var	xAxis = d3.svg.axis().scale(x)
+		.orient("bottom");
+	 
+	var	yAxis = d3.svg.axis().scale(y)
+		.orient("left").ticks(6)
+
+	// Define the line
+	var	valueline = d3.svg.line()
+		.x(function(d) { return x(d.date); })
+		.y(function(d) { return y(d.close); });
+
+	// Adds the svg canvas
+	var	svg = d3.select("#chart-1a")
+		.append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	// Get the data
+	d3.csv("/components/lineagini/data.csv", function(error, data) {
+		data.forEach(function(d) {
+			d.date = parseDate(d.date);
+			d.close = +d.close;
+		});
+	 
+		// Scale the range of the data
+		x.domain(d3.extent(data, function(d) { return d.date; }));
+		y.domain([0, d3.max(data, function(d) { return d.close; })]);
+
+		// Add the valueline path.
+		svg.append("gini-path")	
+			.attr("class", "gini-line")
+			.attr("d", valueline(data));
+
+		xAxis.tickValues(data.map(function(d){return d.date;}));
+
+		// Add the X Axis
+		svg.append("g")		
+			.attr("class", "x axis")
+			.attr("transform", "translate(0," + height + ")")
+			.call(xAxis);
+
+
+
+		// Add the Y Axis
+		svg.append("g")		
+			.attr("class", "y axis")
+			.call(yAxis);
+
+		svg.select('gini-line').style({ 'stroke-width': '0px'});
+
+		var dataCirclesGroup = svg.append('svg:g');
+
+		var circles = dataCirclesGroup.selectAll('.data-point')
+					.data(data);
+
+				circles
+					.enter()
+					.append('svg:circle')
+					.attr('class', 'dot')
+					.attr('fill', function() { return "steelblue"; })
+					.attr('cx', function(d) { return x(d["date"]); })
+					.attr('cy', function(d) { return y(d["close"]); })
+					.attr('r', function() { return 3; })
+					.on("mouseover", function(d) {
+		  				d3.select(this)
+							.attr("r", 8)
+							.attr("class", "dot-selected")
+							.transition()
+		      					.duration(750);
+					})
+					.on("mouseout", function(d) {
+		  				d3.select(this)
+							.attr("r", 3)
+							.attr("class", "dot")
+							.transition()
+		      					.duration(750);
+					});
+	 
+	});
 }
 
 d3.select(self.frameElement).style("height", height + "px");
