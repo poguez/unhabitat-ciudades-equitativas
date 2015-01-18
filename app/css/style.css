@@ -31,6 +31,29 @@
   border-left: 1px solid #ebecec;
 }
 
+.panel-header {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+}
+
+.panel-close {
+  /* border: 1px solid #ebecec; */
+  color: #9d9d9d;
+  position: relative;
+  padding: 1px 5px;
+  top: 5px;
+  background-color: #0098d8;
+  left: 198px;
+  border-radius: 25px;
+}
+
+.panel-close a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .entity-panel h1 {
   font-size: 1.4em;
   color: #0098d8;
@@ -70,8 +93,7 @@
 
 .compare button {
   color: #0098d8;
-  width: 150px;
-  font-size: 1em;
+  font-size: 0.8em;
   background-color: #fff;
   border: 1px solid #0098d8;
   border-radius: 7px;
