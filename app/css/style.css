@@ -1,8 +1,8 @@
 .wrapper {
   width: 100%;
-  height: 620px;
+  height: 600px;
   font-family: 'Open Sans', sans-serif;
-  display: block;
+  display: inline-block;
   position: absolute;
   border-bottom: 1px solid #ebecec;
   left: 0;
@@ -10,17 +10,18 @@
 }
 
 .left-side {
-  width: 55%;
+  width: 560px;
   height: 100%;
   margin: 0;
+  border-right: 1px solid #ebecec;
+  float: left;
   padding: 0;
   display: inline-block;
 }
 
 .entity-title {
-  height: 40px;
+  min-height: 45px;
   width: 100%;
-  float: left;
   margin: 0;
   padding: 0;
 }
@@ -44,28 +45,34 @@
 }
 
 .panels {
-  width: 45%;
-  float: right;
+  float: left;
   height: 100%;
-  display: block;
+  width: 50%;
+  display: inline-block;
   margin: 0;
   padding: 0;
-  border-left: 1px solid #ebecec;
 }
 
 .entity-panel {
-  width: 100%;
-  height: 50%;
+  width: 50%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  display: block;
+  display: inline-block;
+  border-right: 1px solid #ebecec;
 }
 
-#panel-top {
+#intro {
+  visibility: visible;
+  float: left;
+}
+
+#panel-left {
   visibility: hidden;
+  float: left;
 }
 
-#panel-bottom {
+#panel-right {
   visibility: hidden;
 }
 
@@ -77,19 +84,14 @@
 
 .panel-close {
   /* border: 1px solid #ebecec; */
+  width: 100%;
   color: #9d9d9d;
   position: relative;
+  margin: 0;
   padding: 1px 5px;
-  top: 5px;
-  background-color: #0098d8;
-  left: 198px;
-  border-radius: 25px;
-}
-
-.panel-close a {
-  font-size: 15px;
-  color: #fff;
-  text-decoration: none;
+  height: 25px;
+  float: right;
+  text-align: right;
 }
 
 .entity-panel h1 {
@@ -102,7 +104,7 @@
 .entity-panel h2 {
   font-size: 1em;
   color: #9d9d9d;
-  margin: 15px 0 5px 0;
+  margin: 0px 0 5px 0;
   text-align: center;
 }
 

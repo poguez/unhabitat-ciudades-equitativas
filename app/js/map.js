@@ -1,13 +1,13 @@
 // Canvas size
-var width = 704,
-	height = 580,
+var width = 560,
+	height = 600,
 	active = d3.select(null);
 
 // Map properties
 var projection = d3.geo.mercator()
-	.scale(320)
+	.scale(318)
 	.translate([width / 2, 280])
-	.center([-70,-15])
+	.center([-76,-13])
 	.precision(0);
 
 var path = d3.geo.path()
@@ -95,7 +95,7 @@ d3.json("../data/la.json", function(error, la) {
 
 function onCountryClick(d) {
 	small = ["COR", "DOM", "ECU", "GUA", "HON",  "NIC", "PAN", "PAR", "URU"];
-	large = ["ARG", "BRA", "CHI"];
+	large = ["ARG", "BRA", "CHI", "MEX"];
 
 	// Default zoom scale.
 	size = 0.5
@@ -145,13 +145,13 @@ function onCountryClick(d) {
 		if (active.node() === this) {
 			document.getElementById('entity-a').innerHTML='';
 			//document.getElementById('gini').innerHTML='';
-			document.getElementById('panel-top').style.visibility="hidden";
+			document.getElementById('panel-left').style.visibility="hidden";
 			d3.selectAll(".city").attr("visibility","hidden");
 			d3.selectAll(".city-label").attr("visibility","hidden");
 			return reset();
 		}
 
-		document.getElementById('panel-top').style.visibility="visible";
+		document.getElementById('panel-left').style.visibility="visible";
 
 		active.classed("active", false);
 		active = d3.select(this).classed("active", true);
@@ -366,11 +366,12 @@ function onCityClick(d) {
 
 function reset() {
 	if(compareFlag == false) {
-		document.getElementById('panel-top').style.visibility="hidden";
-		document.getElementById('panel-bottom').style.visibility="hidden";
+		document.getElementById('panel-left').style.visibility="hidden";
+		document.getElementById('panel-right').style.visibility="hidden";
+		document.getElementById('entity-a').innerHTML="";
 	} 
 	else if(compareFlag == true) {
-		document.getElementById('panel-bottom').style.visibility="hidden";
+		document.getElementById('panel-right').style.visibility="hidden";
 	}
 
 	active.classed("active", false);
@@ -387,13 +388,13 @@ function reset() {
 	});
 
 	g.selectAll(".city")
-		.attr("visibility", "hidden");
+		.style("visibility", "hidden");
 
 	g.selectAll(".city-label")
-		.attr("visibility", "hidden");
+		.style("visibility", "hidden");
 
 	g.selectAll(".country-label")
-		.attr("visibility", "visible");
+		.style("visibility", "visible");
 
 }
 
@@ -403,9 +404,7 @@ function toggleCompareFlag() {
 }
 
 function compare() {
-	console.log(compareFlag);
 	toggleCompareFlag();
-	console.log(compareFlag);
 }
 
 /* Graphing Functions */

@@ -40,8 +40,8 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
-						<li><a href="#about">Historias</a></li>
+						<!--<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="#about">Historias</a></li>-->
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -49,24 +49,53 @@
 				
 		<div class="wrapper">
 			<div class="left-side">
-				<div class="entity-title">
-					<h1 id="entity-a"></h1>
-				</div> 
 				<div class="map">
 					<script src="js/map.js"></script>
 				</div>
 			</div>
 			<div class="panels">
-				<div class="entity-panel" id="panel-top">
-					<h2 id="title1">Title 1</h2>
+				<!-- <div class="entity-panel" id="intro">
+					<div class="intro">
+						<h1>Construcción de ciudades más equitativas</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h2>Title 2</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+					</div> 
+				</div>-->
+				<div class="entity-panel" id="panel-left">
+					<div class="panel-close">
+						<a href"#">X</a>
+					</div>
+					<div class="entity-title">
+						<h1 id="entity-a"></h1>
+					</div>
+					<h2 id="title1">Distribución per cápita</h2>
+					<h2>&lt;  1 / 3   &gt;</h2>
 					<div id="chart1a" class="chart">
 					</div>
 					<div class="compare">
-						<button onlick=>Comparar</button>
+						<button class="compare-button" onclick="compare()">Comparar</button>
 					</div>
 				</div>
-				<div class="entity-panel" id="panel-bottom">
+
+				<div class="entity-panel" id="panel-right">
+					<div class="panel-close">
+						<a href"#">X</a>
+					</div>
+					<div class="entity-title">
+						<h1 id="entity-b"></h1>
+					</div>
+					<h2 id="title2">Distribución per cápita</h2>
+					<h2>&lt;  1 / 3   &gt;</h2>
+					<div id="chart2a" class="chart">
+					</div>
 				</div>
+
 			</div>
 		</div>
 				
