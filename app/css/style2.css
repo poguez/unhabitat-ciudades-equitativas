@@ -1,56 +1,25 @@
 .wrapper {
   width: 100%;
-  height: 620px;
+  height: 640px;
   font-family: 'Open Sans', sans-serif;
   display: block;
   position: absolute;
-  border-bottom: 1px solid #ebecec;
   left: 0;
   top: 60px;
 }
 
-.left-side {
-  width: 55%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-.entity-title {
-  height: 40px;
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.entity-title h1 {
-  font-size: 1.4em;
-  color: #0098d8;
-  margin: 10px 0px 10px 0;
-  text-align: center;
-}
-
 .map {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   display: inline;
-  float: right;
-}
-
-.map svg {
-  display: block;
 }
 
 .panels {
-  width: 45%;
+  width: 35%;
   float: right;
-  height: 100%;
+  height: 640px;
   display: block;
-  margin: 0;
   padding: 0;
-  border-left: 1px solid #ebecec;
 }
 
 .entity-panel {
@@ -59,6 +28,7 @@
   margin: 0;
   padding: 0;
   display: block;
+  border-left: 1px solid #ebecec;
 }
 
 #panel-top {
@@ -66,7 +36,7 @@
 }
 
 #panel-bottom {
-  visibility: hidden;
+  background-color: black;
 }
 
 .panel-header {

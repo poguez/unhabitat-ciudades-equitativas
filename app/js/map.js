@@ -1,14 +1,14 @@
 // Canvas size
-var width = 832,
-	height = 640,
+var width = 704,
+	height = 580,
 	active = d3.select(null);
 
 // Map properties
 var projection = d3.geo.mercator()
 	.scale(320)
 	.translate([width / 2, 280])
-	.center([-80,-10])
-	.precision(.1);
+	.center([-70,-15])
+	.precision(0);
 
 var path = d3.geo.path()
 	.projection(projection);
@@ -82,7 +82,9 @@ d3.json("../data/la.json", function(error, la) {
 		.data(cities.features)
 		.enter().append("text")
 		.attr("class", "city-label")
-		.attr("transform", function(d, i) { return "translate(0," + i * 5 + ")"; })
+		.attr("transform", function(d, i) { 
+			return "translate(90," + i * 6 + ")"; 
+		})
 		.attr("x", 100)
 		.attr("y", 1)
 		.attr("dy", 1)
@@ -90,6 +92,122 @@ d3.json("../data/la.json", function(error, la) {
 		.on("click", onCityClick);
 	
 });
+
+function onCountryClick(d) {
+	small = ["COR", "DOM", "ECU", "GUA", "HON",  "NIC", "PAN", "PAR", "URU"];
+	large = ["ARG", "BRA", "CHI"];
+
+	// Default zoom scale.
+	size = 0.5
+
+	// Zoom scale for small countries.
+	for (i = 0; i < small.length; i++) {
+        if (small[i] === d.id) {
+            size = 0.2
+        }
+    }
+
+    // Zoom scale for large countries.
+    for (i = 0; i < large.length; i++) {
+        if (large[i] === d.id) {
+            size = 0.85
+        }
+    }
+
+	d3.select(this)
+		.on("mouseover", function() {
+        	d3.select(this).attr("class", function(d) { return "country " + d.properties.category; });
+	});
+
+	g.selectAll(".city")
+		.on("mouseover", function(d) {
+			d3.select(this).attr("class", ".city-hover");
+		})
+		.on("mouseout", function(d) {
+			d3.select(this).attr("class", ".city");
+		});
+
+	g.selectAll(".city-label")
+		.text(function(d) {
+			return d.properties.name; 
+		})
+		.on("mouseover", function(d) {
+			var nodeSelection = d3.select(this).style("fill", "#9C5308");
+			nodeSelection.select("text").style("fill", "#9C5308");
+		})
+		.on("mouseout", function(d) {
+			var nodeSelection = d3.select(this).style("fill", "#444");
+			nodeSelection.select("text").style("fill", "#444");
+		});
+
+
+	if(compareFlag == false) {
+		if (active.node() === this) {
+			document.getElementById('entity-a').innerHTML='';
+			//document.getElementById('gini').innerHTML='';
+			document.getElementById('panel-top').style.visibility="hidden";
+			d3.selectAll(".city").attr("visibility","hidden");
+			d3.selectAll(".city-label").attr("visibility","hidden");
+			return reset();
+		}
+
+		document.getElementById('panel-top').style.visibility="visible";
+
+		active.classed("active", false);
+		active = d3.select(this).classed("active", true);
+		d3.selectAll(".city").attr("visibility","visible");
+		d3.selectAll(".country-label").attr("visibility","hidden");
+		d3.selectAll(".city-label").attr("visibility","visible");
+		
+		var bounds = path.bounds(d),
+			dx = bounds[1][0] - bounds[0][0],
+			dy = bounds[1][1] - bounds[0][1],
+			x = (bounds[0][0] + bounds[1][0]) / 2,
+			y = (bounds[0][1] + bounds[1][1]) / 2,
+			scale = size / Math.max(dx / width, dy / height),
+			translate = [width / 2 - scale * x, height / 2 - scale * y];
+		g.transition()
+			.duration(750)
+			.style("stroke-width", 1.5 / scale + "px")
+			.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+		var country = d.properties.name;
+		document.getElementById('entity-a').innerHTML=country;
+		//var gini = d.properties.gini;
+		//document.getElementById('gini').innerHTML=gini;
+	} 
+
+	else if (compareFlag == true) {
+		if (active.node() === this) {
+			document.getElementById('entity-b').innerHTML='';
+			//document.getElementById('gini').innerHTML='';
+			document.getElementById('panel-right').style.visibility="hidden";
+			d3.selectAll(".city-label").attr("visibility","hidden");
+			return reset();
+		}
+		document.getElementById('panel-right').style.visibility="visible";
+
+		active.classed("active", false);
+		active = d3.select(this).classed("active", true);
+		d3.selectAll(".city-label").attr("visibility","visible");
+			var bounds = path.bounds(d),
+			dx = bounds[1][0] - bounds[0][0],
+			dy = bounds[1][1] - bounds[0][1],
+			x = (bounds[0][0] + bounds[1][0]) / 2,
+			y = (bounds[0][1] + bounds[1][1]) / 2,
+			scale = .9 / Math.max(dx / width, dy / height),
+			translate = [width / 2 - scale * x, height / 2 - scale * y];
+			g.transition()
+			.duration(750)
+			.style("stroke-width", 1.5 / scale + "px")
+			.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+		var country = d.properties.name;
+		document.getElementById('entity-b').innerHTML=country;
+		toggleCompareFlag();
+		//var gini = d.properties.gini;
+		//document.getElementById('gini').innerHTML=gini;
+	}
+	//graphGiniCountry();
+}
 
 
 function onCityClick(d) {
@@ -244,115 +362,6 @@ function onCityClick(d) {
     	graphIpcCity(ipcCityData);		
 	});
 
-}
-
-function onCountryClick(d) {
-
-	small = ["COR", "DOM", "ECU", "GUA", "HON",  "NIC", "PAN", "PAR", "URU"];
-	large = ["ARG", "BRA", "CHI", "MEX"];
-
-	// Default zoom scale.
-	size = 0.5
-
-	// Zoom scale for small countries.
-	for (i = 0; i < small.length; i++) {
-        if (small[i] === d.id) {
-            size = 0.2
-        }
-    }
-
-    // Zoom scale for large countries.
-    for (i = 0; i < large.length; i++) {
-        if (large[i] === d.id) {
-            size = 0.85
-        }
-    }
-
-	d3.select(this)
-		.on("mouseover", function() {
-        	d3.select(this).attr("class", function(d) { return "country " + d.properties.category; });
-	});
-
-	g.selectAll(".city-label")
-		.text(function(d) { 
-			return d.properties.name; 
-		})
-		.on("mouseover", function(d) {
-			var nodeSelection = d3.select(this).style("fill", "#9C5308");
-			nodeSelection.select("text").style("fill", "#9C5308");
-		})
-		.on("mouseout", function(d) {
-			var nodeSelection = d3.select(this).style("fill", "#444");
-			nodeSelection.select("text").style("fill", "#444");
-		});
-
-
-	if(compareFlag == false) {
-		if (active.node() === this) {
-			document.getElementById('entity-a').innerHTML='';
-			//document.getElementById('gini').innerHTML='';
-			document.getElementById('panel-top').style.visibility="hidden";
-			d3.selectAll(".city").attr("visibility","hidden");
-			d3.selectAll(".city-label").attr("visibility","hidden");
-			return reset();
-		}
-
-		document.getElementById('panel-top').style.visibility="visible";
-
-		active.classed("active", false);
-		active = d3.select(this).classed("active", true);
-		d3.selectAll(".city").attr("visibility","visible");
-		d3.selectAll(".country-label").attr("visibility","hidden");
-		d3.selectAll(".city-label").attr("visibility","visible");
-		
-		var bounds = path.bounds(d),
-			dx = bounds[1][0] - bounds[0][0],
-			dy = bounds[1][1] - bounds[0][1],
-			x = (bounds[0][0] + bounds[1][0]) / 2,
-			y = (bounds[0][1] + bounds[1][1]) / 2,
-			scale = size / Math.max(dx / width, dy / height),
-			translate = [width / 2 - scale * x, height / 2 - scale * y];
-		g.transition()
-			.duration(750)
-			.style("stroke-width", 1.5 / scale + "px")
-			.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-		var country = d.properties.name;
-		document.getElementById('entity-a').innerHTML=country;
-		//var gini = d.properties.gini;
-		//document.getElementById('gini').innerHTML=gini;
-	} 
-
-	else if (compareFlag == true) {
-		if (active.node() === this) {
-			document.getElementById('entity-b').innerHTML='';
-			//document.getElementById('gini').innerHTML='';
-			document.getElementById('panel-right').style.visibility="hidden";
-			d3.selectAll(".city-label").attr("visibility","hidden");
-			return reset();
-		}
-		document.getElementById('panel-right').style.visibility="visible";
-
-		active.classed("active", false);
-		active = d3.select(this).classed("active", true);
-		d3.selectAll(".city-label").attr("visibility","visible");
-			var bounds = path.bounds(d),
-			dx = bounds[1][0] - bounds[0][0],
-			dy = bounds[1][1] - bounds[0][1],
-			x = (bounds[0][0] + bounds[1][0]) / 2,
-			y = (bounds[0][1] + bounds[1][1]) / 2,
-			scale = .9 / Math.max(dx / width, dy / height),
-			translate = [width / 2 - scale * x, height / 2 - scale * y];
-			g.transition()
-			.duration(750)
-			.style("stroke-width", 1.5 / scale + "px")
-			.attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-		var country = d.properties.name;
-		document.getElementById('entity-b').innerHTML=country;
-		toggleCompareFlag();
-		//var gini = d.properties.gini;
-		//document.getElementById('gini').innerHTML=gini;
-	}
-	//graphGiniCountry();
 }
 
 function reset() {

@@ -30,6 +30,10 @@
   fill: #444;
 }
 
+.city-hover {
+  fill: #fd8d3c;
+}
+
 .city-label {
 	fill: #444;
   /*visibility: hidden; */
