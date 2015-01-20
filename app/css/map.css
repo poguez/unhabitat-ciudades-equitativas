@@ -17,9 +17,10 @@
 .country-label {
 	fill: #666;
 	fill-opacity: .5;
-	font-size: 12px;
+	font-size: 0.8em;
 	font-weight: 300;
 	text-anchor: middle;
+  pointer-events: none;
 }
 
 .country-hover {
@@ -28,10 +29,6 @@
 
 .city {
   fill: #444;
-}
-
-.city-hover {
-  fill: #fd8d3c;
 }
 
 .city-label {

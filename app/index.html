@@ -69,15 +69,18 @@
 				</div>-->
 				<div class="entity-panel" id="panel-left">
 					<div class="panel-close">
-						<a href"#">X</a>
+						<a id="closeLeftPanel" title="Close left panel" href"#" onclick="closeLeftPanel(); return false;">X</a>
 					</div>
 					<div class="entity-title">
 						<h1 id="entity-a"></h1>
 					</div>
 					<h2 id="title1">Distribución per cápita</h2>
-					<h2>&lt;  1 / 3   &gt;</h2>
-					<div id="chart1a" class="chart">
-					</div>
+					<h2><a id="left_next" title="Show next graph" onclick="prev(); return false;">&lt;</a>  <span id="current">1</span> / <span id="total">4</span>   <a id="left_next" title="Show next graph" onclick="next(); return false;">&gt;</a></h2>
+					<div id="chart1a" class="chart"></div>
+					<div id="chart2a" class="chart"></div>
+					<div id="chart3a" class="chart"></div>
+					<div id="chart4a" class="chart"></div>
+
 					<div class="compare">
 						<button class="compare-button" onclick="compare()">Comparar</button>
 					</div>
@@ -85,19 +88,19 @@
 
 				<div class="entity-panel" id="panel-right">
 					<div class="panel-close">
-						<a href"#">X</a>
+						<a id="closeRightPanel" title="Close right panel" href"#" onclick="closeRightPanel(); return false;">X</a>
 					</div>
 					<div class="entity-title">
 						<h1 id="entity-b"></h1>
 					</div>
 					<h2 id="title2">Distribución per cápita</h2>
-					<h2>&lt;  1 / 3   &gt;</h2>
-					<div id="chart2a" class="chart">
-					</div>
+					<h2>&lt;  1 / 4   &gt;</h2>
+					
 				</div>
 
 			</div>
 		</div>
+
 				
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

@@ -20,7 +20,7 @@
 }
 
 .entity-title {
-  min-height: 45px;
+  height: 65px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -41,7 +41,13 @@
 }
 
 .map svg {
-  display: block;
+  z-index: -1;
+}
+
+.map select {
+  position: relative;
+  top: 10px;
+  z-index: 10;
 }
 
 .panels {
@@ -51,6 +57,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 
 .entity-panel {
@@ -74,6 +81,7 @@
 
 #panel-right {
   visibility: hidden;
+  border-left: 1px solid #ebecec;
 }
 
 .panel-header {
@@ -109,12 +117,31 @@
 }
 
 .chart {
-  width: 85%;
+  width: 280px;
   background-color: #fff;
-  height: 250px;
+  height: 240px;
   margin: 0 auto;
   padding: 0;
+}
+
+#chart1a {
+  display: block;
   background-color: gray;
+}
+
+#chart2a {
+  display: none;
+  background-color: red;
+}
+
+#chart3a {
+  display: none;
+  background-color: green;
+}
+
+#chart4a {
+  display: none;
+  background-color: blue;
 }
 
 .compare {
@@ -139,6 +166,7 @@
 }
 
 .footer {
+  display: block;
   width: 100%;
   background-color: green;
   height: 80px;  
