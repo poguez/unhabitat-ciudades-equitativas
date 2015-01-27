@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="ISO-8859-1">
+ <html>
+ <style> /* set the CSS */
+ 
+body { font: 12px Arial;}
+ 
+.viz1 path { 
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+ 
+.viz1 .axis path {
+	stroke: lightgrey;
+}
+
+.viz1 .axis line {
+	fill: none;
+	stroke: lightgrey;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+</style>
+   <head>
+ 		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+ 		<script type="text/javascript" src="compnuevo.js"></script>
+ 
+   </head>
+   <body>
+   		<div class="viz1">
+ 		</div>
+   </body>
+<script type="text/javascript" > 
+ 		graphgini('data.csv','Argentina','Argentina'); 
+ 		</script>
+ </html>
