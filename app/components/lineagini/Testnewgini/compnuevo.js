@@ -73,7 +73,7 @@ function graphgini(data,pais,ciudad) {
 
     // Adds the svg canvas
 
-    var canvas = d3.select("div.viz1")
+    var canvas = d3.select("div.chart1a")
 
 var svg = canvas
         .append("svg")

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> /* set the CSS */
+ 
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+</style>
+<body>
+ 
+<!-- load the d3.js library -->	
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="chartingreso.js"></script>
+</style>
+   <head>
+
+ 
+   </head>
+   <body>
+        <div class="chart3a">
+        </div>
+        <div id="tooltip" class="hidden">
+    <p><span id="value">100</span>
+    </p>
+</div>
+   </body>
+<script type="text/javascript" > 
+        graphingreso('contribucionesporcentualessalarioygini.csv','Buenos Aires'); 
+        </script>
+ </html>
