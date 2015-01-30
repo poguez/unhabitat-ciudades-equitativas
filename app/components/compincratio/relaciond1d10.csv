@@ -1,0 +1,1370 @@
+Pais,Tipo GINI,Ciudad ,Año,Razon D1-D10
+Argentina,Urbano,Bahía Blanca,1990,--
+Argentina,Urbano,Bahía Blanca,1994,--
+Argentina,Urbano,Bahía Blanca,1999,--
+Argentina,Urbano,Bahía Blanca,2002,36.46
+Argentina,Urbano,Bahía Blanca,2005,64.06
+Argentina,Urbano,Bahía Blanca,2010,28.48
+Argentina,Urbano,Buenos Aires,1990,25.79
+Argentina,Urbano,Buenos Aires,1994,27.16
+Argentina,Urbano,Buenos Aires,1999,33.41
+Argentina,Urbano,Buenos Aires,2002,56.10
+Argentina,Urbano,Buenos Aires,2005,51.49
+Argentina,Urbano,Buenos Aires,2010,32.07
+Argentina,Urbano,Comodoro Rivadavia,1990,--
+Argentina,Urbano,Comodoro Rivadavia,1994,33.75
+Argentina,Urbano,Comodoro Rivadavia,1999,29.44
+Argentina,Urbano,Comodoro Rivadavia,2002,55.85
+Argentina,Urbano,Comodoro Rivadavia,2005,52.32
+Argentina,Urbano,Comodoro Rivadavia,2010,39.68
+Argentina,Urbano,Concordia,1990,--
+Argentina,Urbano,Concordia,1994,--
+Argentina,Urbano,Concordia,1999,42.61
+Argentina,Urbano,Concordia,2002,61.21
+Argentina,Urbano,Concordia,2005,46.31
+Argentina,Urbano,Concordia,2010,39.01
+Argentina,Urbano,Cordoba,1990,--
+Argentina,Urbano,Cordoba,1994,30.98
+Argentina,Urbano,Cordoba,1999,27.32
+Argentina,Urbano,Cordoba,2002,39.45
+Argentina,Urbano,Cordoba,2005,45.10
+Argentina,Urbano,Cordoba,2010,30.03
+Argentina,Urbano,Corrientes,1990,--
+Argentina,Urbano,Corrientes,1994,--
+Argentina,Urbano,Corrientes,1999,20.6
+Argentina,Urbano,Corrientes,2002,30.338
+Argentina,Urbano,Corrientes,2005,40.19
+Argentina,Urbano,Corrientes,2010,34.01
+Argentina,Urbano,Formosa,1990,--
+Argentina,Urbano,Formosa,1994,--
+Argentina,Urbano,Formosa,1999,32.82
+Argentina,Urbano,Formosa,2002,33.42
+Argentina,Urbano,Formosa,2005,22.05
+Argentina,Urbano,Formosa,2010,19.69
+Argentina,Urbano,Jujuy,1990,--
+Argentina,Urbano,Jujuy,1994,23.84
+Argentina,Urbano,Jujuy,1999,26.23
+Argentina,Urbano,Jujuy,2002,32.87
+Argentina,Urbano,Jujuy,2005,31.80
+Argentina,Urbano,Jujuy,2010,25.00
+Argentina,Urbano,La Plata,1990,--
+Argentina,Urbano,La Plata,1994,--
+Argentina,Urbano,La Plata,1999,29.49
+Argentina,Urbano,La Plata,2002,26.31
+Argentina,Urbano,La Plata,2005,37.27
+Argentina,Urbano,La Plata,2010,29.72
+Argentina,Urbano,La Rioja,1990,--
+Argentina,Urbano,La Rioja,1994,--
+Argentina,Urbano,La Rioja,1999,24.27
+Argentina,Urbano,La Rioja,2002,30.15
+Argentina,Urbano,La Rioja,2005,30.62
+Argentina,Urbano,La Rioja,2010,16.96
+Argentina,Urbano,Mar del Plata,1990,--
+Argentina,Urbano,Mar del Plata,1994,--
+Argentina,Urbano,Mar del Plata,1999,33.45
+Argentina,Urbano,Mar del Plata,2002,34.00
+Argentina,Urbano,Mar del Plata,2005,53.70
+Argentina,Urbano,Mar del Plata,2010,28.29
+Argentina,Urbano,Mendoza,1990,--
+Argentina,Urbano,Mendoza,1994,27.47
+Argentina,Urbano,Mendoza,1999,30.42
+Argentina,Urbano,Mendoza,2002,35.05
+Argentina,Urbano,Mendoza,2005,32.66
+Argentina,Urbano,Mendoza,2010,22.20
+Argentina,Urbano,Neuquén,1990,--
+Argentina,Urbano,Neuquén,1994,37.4
+Argentina,Urbano,Neuquén,1999,35.9
+Argentina,Urbano,Neuquén,2002,47.2
+Argentina,Urbano,Neuquén,2005,51.2
+Argentina,Urbano,Neuquén,2010,64.9
+Argentina,Urbano,Paraná,1990,--
+Argentina,Urbano,Paraná,1994,20.4
+Argentina,Urbano,Paraná,1999,33.3
+Argentina,Urbano,Paraná,2002,36.4
+Argentina,Urbano,Paraná,2005,29.8
+Argentina,Urbano,Paraná,2010,25.9
+Argentina,Urbano,Posadas,1990,--
+Argentina,Urbano,Posadas,1994,--
+Argentina,Urbano,Posadas,1999,42.08
+Argentina,Urbano,Posadas,2002,32.51
+Argentina,Urbano,Posadas,2005,30.56
+Argentina,Urbano,Posadas,2010,31.31
+Argentina,Urbano,Resistencia,1990,--
+Argentina,Urbano,Resistencia,1994,26.85
+Argentina,Urbano,Resistencia,1999,48.44
+Argentina,Urbano,Resistencia,2002,41.21
+Argentina,Urbano,Resistencia,2005,42.78
+Argentina,Urbano,Resistencia,2010,24.94
+Argentina,Urbano,Río Cuarto,1990,--
+Argentina,Urbano,Río Cuarto,1994,--
+Argentina,Urbano,Río Cuarto,1999,23.73
+Argentina,Urbano,Río Cuarto,2002,53.06
+Argentina,Urbano,Río Cuarto,2005,81.79
+Argentina,Urbano,Río Cuarto,2010,39.08
+Argentina,Urbano,Río Gallegos,1990,--
+Argentina,Urbano,Río Gallegos,1994,15.40
+Argentina,Urbano,Río Gallegos,1999,18.16
+Argentina,Urbano,Río Gallegos,2002,22.46
+Argentina,Urbano,Río Gallegos,2005,24.13
+Argentina,Urbano,Río Gallegos,2010,28.70
+Argentina,Urbano,Rosario,1990,--
+Argentina,Urbano,Rosario,1994,22.39
+Argentina,Urbano,Rosario,1999,18.88
+Argentina,Urbano,Rosario,2002,33.73
+Argentina,Urbano,Rosario,2005,41.30
+Argentina,Urbano,Rosario,2010,34.47
+Argentina,Urbano,Salta,1990,--
+Argentina,Urbano,Salta,1994,20.45
+Argentina,Urbano,Salta,1999,30.62
+Argentina,Urbano,Salta,2002,56.07
+Argentina,Urbano,Salta,2005,45.20
+Argentina,Urbano,Salta,2010,29.93
+Argentina,Urbano,San Fernando del Valle de Catamarca,1990,--
+Argentina,Urbano,San Fernando del Valle de Catamarca,1994,22.56
+Argentina,Urbano,San Fernando del Valle de Catamarca,1999,28.30
+Argentina,Urbano,San Fernando del Valle de Catamarca,2002,34.77
+Argentina,Urbano,San Fernando del Valle de Catamarca,2005,40.09
+Argentina,Urbano,San Fernando del Valle de Catamarca,2010,25.80
+Argentina,Urbano,San Juan,1990,--
+Argentina,Urbano,San Juan,1994,19.82
+Argentina,Urbano,San Juan,1999,31.03
+Argentina,Urbano,San Juan,2002,25.19
+Argentina,Urbano,San Juan,2005,36.84
+Argentina,Urbano,San Juan,2010,27.47
+Argentina,Urbano,San Luis,1990,--
+Argentina,Urbano,San Luis,1994,26.61
+Argentina,Urbano,San Luis,1999,26.17
+Argentina,Urbano,San Luis,2002,43.19
+Argentina,Urbano,San Luis,2005,23.19
+Argentina,Urbano,San Luis,2010,23.23
+Argentina,Urbano,Santa Fé,1990,--
+Argentina,Urbano,Santa Fé,1994,19.67
+Argentina,Urbano,Santa Fé,1999,23.42
+Argentina,Urbano,Santa Fé,2002,41.12
+Argentina,Urbano,Santa Fé,2005,52.18
+Argentina,Urbano,Santa Fé,2010,23.02
+Argentina,Urbano,Santa Rosa,1990,--
+Argentina,Urbano,Santa Rosa,1994,17.41
+Argentina,Urbano,Santa Rosa,1999,23.20
+Argentina,Urbano,Santa Rosa,2002,54.59
+Argentina,Urbano,Santa Rosa,2005,32.77
+Argentina,Urbano,Santa Rosa,2010,28.97
+Argentina,Urbano,Santiago del Estero,1990,--
+Argentina,Urbano,Santiago del Estero,1994,23.39
+Argentina,Urbano,Santiago del Estero,1999,20.53
+Argentina,Urbano,Santiago del Estero,2002,30.14
+Argentina,Urbano,Santiago del Estero,2005,36.52
+Argentina,Urbano,Santiago del Estero,2010,19.75
+Argentina,Urbano,Tucumán,1990,--
+Argentina,Urbano,Tucumán,1994,29.60
+Argentina,Urbano,Tucumán,1999,33.81
+Argentina,Urbano,Tucumán,2002,56.61
+Argentina,Urbano,Tucumán,2005,47.06
+Argentina,Urbano,Tucumán,2010,29.43
+Argentina,Urbano,Ushuaia,1990,--
+Argentina,Urbano,Ushuaia,1994,24.66
+Argentina,Urbano,Ushuaia,1999,29.52
+Argentina,Urbano,Ushuaia,2002,43.71
+Argentina,Urbano,Ushuaia,2005,43.74
+Argentina,Urbano,Ushuaia,2010,32.83
+Bolivia,Urbano,Cobija,1989,--
+Bolivia,Urbano,Cobija,1994,--
+Bolivia,Urbano,Cobija,1999,--
+Bolivia,Urbano,Cobija,2004,18.12
+Bolivia,Urbano,Cobija,2007,12.89
+Bolivia,Urbano,Cochabamba,1989,35.68
+Bolivia,Urbano,Cochabamba,1994,16.87
+Bolivia,Urbano,Cochabamba,1999,13.32
+Bolivia,Urbano,Cochabamba,2004,22.39
+Bolivia,Urbano,Cochabamba,2007,26.05
+Bolivia,Urbano,El Alto,1989,30.62
+Bolivia,Urbano,El Alto,1994,15.39
+Bolivia,Urbano,El Alto,1999,21.01
+Bolivia,Urbano,El Alto,2004,11.80
+Bolivia,Urbano,El Alto,2007,20.16
+Bolivia,Urbano,La Paz,1989,46.22
+Bolivia,Urbano,La Paz,1994,26.55
+Bolivia,Urbano,La Paz,1999,58.46
+Bolivia,Urbano,La Paz,2004,29.61
+Bolivia,Urbano,La Paz,2007,34.08
+Bolivia,Urbano,Oruro,1989,--
+Bolivia,Urbano,Oruro,1994,19.22
+Bolivia,Urbano,Oruro,1999,14.04
+Bolivia,Urbano,Oruro,2004,18.93
+Bolivia,Urbano,Oruro,2007,10.94
+Bolivia,Urbano,Potosí,1989,38.46
+Bolivia,Urbano,Potosí,1994,20.68
+Bolivia,Urbano,Potosí,1999,17.63
+Bolivia,Urbano,Potosí,2004,14.30
+Bolivia,Urbano,Potosí,2007,25.02
+Bolivia,Urbano,Santa Cruz,1989,40.70
+Bolivia,Urbano,Santa Cruz,1994,22.82
+Bolivia,Urbano,Santa Cruz,1999,17.69
+Bolivia,Urbano,Santa Cruz,2004,21.51
+Bolivia,Urbano,Santa Cruz,2007,26.86
+Bolivia,Urbano,Sucre,1989,30.82
+Bolivia,Urbano,Sucre,1994,24.47
+Bolivia,Urbano,Sucre,1999,14.44
+Bolivia,Urbano,Sucre,2004,22.72
+Bolivia,Urbano,Sucre,2007,20.66
+Bolivia,Urbano,Tarija,1989,31.52
+Bolivia,Urbano,Tarija,1994,24.55
+Bolivia,Urbano,Tarija,1999,9.82
+Bolivia,Urbano,Tarija,2004,18.14
+Bolivia,Urbano,Tarija,2007,14.98
+Bolivia,Urbano,Trinidad,1989,50.25
+Bolivia,Urbano,Trinidad,1994,10.79
+Bolivia,Urbano,Trinidad,1999,19.43
+Bolivia,Urbano,Trinidad,2004,17.94
+Bolivia,Urbano,Trinidad,2007,15.77
+Mexico,Urbano,Acapulco,1989,--
+Mexico,Urbano,Acapulco,1994,--
+Mexico,Urbano,Acapulco,2002,17.90
+Mexico,Urbano,Acapulco,2005,20.62
+Mexico,Urbano,Acapulco,2010,14.74
+Mexico,Urbano,Aguascalientes,1989,--
+Mexico,Urbano,Aguascalientes,1994,15.48
+Mexico,Urbano,Aguascalientes,2002,15.16
+Mexico,Urbano,Aguascalientes,2005,16.34
+Mexico,Urbano,Aguascalientes,2010,12.36
+Mexico,Urbano,Cancun,1989,--
+Mexico,Urbano,Cancun,1994,--
+Mexico,Urbano,Cancun,2002,13.99
+Mexico,Urbano,Cancun,2005,12.81
+Mexico,Urbano,Cancun,2010,15.23
+Brasil,Urbano,Belem,1990,53.78
+Brasil,Urbano,Belem,1993,64.01
+Brasil,Urbano,Belem,1999,60.56
+Brasil,Urbano,Belem,2003,51.87
+Brasil,Urbano,Belem,2005,45.16
+Brasil,Urbano,Belem,2009,35.37
+Brasil,Urbano,Belo Horizonte,1990,63.39
+Brasil,Urbano,Belo Horizonte,1993,57.81
+Brasil,Urbano,Belo Horizonte,1999,64.94
+Brasil,Urbano,Belo Horizonte,2003,55.37
+Brasil,Urbano,Belo Horizonte,2005,49.94
+Brasil,Urbano,Belo Horizonte,2009,44.01
+Brasil,Urbano,Brasilia,1990,62.85
+Brasil,Urbano,Brasilia,1993,81.45
+Brasil,Urbano,Brasilia,1999,88.86
+Brasil,Urbano,Brasilia,2003,121.75
+Brasil,Urbano,Brasilia,2005,85.79
+Brasil,Urbano,Brasilia,2009,88.62
+Brasil,Urbano,Curitiba,1990,39.46
+Brasil,Urbano,Curitiba,1993,49.17
+Brasil,Urbano,Curitiba,1999,83.04
+Brasil,Urbano,Curitiba,2003,50.40
+Brasil,Urbano,Curitiba,2005,52.36
+Brasil,Urbano,Curitiba,2009,88.62
+Brasil,Urbano,Fortaleza,1990,58.87
+Brasil,Urbano,Fortaleza,1993,59.11
+Brasil,Urbano,Fortaleza,1999,71.48
+Brasil,Urbano,Fortaleza,2003,62.38
+Brasil,Urbano,Fortaleza,2005,59.68
+Brasil,Urbano,Fortaleza,2009,54.21
+Brasil,Urbano,Porto Alegre,1990,52.69
+Brasil,Urbano,Porto Alegre,1993,53.95
+Brasil,Urbano,Porto Alegre,1999,73.53
+Brasil,Urbano,Porto Alegre,2003,61.78
+Brasil,Urbano,Porto Alegre,2005,55.74
+Brasil,Urbano,Porto Alegre,2009,39.65
+Brasil,Urbano,Recife,1990,64.75
+Brasil,Urbano,Recife,1993,103.60
+Brasil,Urbano,Recife,1999,73.36
+Brasil,Urbano,Recife,2003,99.89
+Brasil,Urbano,Recife,2005,93.79
+Brasil,Urbano,Recife,2009,63.43
+Brasil,Urbano,Rio de Janeiro,1990,53.99
+Brasil,Urbano,Rio de Janeiro,1993,54.05
+Brasil,Urbano,Rio de Janeiro,1999,53.59
+Brasil,Urbano,Rio de Janeiro,2003,56.98
+Brasil,Urbano,Rio de Janeiro,2005,52.57
+Brasil,Urbano,Rio de Janeiro,2009,51.51
+Brasil,Urbano,Salvador,1990,114.65
+Brasil,Urbano,Salvador,1993,113.60
+Brasil,Urbano,Salvador,1999,96.68
+Brasil,Urbano,Salvador,2003,103.69
+Brasil,Urbano,Salvador,2005,64.24
+Brasil,Urbano,Salvador,2009,63.63
+Brasil,Urbano,Sao Paulo,1990,43.35
+Brasil,Urbano,Sao Paulo,1993,49.14
+Brasil,Urbano,Sao Paulo,1999,68.54
+Brasil,Urbano,Sao Paulo,2003,79.53
+Brasil,Urbano,Sao Paulo,2005,63.03
+Brasil,Urbano,Sao Paulo,2009,40.91
+Chile,Urbano,Ancud,1990,--
+Chile,Urbano,Ancud,1994,--
+Chile,Urbano,Ancud,2000,17.59
+Chile,Urbano,Ancud,2003,17.74
+Chile,Urbano,Ancud,2006,17.45
+Chile,Urbano,Ancud,2009,11.84
+Chile,Urbano,Angol,1990,39.82
+Chile,Urbano,Angol,1994,19.77
+Chile,Urbano,Angol,2000,30.40
+Chile,Urbano,Angol,2003,18.34
+Chile,Urbano,Angol,2006,23.97
+Chile,Urbano,Angol,2009,40.07
+Chile,Urbano,Antofagarasta,1990,27.61
+Chile,Urbano,Antofagarasta,1994,21.08
+Chile,Urbano,Antofagarasta,2000,35.88
+Chile,Urbano,Antofagarasta,2003,15.37
+Chile,Urbano,Antofagarasta,2006,12.29
+Chile,Urbano,Antofagarasta,2009,10.85
+Chile,Urbano,Arauco,1990,--
+Chile,Urbano,Arauco,1994,28.66
+Chile,Urbano,Arauco,2000,31.48
+Chile,Urbano,Arauco,2003,21.17
+Chile,Urbano,Arauco,2006,23.09
+Chile,Urbano,Arauco,2009,28.08
+Chile,Urbano,Arica,1990,19.78
+Chile,Urbano,Arica,1994,29.09
+Chile,Urbano,Arica,2000,29.20
+Chile,Urbano,Arica,2003,20.55
+Chile,Urbano,Arica,2006,11.88
+Chile,Urbano,Arica,2009,19.70
+Chile,Urbano,Buin,1990,14.06
+Chile,Urbano,Buin,1994,9.46
+Chile,Urbano,Buin,2000,24.82
+Chile,Urbano,Buin,2003,20.63
+Chile,Urbano,Buin,2006,12.71
+Chile,Urbano,Buin,2009,12.42
+Chile,Urbano,Calama,1990,35.28
+Chile,Urbano,Calama,1994,28.69
+Chile,Urbano,Calama,2000,14.91
+Chile,Urbano,Calama,2003,23.17
+Chile,Urbano,Calama,2006,16.93
+Chile,Urbano,Calama,2009,14.43
+Chile,Urbano,Castro,1990,20.88
+Chile,Urbano,Castro,1994,29.21
+Chile,Urbano,Castro,2000,8.18
+Chile,Urbano,Castro,2003,15.11
+Chile,Urbano,Castro,2006,14.08
+Chile,Urbano,Castro,2009,12.53
+Chile,Urbano,Cauquenes,1990,29.17
+Chile,Urbano,Cauquenes,1994,30.69
+Chile,Urbano,Cauquenes,2000,26.53
+Chile,Urbano,Cauquenes,2003,14.87
+Chile,Urbano,Cauquenes,2006,24.48
+Chile,Urbano,Cauquenes,2009,25.12
+Chile,Urbano,Chañaral,1990,28.52
+Chile,Urbano,Chañaral,1994,14.41
+Chile,Urbano,Chañaral,2000,22.47
+Chile,Urbano,Chañaral,2003,26.04
+Chile,Urbano,Chañaral,2006,21.84
+Chile,Urbano,Chañaral,2009,47.25
+Chile,Urbano,Chillán,1990,37.13
+Chile,Urbano,Chillán,1994,18.54
+Chile,Urbano,Chillán,2000,--
+Chile,Urbano,Chillán,2003,25.16
+Chile,Urbano,Chillán,2006,28.80
+Chile,Urbano,Chillán,2009,13.75
+Chile,Urbano,Colhaique,1990,26.16
+Chile,Urbano,Colhaique,1994,29.90
+Chile,Urbano,Colhaique,2000,19.31
+Chile,Urbano,Colhaique,2003,33.33
+Chile,Urbano,Colhaique,2006,18.00
+Chile,Urbano,Colhaique,2009,41.59
+Chile,Urbano,Colina,1990,9.72
+Chile,Urbano,Colina,1994,13.37
+Chile,Urbano,Colina,2000,21.12
+Chile,Urbano,Colina,2003,10.99
+Chile,Urbano,Colina,2006,23.15
+Chile,Urbano,Colina,2009,12.33
+Chile,Urbano,Concepción (Área Metropolitana),1990,31.99
+Chile,Urbano,Concepción (Área Metropolitana),1994,28.43
+Chile,Urbano,Concepción (Área Metropolitana),2000,19.88
+Chile,Urbano,Concepción (Área Metropolitana),2003,34.41
+Chile,Urbano,Concepción (Área Metropolitana),2006,24.44
+Chile,Urbano,Concepción (Área Metropolitana),2009,22.12
+Chile,Urbano,Constitución,1990,--
+Chile,Urbano,Constitución,1994,23.83
+Chile,Urbano,Constitución,2000,16.75
+Chile,Urbano,Constitución,2003,8.08
+Chile,Urbano,Constitución,2006,--
+Chile,Urbano,Constitución,2009,19.92
+Chile,Urbano,Copiapó,1990,25.83
+Chile,Urbano,Copiapó,1994,20.09
+Chile,Urbano,Copiapó,2000,25.66
+Chile,Urbano,Copiapó,2003,21.02
+Chile,Urbano,Copiapó,2006,17.96
+Chile,Urbano,Copiapó,2009,22.10
+Chile,Urbano,Coronel,1990,10.89
+Chile,Urbano,Coronel,1994,25.16
+Chile,Urbano,Coronel,2000,20.43
+Chile,Urbano,Coronel,2003,17.04
+Chile,Urbano,Coronel,2006,12.83
+Chile,Urbano,Coronel,2009,20.89
+Chile,Urbano,Curanilahue,1990,24.97
+Chile,Urbano,Curanilahue,1994,23.56
+Chile,Urbano,Curanilahue,2000,15.80
+Chile,Urbano,Curanilahue,2003,17.77
+Chile,Urbano,Curanilahue,2006,--
+Chile,Urbano,Curanilahue,2009,7.84
+Chile,Urbano,Curicó,1990,60.08
+Chile,Urbano,Curicó,1994,92.42
+Chile,Urbano,Curicó,2000,50.99
+Chile,Urbano,Curicó,2003,19.86
+Chile,Urbano,Curicó,2006,18.16
+Chile,Urbano,Curicó,2009,30.66
+Chile,Urbano,El Monte,1990,23.78
+Chile,Urbano,El Monte,1994,19.00
+Chile,Urbano,El Monte,2000,15.89
+Chile,Urbano,El Monte,2003,26.09
+Chile,Urbano,El Monte,2006,15.12
+Chile,Urbano,El Monte,2009,14.73
+Chile,Urbano,Graneros,1990,--
+Chile,Urbano,Graneros,1994,--
+Chile,Urbano,Graneros,2000,0.42
+Chile,Urbano,Graneros,2003,0.43
+Chile,Urbano,Graneros,2006,0.39
+Chile,Urbano,Graneros,2009,0.36
+Chile,Urbano,Illapel,1990,10.05
+Chile,Urbano,Illapel,1994,20.48
+Chile,Urbano,Illapel,2000,12.56
+Chile,Urbano,Illapel,2003,11.91
+Chile,Urbano,Illapel,2006,12.65
+Chile,Urbano,Illapel,2009,8.54
+Chile,Urbano,Iquique,1990,35.86
+Chile,Urbano,Iquique,1994,19.25
+Chile,Urbano,Iquique,2000,22.37
+Chile,Urbano,Iquique,2003,18.17
+Chile,Urbano,Iquique,2006,13.09
+Chile,Urbano,Iquique,2009,16.75
+Chile,Urbano,La Calera,1990,49.47
+Chile,Urbano,La Calera,1994,16.53
+Chile,Urbano,La Calera,2000,24.74
+Chile,Urbano,La Calera,2003,21.77
+Chile,Urbano,La Calera,2006,16.65
+Chile,Urbano,La Calera,2009,14.66
+Chile,Urbano,La Ligua,1990,--
+Chile,Urbano,La Ligua,1994,20.04
+Chile,Urbano,La Ligua,2000,23.63
+Chile,Urbano,La Ligua,2003,17.63
+Chile,Urbano,La Ligua,2006,21.19
+Chile,Urbano,La Ligua,2009,10.16
+Chile,Urbano,Lampa,1990,13.71
+Chile,Urbano,Lampa,1994,17.29
+Chile,Urbano,Lampa,2000,18.07
+Chile,Urbano,Lampa,2003,15.23
+Chile,Urbano,Lampa,2006,26.51
+Chile,Urbano,Lampa,2009,16.23
+Chile,Urbano,La Unión,1990,43.24
+Chile,Urbano,La Unión,1994,69.19
+Chile,Urbano,La Unión,2000,39.52
+Chile,Urbano,La Unión,2003,17.50
+Chile,Urbano,La Unión,2006,13.14
+Chile,Urbano,La Unión,2009,19.86
+Chile,Urbano,Lautaro,1990,--
+Chile,Urbano,Lautaro,1994,--
+Chile,Urbano,Lautaro,2000,45.80
+Chile,Urbano,Lautaro,2003,22.44
+Chile,Urbano,Lautaro,2006,35.84
+Chile,Urbano,Lautaro,2009,14.59
+Chile,Urbano,La Serena (Área Metropolitana),1990,35.56
+Chile,Urbano,La Serena (Área Metropolitana),1994,24.87
+Chile,Urbano,La Serena (Área Metropolitana),2000,25.96
+Chile,Urbano,La Serena (Área Metropolitana),2003,57.10
+Chile,Urbano,La Serena (Área Metropolitana),2006,17.12
+Chile,Urbano,La Serena (Área Metropolitana),2009,22.33
+Chile,Urbano,Lebu,1990,13.59
+Chile,Urbano,Lebu,1994,16.83
+Chile,Urbano,Lebu,2000,21.76
+Chile,Urbano,Lebu,2003,30.86
+Chile,Urbano,Lebu,2006,19.29
+Chile,Urbano,Lebu,2009,8.73
+Chile,Urbano,Linares,1990,21.68
+Chile,Urbano,Linares,1994,27.74
+Chile,Urbano,Linares,2000,37.38
+Chile,Urbano,Linares,2003,30.06
+Chile,Urbano,Linares,2006,25.88
+Chile,Urbano,Linares,2009,17.77
+Chile,Urbano,Los Andes,1990,40.28
+Chile,Urbano,Los Andes,1994,22.35
+Chile,Urbano,Los Andes,2000,28.41
+Chile,Urbano,Los Andes,2003,25.24
+Chile,Urbano,Los Andes,2006,--
+Chile,Urbano,Los Andes,2009,18.65
+Chile,Urbano,Los Angeles,1990,30.53
+Chile,Urbano,Los Angeles,1994,35.73
+Chile,Urbano,Los Angeles,2000,--
+Chile,Urbano,Los Angeles,2003,20.17
+Chile,Urbano,Los Angeles,2006,20.38
+Chile,Urbano,Los Angeles,2009,26.01
+Chile,Urbano,Los Vilos,1990,13.59
+Chile,Urbano,Los Vilos,1994,18.60
+Chile,Urbano,Los Vilos,2000,38.01
+Chile,Urbano,Los Vilos,2003,14.23
+Chile,Urbano,Los Vilos,2006,7.54
+Chile,Urbano,Los Vilos,2009,15.53
+Chile,Urbano,Lota,1990,12.36
+Chile,Urbano,Lota,1994,17.50
+Chile,Urbano,Lota,2000,13.49
+Chile,Urbano,Lota,2003,12.96
+Chile,Urbano,Lota,2006,--
+Chile,Urbano,Lota,2009,11.65
+Chile,Urbano,Machalí,1990,--
+Chile,Urbano,Machalí,1994,--
+Chile,Urbano,Machalí,2000,16.34
+Chile,Urbano,Machalí,2003,19.51
+Chile,Urbano,Machalí,2006,11.21
+Chile,Urbano,Machalí,2009,26.39
+Chile,Urbano,Mejillones,1990,19.36
+Chile,Urbano,Mejillones,1994,31.60
+Chile,Urbano,Mejillones,2000,25.76
+Chile,Urbano,Mejillones,2003,18.48
+Chile,Urbano,Mejillones,2006,12.60
+Chile,Urbano,Mejillones,2009,8.35
+Chile,Urbano,Melipilla,1990,16.43
+Chile,Urbano,Melipilla,1994,13.33
+Chile,Urbano,Melipilla,2000,29.70
+Chile,Urbano,Melipilla,2003,37.21
+Chile,Urbano,Melipilla,2006,13.99
+Chile,Urbano,Melipilla,2009,17.02
+Chile,Urbano,Molina,1990,--
+Chile,Urbano,Molina,1994,17.50
+Chile,Urbano,Molina,2000,15.29
+Chile,Urbano,Molina,2003,13.99
+Chile,Urbano,Molina,2006,18.74
+Chile,Urbano,Molina,2009,36.69
+Chile,Urbano,Mulchén,1990,9.85
+Chile,Urbano,Mulchén,1994,10.44
+Chile,Urbano,Mulchén,2000,25.45
+Chile,Urbano,Mulchén,2003,24.74
+Chile,Urbano,Mulchén,2006,--
+Chile,Urbano,Mulchén,2009,13.48
+Chile,Urbano,Nacimiento,1990,--
+Chile,Urbano,Nacimiento,1994,92.72
+Chile,Urbano,Nacimiento,2000,22.40
+Chile,Urbano,Nacimiento,2003,15.52
+Chile,Urbano,Nacimiento,2006,--
+Chile,Urbano,Nacimiento,2009,11.11
+Chile,Urbano,Osorno,1990,43.92
+Chile,Urbano,Osorno,1994,25.45
+Chile,Urbano,Osorno,2000,36.15
+Chile,Urbano,Osorno,2003,25.15
+Chile,Urbano,Osorno,2006,23.04
+Chile,Urbano,Osorno,2009,13.55
+Chile,Urbano,Ovalle,1990,24.33
+Chile,Urbano,Ovalle,1994,14.88
+Chile,Urbano,Ovalle,2000,43.54
+Chile,Urbano,Ovalle,2003,25.58
+Chile,Urbano,Ovalle,2006,13.26
+Chile,Urbano,Ovalle,2009,11.07
+Chile,Urbano,Padre Hurtado,1990,--
+Chile,Urbano,Padre Hurtado,1994,11.04
+Chile,Urbano,Padre Hurtado,2000,8.37
+Chile,Urbano,Padre Hurtado,2003,26.79
+Chile,Urbano,Padre Hurtado,2006,15.71
+Chile,Urbano,Padre Hurtado,2009,14.91
+Chile,Urbano,Paine,1990,12.21
+Chile,Urbano,Paine,1994,23.14
+Chile,Urbano,Paine,2000,16.97
+Chile,Urbano,Paine,2003,20.67
+Chile,Urbano,Paine,2006,20.63
+Chile,Urbano,Paine,2009,16.60
+Chile,Urbano,Parral,1990,30.05
+Chile,Urbano,Parral,1994,30.35
+Chile,Urbano,Parral,2000,21.24
+Chile,Urbano,Parral,2003,27.96
+Chile,Urbano,Parral,2006,14.07
+Chile,Urbano,Parral,2009,24.85
+Chile,Urbano,Peñaflor,1990,23.01
+Chile,Urbano,Peñaflor,1994,19.75
+Chile,Urbano,Peñaflor,2000,28.42
+Chile,Urbano,Peñaflor,2003,19.23
+Chile,Urbano,Peñaflor,2006,15.23
+Chile,Urbano,Peñaflor,2009,22.00
+Chile,Urbano,Puerto Montt,1990,24.44
+Chile,Urbano,Puerto Montt,1994,29.11
+Chile,Urbano,Puerto Montt,2000,22.73
+Chile,Urbano,Puerto Montt,2003,22.75
+Chile,Urbano,Puerto Montt,2006,25.02
+Chile,Urbano,Puerto Montt,2009,23.00
+Chile,Urbano,Puerto Varas,1990,76.09
+Chile,Urbano,Puerto Varas,1994,81.04
+Chile,Urbano,Puerto Varas,2000,47.97
+Chile,Urbano,Puerto Varas,2003,23.42
+Chile,Urbano,Puerto Varas,2006,17.11
+Chile,Urbano,Puerto Varas,2009,32.47
+Chile,Urbano,Punta Arenas,1990,27.73
+Chile,Urbano,Punta Arenas,1994,13.53
+Chile,Urbano,Punta Arenas,2000,44.12
+Chile,Urbano,Punta Arenas,2003,24.77
+Chile,Urbano,Punta Arenas,2006,12.39
+Chile,Urbano,Punta Arenas,2009,22.61
+Chile,Urbano,Quillota,1990,--
+Chile,Urbano,Quillota,1994,17.10
+Chile,Urbano,Quillota,2000,35.47
+Chile,Urbano,Quillota,2003,17.61
+Chile,Urbano,Quillota,2006,18.29
+Chile,Urbano,Quillota,2009,15.62
+Chile,Urbano,Rancagua,1990,36.95
+Chile,Urbano,Rancagua,1994,--
+Chile,Urbano,Rancagua,2000,20.22
+Chile,Urbano,Rancagua,2003,--
+Chile,Urbano,Rancagua,2006,31.59
+Chile,Urbano,Rancagua,2009,19.20
+Chile,Urbano,Rengo,1990,22.22
+Chile,Urbano,Rengo,1994,32.31
+Chile,Urbano,Rengo,2000,18.74
+Chile,Urbano,Rengo,2003,17.90
+Chile,Urbano,Rengo,2006,26.29
+Chile,Urbano,Rengo,2009,11.71
+Chile,Urbano,San Antonio,1990,21.29
+Chile,Urbano,San Antonio,1994,19.25
+Chile,Urbano,San Antonio,2000,25.06
+Chile,Urbano,San Antonio,2003,21.17
+Chile,Urbano,San Antonio,2006,26.31
+Chile,Urbano,San Antonio,2009,20.17
+Chile,Urbano,San Carlos,1990,19.54
+Chile,Urbano,San Carlos,1994,23.77
+Chile,Urbano,San Carlos,2000,17.51
+Chile,Urbano,San Carlos,2003,31.98
+Chile,Urbano,San Carlos,2006,18.51
+Chile,Urbano,San Carlos,2009,22.19
+Chile,Urbano,San Felipe,1990,17.07
+Chile,Urbano,San Felipe,1994,15.77
+Chile,Urbano,San Felipe,2000,20.49
+Chile,Urbano,San Felipe,2003,16.89
+Chile,Urbano,San Felipe,2006,17.54
+Chile,Urbano,San Felipe,2009,23.72
+Chile,Urbano,San Fernando,1990,23.91
+Chile,Urbano,San Fernando,1994,12.88
+Chile,Urbano,San Fernando,2000,9.88
+Chile,Urbano,San Fernando,2003,19.75
+Chile,Urbano,San Fernando,2006,14.54
+Chile,Urbano,San Fernando,2009,45.18
+Chile,Urbano,San Javier,1990,--
+Chile,Urbano,San Javier,1994,20.03
+Chile,Urbano,San Javier,2000,24.97
+Chile,Urbano,San Javier,2003,18.33
+Chile,Urbano,San Javier,2006,14.30
+Chile,Urbano,San Javier,2009,47.90
+Chile,Urbano,Santiago,1990,33.10
+Chile,Urbano,Santiago,1994,36.91
+Chile,Urbano,Santiago,2000,40.96
+Chile,Urbano,Santiago,2003,37.15
+Chile,Urbano,Santiago,2006,32.10
+Chile,Urbano,Santiago,2009,35.08
+Chile,Urbano,San Vicente,1990,--
+Chile,Urbano,San Vicente,1994,--
+Chile,Urbano,San Vicente,2000,18.58
+Chile,Urbano,San Vicente,2003,12.40
+Chile,Urbano,San Vicente,2006,13.42
+Chile,Urbano,San Vicente,2009,8.03
+Chile,Urbano,Talagante,1990,12.29
+Chile,Urbano,Talagante,1994,11.74
+Chile,Urbano,Talagante,2000,13.66
+Chile,Urbano,Talagante,2003,19.53
+Chile,Urbano,Talagante,2006,13.74
+Chile,Urbano,Talagante,2009,14.00
+Chile,Urbano,Talca,1990,33.50
+Chile,Urbano,Talca,1994,19.80
+Chile,Urbano,Talca,2000,25.71
+Chile,Urbano,Talca,2003,40.44
+Chile,Urbano,Talca,2006,13.93
+Chile,Urbano,Talca,2009,26.89
+Chile,Urbano,Temuco,1990,34.64
+Chile,Urbano,Temuco,1994,28.54
+Chile,Urbano,Temuco,2000,60.66
+Chile,Urbano,Temuco,2003,33.11
+Chile,Urbano,Temuco,2006,31.53
+Chile,Urbano,Temuco,2009,36.75
+Chile,Urbano,Tocopilla,1990,27.09
+Chile,Urbano,Tocopilla,1994,19.32
+Chile,Urbano,Tocopilla,2000,18.55
+Chile,Urbano,Tocopilla,2003,19.52
+Chile,Urbano,Tocopilla,2006,17.07
+Chile,Urbano,Tocopilla,2009,19.30
+Chile,Urbano,Tome,1990,38.07
+Chile,Urbano,Tome,1994,11.93
+Chile,Urbano,Tome,2000,16.94
+Chile,Urbano,Tome,2003,30.02
+Chile,Urbano,Tome,2006,45.11
+Chile,Urbano,Tome,2009,24.43
+Chile,Urbano,Valdivia,1990,19.94
+Chile,Urbano,Valdivia,1994,34.10
+Chile,Urbano,Valdivia,2000,28.78
+Chile,Urbano,Valdivia,2003,36.19
+Chile,Urbano,Valdivia,2006,22.70
+Chile,Urbano,Valdivia,2009,23.19
+Chile,Urbano,Vallenar,1990,21.28
+Chile,Urbano,Vallenar,1994,30.28
+Chile,Urbano,Vallenar,2000,19.74
+Chile,Urbano,Vallenar,2003,23.14
+Chile,Urbano,Vallenar,2006,16.48
+Chile,Urbano,Vallenar,2009,34.82
+Chile,Urbano,Valparaíso,1990,34.79
+Chile,Urbano,Valparaíso,1994,24.89
+Chile,Urbano,Valparaíso,2000,24.46
+Chile,Urbano,Valparaíso,2003,20.85
+Chile,Urbano,Valparaíso,2006,15.91
+Chile,Urbano,Valparaíso,2009,26.40
+Chile,Urbano,Victoria,1990,--
+Chile,Urbano,Victoria,1994,--
+Chile,Urbano,Victoria,2000,31.36
+Chile,Urbano,Victoria,2003,54.68
+Chile,Urbano,Victoria,2006,18.25
+Chile,Urbano,Victoria,2009,13.12
+Chile,Urbano,Villarrica,1990,14.64
+Chile,Urbano,Villarrica,1994,24.68
+Chile,Urbano,Villarrica,2000,13.34
+Chile,Urbano,Villarrica,2003,27.68
+Chile,Urbano,Villarrica,2006,11.33
+Chile,Urbano,Villarrica,2009,26.92
+Colombia,Urbano,Brranquilla,1991,20.43
+Colombia,Urbano,Brranquilla,1994,--
+Colombia,Urbano,Brranquilla,1999,--
+Colombia,Urbano,Brranquilla,2002,33.00
+Colombia,Urbano,Brranquilla,2005,29.48
+Colombia,Urbano,Brranquilla,2010,26.60
+Colombia,Urbano,Bogotá,1991,27.82
+Colombia,Urbano,Bogotá,1994,43.76
+Colombia,Urbano,Bogotá,1999,83.07
+Colombia,Urbano,Bogotá,2002,61.90
+Colombia,Urbano,Bogotá,2005,46.32
+Colombia,Urbano,Bogotá,2010,35.13
+Colombia,Urbano,Bucaramanga,1991,17.70
+Colombia,Urbano,Bucaramanga,1994,--
+Colombia,Urbano,Bucaramanga,1999,--
+Colombia,Urbano,Bucaramanga,2002,26.14
+Colombia,Urbano,Bucaramanga,2005,30.88
+Colombia,Urbano,Bucaramanga,2010,19.31
+Colombia,Urbano,Calí,1991,22.91
+Colombia,Urbano,Calí,1994,--
+Colombia,Urbano,Calí,1999,--
+Colombia,Urbano,Calí,2002,36.90
+Colombia,Urbano,Calí,2005,39.76
+Colombia,Urbano,Calí,2010,50.26
+Colombia,Urbano,Catagena,1991,--
+Colombia,Urbano,Catagena,1994,--
+Colombia,Urbano,Catagena,1999,--
+Colombia,Urbano,Catagena,2002,22.57
+Colombia,Urbano,Catagena,2005,19.34
+Colombia,Urbano,Catagena,2010,26.08
+Colombia,Urbano,Cúcuta,1991,16.34
+Colombia,Urbano,Cúcuta,1994,--
+Colombia,Urbano,Cúcuta,1999,--
+Colombia,Urbano,Cúcuta,2002,28.00
+Colombia,Urbano,Cúcuta,2005,23.98
+Colombia,Urbano,Cúcuta,2010,35.51
+Colombia,Urbano,Ibagué,1991,22.66
+Colombia,Urbano,Ibagué,1994,--
+Colombia,Urbano,Ibagué,1999,--
+Colombia,Urbano,Ibagué,2002,34.84
+Colombia,Urbano,Ibagué,2005,36.69
+Colombia,Urbano,Ibagué,2010,31.13
+Colombia,Urbano,Manizales,1991,22.58
+Colombia,Urbano,Manizales,1994,--
+Colombia,Urbano,Manizales,1999,--
+Colombia,Urbano,Manizales,2002,40.98
+Colombia,Urbano,Manizales,2005,38.89
+Colombia,Urbano,Manizales,2010,35.08
+Colombia,Urbano,Medellín,1991,21.01
+Colombia,Urbano,Medellín,1994,--
+Colombia,Urbano,Medellín,1999,--
+Colombia,Urbano,Medellín,2002,44.77
+Colombia,Urbano,Medellín,2005,38.53
+Colombia,Urbano,Medellín,2010,55.74
+Colombia,Urbano,Monteria,1991,20.28
+Colombia,Urbano,Monteria,1994,--
+Colombia,Urbano,Monteria,1999,--
+Colombia,Urbano,Monteria,2002,35.79
+Colombia,Urbano,Monteria,2005,32.93
+Colombia,Urbano,Monteria,2010,35.05
+Colombia,Urbano,Pasto,1991,21.54
+Colombia,Urbano,Pasto,1994,--
+Colombia,Urbano,Pasto,1999,--
+Colombia,Urbano,Pasto,2002,33.31
+Colombia,Urbano,Pasto,2005,34.01
+Colombia,Urbano,Pasto,2010,33.93
+Colombia,Urbano,Pereira,1991,19.55
+Colombia,Urbano,Pereira,1994,--
+Colombia,Urbano,Pereira,1999,--
+Colombia,Urbano,Pereira,2002,27.75
+Colombia,Urbano,Pereira,2005,25.58
+Colombia,Urbano,Pereira,2010,24.09
+Colombia,Urbano,Villavicencio,1991,--
+Colombia,Urbano,Villavicencio,1994,--
+Colombia,Urbano,Villavicencio,1999,--
+Colombia,Urbano,Villavicencio,2002,33.79
+Colombia,Urbano,Villavicencio,2005,33.90
+Colombia,Urbano,Villavicencio,2010,31.87
+Costa Rica,Urbano,Alajuela,1990,--
+Costa Rica,Urbano,Alajuela,1994,--
+Costa Rica,Urbano,Alajuela,1999,--
+Costa Rica,Urbano,Alajuela,2002,--
+Costa Rica,Urbano,Alajuela,2005,27.97
+Costa Rica,Urbano,Alajuela,2010,25.14
+Costa Rica,Urbano,Cartago,1990,--
+Costa Rica,Urbano,Cartago,1994,--
+Costa Rica,Urbano,Cartago,1999,--
+Costa Rica,Urbano,Cartago,2002,--
+Costa Rica,Urbano,Cartago,2005,--
+Costa Rica,Urbano,Cartago,2010,23.24
+Costa Rica,Urbano,Heredia,1990,--
+Costa Rica,Urbano,Heredia,1994,--
+Costa Rica,Urbano,Heredia,1999,--
+Costa Rica,Urbano,Heredia,2002,--
+Costa Rica,Urbano,Heredia,2005,--
+Costa Rica,Urbano,Heredia,2010,23.03
+Costa Rica,Urbano,Limon,1990,--
+Costa Rica,Urbano,Limon,1994,--
+Costa Rica,Urbano,Limon,1999,--
+Costa Rica,Urbano,Limon,2002,--
+Costa Rica,Urbano,Limon,2005,-- 
+Costa Rica,Urbano,Limon,2010,25.19
+Costa Rica,Urbano,San José,1990,18.76
+Costa Rica,Urbano,San José,1994,19.74
+Costa Rica,Urbano,San José,1999,38.26
+Costa Rica,Urbano,San José,2002,59.00
+Costa Rica,Urbano,San José,2005,64.14
+Costa Rica,Urbano,San José,2010,23.59
+República Dominicana,Urbano,Bonao,1990,--
+República Dominicana,Urbano,Bonao,1994,--
+República Dominicana,Urbano,Bonao,1997,--
+República Dominicana,Urbano,Bonao,2002,--
+República Dominicana,Urbano,Bonao,2005,32.61
+República Dominicana,Urbano,Bonao,2010,36.60
+República Dominicana,Urbano,Higuey,1990,--
+República Dominicana,Urbano,Higuey,1994,--
+República Dominicana,Urbano,Higuey,1997,--
+República Dominicana,Urbano,Higuey,2002,--
+República Dominicana,Urbano,Higuey,2005,24.67
+República Dominicana,Urbano,Higuey,2010,52.78
+República Dominicana,Urbano,La Romana,1990,--
+República Dominicana,Urbano,La Romana,1994,--
+República Dominicana,Urbano,La Romana,1997,--
+República Dominicana,Urbano,La Romana,2002,--
+República Dominicana,Urbano,La Romana,2005,41.20
+República Dominicana,Urbano,La Romana,2010,54.56
+República Dominicana,Urbano,San Cristobal,1990,--
+República Dominicana,Urbano,San Cristobal,1994,--
+República Dominicana,Urbano,San Cristobal,1997,--
+República Dominicana,Urbano,San Cristobal,2002,--
+República Dominicana,Urbano,San Cristobal,2005,33.86
+República Dominicana,Urbano,San Cristobal,2010,19.57
+República Dominicana,Urbano,San Felipe de Puerto Plata,1990,--
+República Dominicana,Urbano,San Felipe de Puerto Plata,1994,--
+República Dominicana,Urbano,San Felipe de Puerto Plata,1997,--
+República Dominicana,Urbano,San Felipe de Puerto Plata,2002,--
+República Dominicana,Urbano,San Felipe de Puerto Plata,2005,34.55
+República Dominicana,Urbano,San Felipe de Puerto Plata,2010,25.95
+República Dominicana,Urbano,San Francisco de Macoris,1990,--
+República Dominicana,Urbano,San Francisco de Macoris,1994,--
+República Dominicana,Urbano,San Francisco de Macoris,1997,--
+República Dominicana,Urbano,San Francisco de Macoris,2002,--
+República Dominicana,Urbano,San Francisco de Macoris,2005,30.20
+República Dominicana,Urbano,San Francisco de Macoris,2010,32.55
+República Dominicana,Urbano,San Pedro de Marcoris,1990,--
+República Dominicana,Urbano,San Pedro de Marcoris,1994,--
+República Dominicana,Urbano,San Pedro de Marcoris,1997,--
+República Dominicana,Urbano,San Pedro de Marcoris,2002,--
+República Dominicana,Urbano,San Pedro de Marcoris,2005,49.39
+República Dominicana,Urbano,San Pedro de Marcoris,2010,28.50
+República Dominicana,Urbano,Santa Cruz de Barahona,1990,--
+República Dominicana,Urbano,Santa Cruz de Barahona,1994,--
+República Dominicana,Urbano,Santa Cruz de Barahona,1997,--
+República Dominicana,Urbano,Santa Cruz de Barahona,2002,--
+República Dominicana,Urbano,Santa Cruz de Barahona,2005,23.49
+República Dominicana,Urbano,Santa Cruz de Barahona,2010,43.57
+República Dominicana,Urbano,Santiago de los Caballeros,1990,--
+República Dominicana,Urbano,Santiago de los Caballeros,1994,--
+República Dominicana,Urbano,Santiago de los Caballeros,1997,--
+República Dominicana,Urbano,Santiago de los Caballeros,2002,--
+República Dominicana,Urbano,Santiago de los Caballeros,2005,48.33
+República Dominicana,Urbano,Santiago de los Caballeros,2010,58.26
+República Dominicana,Urbano,Santo Domingo,1990,--
+República Dominicana,Urbano,Santo Domingo,1994,--
+República Dominicana,Urbano,Santo Domingo,1997,--
+República Dominicana,Urbano,Santo Domingo,2002,--
+República Dominicana,Urbano,Santo Domingo,2005,81.41
+República Dominicana,Urbano,Santo Domingo,2010,63.97
+Ecuador,Urbano,Ambato,1990,--
+Ecuador,Urbano,Ambato,1994,--
+Ecuador,Urbano,Ambato,1999,--
+Ecuador,Urbano,Ambato,2002,18.52
+Ecuador,Urbano,Ambato,2005,29.09
+Ecuador,Urbano,Ambato,2010,17.59
+Ecuador,Urbano,Azogues,1990,--
+Ecuador,Urbano,Azogues,1994,--
+Ecuador,Urbano,Azogues,1999,--
+Ecuador,Urbano,Azogues,2002,--
+Ecuador,Urbano,Azogues,2005,58.45
+Ecuador,Urbano,Azogues,2010,35.64
+Ecuador,Urbano,Babahoyo,1990,--
+Ecuador,Urbano,Babahoyo,1994,--
+Ecuador,Urbano,Babahoyo,1999,--
+Ecuador,Urbano,Babahoyo,2002,--
+Ecuador,Urbano,Babahoyo,2005,17.21
+Ecuador,Urbano,Babahoyo,2010,35.82
+Ecuador,Urbano,Cuenca,1990,--
+Ecuador,Urbano,Cuenca,1994,--
+Ecuador,Urbano,Cuenca,1999,29.75
+Ecuador,Urbano,Cuenca,2002,33.44
+Ecuador,Urbano,Cuenca,2005,21.97
+Ecuador,Urbano,Cuenca,2010,12.32
+Ecuador,Urbano,Eloy Alfaro (Durán),1990,--
+Ecuador,Urbano,Eloy Alfaro (Durán),1994,--
+Ecuador,Urbano,Eloy Alfaro (Durán),1999,--
+Ecuador,Urbano,Eloy Alfaro (Durán),2002,12.81
+Ecuador,Urbano,Eloy Alfaro (Durán),2005,18.89
+Ecuador,Urbano,Eloy Alfaro (Durán),2010,20.41
+Ecuador,Urbano,Esmeraldas,1990,--
+Ecuador,Urbano,Esmeraldas,1994,--
+Ecuador,Urbano,Esmeraldas,1997,--
+Ecuador,Urbano,Esmeraldas,2002,--
+Ecuador,Urbano,Esmeraldas,2005,42.10
+Ecuador,Urbano,Esmeraldas,2010,33.91
+Ecuador,Urbano,Guaranda,1990,--
+Ecuador,Urbano,Guaranda,1994,--
+Ecuador,Urbano,Guaranda,1999,--
+Ecuador,Urbano,Guaranda,2002,--
+Ecuador,Urbano,Guaranda,2005,29.71
+Ecuador,Urbano,Guaranda,2010,21.00
+Ecuador,Urbano,Guayaquil,1990,--
+Ecuador,Urbano,Guayaquil,1994,--
+Ecuador,Urbano,Guayaquil,1999,29.32
+Ecuador,Urbano,Guayaquil,2002,29.36
+Ecuador,Urbano,Guayaquil,2005,25.96
+Ecuador,Urbano,Guayaquil,2010,13.31
+Ecuador,Urbano,Ibarra,1990,--
+Ecuador,Urbano,Ibarra,1994,--
+Ecuador,Urbano,Ibarra,1999,--
+Ecuador,Urbano,Ibarra,2002,--
+Ecuador,Urbano,Ibarra,2005,23.17
+Ecuador,Urbano,Ibarra,2010,26.67
+Ecuador,Urbano,La Mana,1990,--
+Ecuador,Urbano,,1994,--
+Ecuador,Urbano,,1999,--
+Ecuador,Urbano,,2002,--
+Ecuador,Urbano,,2005,27.28
+Ecuador,Urbano,,2010,15.45
+Ecuador,Urbano,La Troncal,1990,--
+Ecuador,Urbano,La Troncal,1994,--
+Ecuador,Urbano,La Troncal,1999,--
+Ecuador,Urbano,La Troncal,2002,--
+Ecuador,Urbano,La Troncal,2005,47.35
+Ecuador,Urbano,La Troncal,2010,13.20
+Ecuador,Urbano,Latacunga,1990,--
+Ecuador,Urbano,Latacunga,1994,--
+Ecuador,Urbano,Latacunga,1999,--
+Ecuador,Urbano,Latacunga,2002,--
+Ecuador,Urbano,Latacunga,2005,35.62
+Ecuador,Urbano,Latacunga,2010,21.02
+Ecuador,Urbano,Loja,1990,--
+Ecuador,Urbano,Loja,1994,--
+Ecuador,Urbano,Loja,1999,--
+Ecuador,Urbano,Loja,2002,33.43
+Ecuador,Urbano,Loja,2005,21.68
+Ecuador,Urbano,Loja,2010,20.29
+Ecuador,Urbano,Machala,1990,--
+Ecuador,Urbano,Machala,1994,--
+Ecuador,Urbano,Machala,1999,18.51
+Ecuador,Urbano,Machala,2002,20.07
+Ecuador,Urbano,Machala,2005,18.22
+Ecuador,Urbano,Machala,2010,18.17
+Ecuador,Urbano,Manta,1990,--
+Ecuador,Urbano,Manta,1994,--
+Ecuador,Urbano,Manta,1999,--
+Ecuador,Urbano,Manta,2002,18.95
+Ecuador,Urbano,Manta,2005,17.23
+Ecuador,Urbano,Manta,2010,20.82
+Ecuador,Urbano,Nueva Loja,1990,--
+Ecuador,Urbano,Nueva Loja,1994,--
+Ecuador,Urbano,Nueva Loja,1999,--
+Ecuador,Urbano,Nueva Loja,2002,38.82
+Ecuador,Urbano,Nueva Loja,2005,27.15
+Ecuador,Urbano,Nueva Loja,2010,25.58
+Ecuador,Urbano,Portoviejo,1990,--
+Ecuador,Urbano,Portoviejo,1994,--
+Ecuador,Urbano,Portoviejo,1999,--
+Ecuador,Urbano,Portoviejo,2002,28.94
+Ecuador,Urbano,Portoviejo,2005,24.46
+Ecuador,Urbano,Portoviejo,2010,16.80
+Ecuador,Urbano,Quevedo,1990,--
+Ecuador,Urbano,Quevedo,1994,--
+Ecuador,Urbano,Quevedo,1999,--
+Ecuador,Urbano,Quevedo,2002,--
+Ecuador,Urbano,Quevedo,2005,21.66
+Ecuador,Urbano,Quevedo,2010,9.69
+Ecuador,Urbano,Quito,1990,26.09
+Ecuador,Urbano,Quito,1994,24.01
+Ecuador,Urbano,Quito,1999,37.61
+Ecuador,Urbano,Quito,2002,29.08
+Ecuador,Urbano,Quito,2005,33.47
+Ecuador,Urbano,Quito,2010,31.55
+Ecuador,Urbano,Riobamba,1990,--
+Ecuador,Urbano,Riobamba,1994,--
+Ecuador,Urbano,Riobamba,1999,--
+Ecuador,Urbano,Riobamba,2002,27.01
+Ecuador,Urbano,Riobamba,2005,23.17
+Ecuador,Urbano,Riobamba,2010,21.09
+Ecuador,Urbano,Tulcan,1990,--
+Ecuador,Urbano,Tulcan,1994,--
+Ecuador,Urbano,Tulcan,1999,--
+Ecuador,Urbano,Tulcan,2002,--
+Ecuador,Urbano,Tulcan,2005,17.30
+Ecuador,Urbano,Tulcan,2010,35.20
+Ecuador,Urbano,Vuelta Larga,1990,--
+Ecuador,Urbano,Vuelta Larga,1994,--
+Ecuador,Urbano,Vuelta Larga,1999,--
+Ecuador,Urbano,Vuelta Larga,2002,--
+Ecuador,Urbano,Vuelta Larga,2005,19.14
+Ecuador,Urbano,Vuelta Larga,2010,34.90
+El Salvador,Urbano,San Salvador,1990,--
+El Salvador,Urbano,San Salvador,1997,18.68
+El Salvador,Urbano,San Salvador,1999,19.36
+El Salvador,Urbano,San Salvador,2002,--
+El Salvador,Urbano,San Salvador,2004,19.45
+El Salvador,Urbano,San Salvador,2010,14.05
+Guatemala ,Urbano,Guatemala Ciudad,1989,34.26
+Guatemala ,Urbano,Guatemala Ciudad,1994,--
+Guatemala ,Urbano,Guatemala Ciudad,1998,24.13
+Guatemala ,Urbano,Guatemala Ciudad,2002,36.21
+Guatemala ,Urbano,Guatemala Ciudad,2006,23.92
+Guatemala ,Urbano,Guatemala Ciudad,2010,--
+Honduras,Urbano,San Pedro Sula,1990,34.43
+Honduras,Urbano,San Pedro Sula,1994,34.98
+Honduras,Urbano,San Pedro Sula,1999,26.94
+Honduras,Urbano,San Pedro Sula,2002,28.39
+Honduras,Urbano,San Pedro Sula,2006,24.79
+Honduras,Urbano,San Pedro Sula,2010,54.63
+Honduras,Urbano,Tegucigalpa,1990,41.63
+Honduras,Urbano,Tegucigalpa,1994,41.48
+Honduras,Urbano,Tegucigalpa,1999,34.45
+Honduras,Urbano,Tegucigalpa,2002,35.18
+Honduras,Urbano,Tegucigalpa,2006,36.99
+Honduras,Urbano,Tegucigalpa,2010,51.76
+México,Urbano,Chetumal,1989,--
+México,Urbano,Chetumal,1994,27.12
+México,Urbano,Chetumal,2002,--
+México,Urbano,Chetumal,2005,23.38
+México,Urbano,Chetumal,2010,23.08
+México,Urbano,Chihuahua,1989,--
+México,Urbano,Chihuahua,1994,--
+México,Urbano,Chihuahua,2002,17.26
+México,Urbano,Chihuahua,2005,15.54
+México,Urbano,Chihuahua,2010,20.34
+México,Urbano,Ciudad Juarez,1989,--
+México,Urbano,Ciudad Juarez,1994,--
+México,Urbano,Ciudad Juarez,2002,12.59
+México,Urbano,Ciudad Juarez,2005,23.53
+México,Urbano,Ciudad Juarez,2010,18.25
+México,Urbano,Colima,1989,--
+México,Urbano,Colima,1994,8.80
+México,Urbano,Colima,2002,14.91
+México,Urbano,Colima,2005,13.76
+México,Urbano,Colima,2010,14.10
+México,Urbano,Cuernavaca,1989,--
+México,Urbano,Cuernavaca,1994,--
+México,Urbano,Cuernavaca,2002,14.72
+México,Urbano,Cuernavaca,2005,15.24
+México,Urbano,Cuernavaca,2010,13.66
+México,Urbano,Culiacán Rosales,1989,--
+México,Urbano,Culiacán Rosales,1994,--
+México,Urbano,Culiacán Rosales,2002,18.75
+México,Urbano,Culiacán Rosales,2005,19.65
+México,Urbano,Culiacán Rosales,2010,12.15
+México,Urbano,Durango,1989,--
+México,Urbano,Durango,1994,17.69
+México,Urbano,Durango,2002,17.88
+México,Urbano,Durango,2005,12.41
+México,Urbano,Durango,2010,11.50
+México,Urbano,Guadalajara,1989,23.94
+México,Urbano,Guadalajara,1994,--
+México,Urbano,Guadalajara,2002,15.15
+México,Urbano,Guadalajara,2005,12.23
+México,Urbano,Guadalajara,2010,13.62
+México,Urbano,Hermosillo,1989,--
+México,Urbano,Hermosillo,1994,--
+México,Urbano,Hermosillo,2002,13.55
+México,Urbano,Hermosillo,2005,33.45
+México,Urbano,Hermosillo,2010,14.16
+México,Urbano,Irapuato,1989,--
+México,Urbano,Irapuato,1994,--
+México,Urbano,Irapuato,2002,--
+México,Urbano,Irapuato,2005,13.33
+México,Urbano,Irapuato,2010,17.66
+México,Urbano,León,1989,--
+México,Urbano,León,1994,--
+México,Urbano,León,2002,8.64
+México,Urbano,León,2005,15.98
+México,Urbano,León,2010,14.57
+México,Urbano,Mérida,1989,--
+México,Urbano,Mérida,1994,--
+México,Urbano,Mérida,2002,9.42
+México,Urbano,Mérida,2005,22.31
+México,Urbano,Mérida,2010,15.09
+México,Urbano,Mexicali,1989,14.00
+México,Urbano,Mexicali,1994,--
+México,Urbano,Mexicali,2002,14.84
+México,Urbano,Mexicali,2005,8.77
+México,Urbano,Mexicali,2010,20.41
+México,Urbano,México Ciudad,1989,27.70
+México,Urbano,México Ciudad,1994,27.92
+México,Urbano,México Ciudad,2002,20.09
+México,Urbano,México Ciudad,2005,29.27
+México,Urbano,México Ciudad,2010,20.39
+México,Urbano,Monterrey,1989,19.49
+México,Urbano,Monterrey,1994,17.78
+México,Urbano,Monterrey,2002,19.24
+México,Urbano,Monterrey,2005,13.37
+México,Urbano,Monterrey,2010,11.64
+México,Urbano,Morelia,1989,--
+México,Urbano,Morelia,1994,--
+México,Urbano,Morelia,2002,--
+México,Urbano,Morelia,2005,24.21
+México,Urbano,Morelia,2010,15.77
+México,Urbano,Oaxaca de Juárez,1989,--
+México,Urbano,Oaxaca de Juárez,1994,--
+México,Urbano,Oaxaca de Juárez,2002,9.28
+México,Urbano,Oaxaca de Juárez,2005,15.37
+México,Urbano,Oaxaca de Juárez,2010,9.53
+México,Urbano,Puebla,1989,--
+México,Urbano,Puebla,1994,--
+México,Urbano,Puebla,2002,17.28
+México,Urbano,Puebla,2005,--
+México,Urbano,Puebla,2010,10.79
+México,Urbano,Saltillo,1989,--
+México,Urbano,Saltillo,1994,25.88
+México,Urbano,Saltillo,2002,10.28
+México,Urbano,Saltillo,2005,17.31
+México,Urbano,Saltillo,2010,17.02
+México,Urbano,San Francisco de Campeche,1989,--
+México,Urbano,San Francisco de Campeche,1994,6.09
+México,Urbano,San Francisco de Campeche,2002,16.75
+México,Urbano,San Francisco de Campeche,2005,23.79
+México,Urbano,San Francisco de Campeche,2010,--
+México,Urbano,San Luis de Potosí,1989,16.48
+México,Urbano,San Luis de Potosí,1994,--
+México,Urbano,San Luis de Potosí,2002,--
+México,Urbano,San Luis de Potosí,2005,--
+México,Urbano,San Luis de Potosí,2010,12.47
+México,Urbano,Santiago de Querétaro,1989,--
+México,Urbano,Santiago de Querétaro,1994,--
+México,Urbano,Santiago de Querétaro,2002,13.86
+México,Urbano,Santiago de Querétaro,2005,21.44
+México,Urbano,Santiago de Querétaro,2010,16.75
+México,Urbano,Tampico,1989,--
+México,Urbano,Tampico,1994,--
+México,Urbano,Tampico,2002,--
+México,Urbano,Tampico,2005,16.87
+México,Urbano,Tampico,2010,12.99
+México,Urbano,Tepic,1989,17.81
+México,Urbano,Tepic,1994,--
+México,Urbano,Tepic,2002,20.10
+México,Urbano,Tepic,2005,11.35
+México,Urbano,Tepic,2010,8.45
+México,Urbano,Tijuana,1989,13.10
+México,Urbano,Tijuana,1994,--
+México,Urbano,Tijuana,2002,11.71
+México,Urbano,Tijuana,2005,20.55
+México,Urbano,Tijuana,2010,21.33
+México,Urbano,Toluca de Lerdo,1989,--
+México,Urbano,Toluca de Lerdo,1994,15.95
+México,Urbano,Toluca de Lerdo,2002,22.81
+México,Urbano,Toluca de Lerdo,2005,24.12
+México,Urbano,Toluca de Lerdo,2010,--
+México,Urbano,Torreón,1989,--
+México,Urbano,Torreón,1994,11.31
+México,Urbano,Torreón,2002,10.63
+México,Urbano,Torreón,2005,28.72
+México,Urbano,Torreón,2010,11.77
+México,Urbano,Tuxtla Gutierrez,1989,--
+México,Urbano,Tuxtla Gutierrez,1994,--
+México,Urbano,Tuxtla Gutierrez,2002,16.43
+México,Urbano,Tuxtla Gutierrez,2005,20.43
+México,Urbano,Tuxtla Gutierrez,2010,18.16
+México,Urbano,Veracruz,1989,--
+México,Urbano,Veracruz,1994,14.90
+México,Urbano,Veracruz,2002,17.84
+México,Urbano,Veracruz,2005,12.65
+México,Urbano,Veracruz,2010,12.43
+México,Urbano,Villahermosa,1989,17.87
+México,Urbano,Villahermosa,1994,--
+México,Urbano,Villahermosa,2002,34.20
+México,Urbano,Villahermosa,2005,27.46
+México,Urbano,Villahermosa,2010,10.67
+México,Urbano,Zacatecas,1989,--
+México,Urbano,Zacatecas,1994,--
+México,Urbano,Zacatecas,2002,25.85
+México,Urbano,Zacatecas,2005,17.19
+México,Urbano,Zacatecas,2010,17.50
+Nicaragua,Urbano,Chinandega,1993,--
+Nicaragua,Urbano,Chinandega,1998,13.61
+Nicaragua,Urbano,Chinandega,2001,23.31
+Nicaragua,Urbano,Chinandega,2005,12.37
+Nicaragua,Urbano,Estelí,1993,--
+Nicaragua,Urbano,Estelí,1998,19.25
+Nicaragua,Urbano,Estelí,2001,30.35
+Nicaragua,Urbano,Estelí,2005,20.86
+Nicaragua,Urbano,Granada,1993,50.00
+Nicaragua,Urbano,Granada,1998,20.75
+Nicaragua,Urbano,Granada,2001,26.42
+Nicaragua,Urbano,Granada,2005,25.60
+Nicaragua,Urbano,León,1993,50.42
+Nicaragua,Urbano,León,1998,24.41
+Nicaragua,Urbano,León,2001,9.32
+Nicaragua,Urbano,León,2005,23.99
+Nicaragua,Urbano,Managua,1993,51.82
+Nicaragua,Urbano,Managua,1998,56.43
+Nicaragua,Urbano,Managua,2001,53.33
+Nicaragua,Urbano,Managua,2005,26.62
+Nicaragua,Urbano,Masaya,1993,--
+Nicaragua,Urbano,Masaya,1998,25.76
+Nicaragua,Urbano,Masaya,2001,51.44
+Nicaragua,Urbano,Masaya,2005,24.61
+Nicaragua,Urbano,Nueva Guinea,1993,--
+Nicaragua,Urbano,Nueva Guinea,1998,--
+Nicaragua,Urbano,Nueva Guinea,2001,40.09
+Nicaragua,Urbano,Nueva Guinea,2005,34.30
+Panamá,Urbano,Chitre,1991,--
+Panamá,Urbano,Chitre,1994,--
+Panamá,Urbano,Chitre,1999,--
+Panamá,Urbano,Chitre,2002,--
+Panamá,Urbano,Chitre,2005,21.46
+Panamá,Urbano,Chitre,2010,15.73
+Panamá,Urbano,Colón,1991,--
+Panamá,Urbano,Colón,1994,--
+Panamá,Urbano,Colón,1999,--
+Panamá,Urbano,Colón,2002,--
+Panamá,Urbano,Colón,2005,24.55
+Panamá,Urbano,Colón,2010,22.82
+Panamá,Urbano,David,1991,--
+Panamá,Urbano,David,1994,--
+Panamá,Urbano,David,1999,--
+Panamá,Urbano,David,2002,--
+Panamá,Urbano,David,2005,20.07
+Panamá,Urbano,David,2010,18.40
+Panamá,Urbano,Panamá Ciudad,1991,60.27
+Panamá,Urbano,Panamá Ciudad,1994,42.13
+Panamá,Urbano,Panamá Ciudad,1999,34.40
+Panamá,Urbano,Panamá Ciudad,2002,35.17
+Panamá,Urbano,Panamá Ciudad,2005,25.43
+Panamá,Urbano,Panamá Ciudad,2010,20.33
+Paraguay,Urbano,Asunción,1990,16.70
+Paraguay,Urbano,Asunción,1994,23.17
+Paraguay,Urbano,Asunción,2000,31.02
+Paraguay,Urbano,Asunción,2005,24.89
+Paraguay,Urbano,Asunción,2010,31.84
+Perú,Urbano,Arequipa,1999,--
+Perú,Urbano,Arequipa,2003,21.29
+Perú,Urbano,Arequipa,2006,13.25
+Perú,Urbano,Arequipa,2010,12.19
+Perú,Urbano,Ayacucho,1999,--
+Perú,Urbano,Ayacucho,2003,8.63
+Perú,Urbano,Ayacucho,2006,12.87
+Perú,Urbano,Ayacucho,2010,12.63
+Perú,Urbano,Bagua Grande,1999,--
+Perú,Urbano,Bagua Grande,2003,14.56
+Perú,Urbano,Bagua Grande,2006,15.41
+Perú,Urbano,Bagua Grande,2010,15.49
+Perú,Urbano,Cajamarca,1999,11.73
+Perú,Urbano,Cajamarca,2003,12.27
+Perú,Urbano,Cajamarca,2006,22.77
+Perú,Urbano,Cajamarca,2010,16.42
+Perú,Urbano,Cerro de Pasco,1999,--
+Perú,Urbano,Cerro de Pasco,2003,11.17
+Perú,Urbano,Cerro de Pasco,2006,18.66
+Perú,Urbano,Cerro de Pasco,2010,12.86
+Perú,Urbano,Chiclayo,1999,--
+Perú,Urbano,Chiclayo,2003,12.92
+Perú,Urbano,Chiclayo,2006,12.51
+Perú,Urbano,Chiclayo,2010,11.24
+Perú,Urbano,Chimbote,1999,--
+Perú,Urbano,Chimbote,2003,6.80
+Perú,Urbano,Chimbote,2006,7.65
+Perú,Urbano,Chimbote,2010,8.64
+Perú,Urbano,Cusco,1999,--
+Perú,Urbano,Cusco,2003,12.87
+Perú,Urbano,Cusco,2006,15.89
+Perú,Urbano,Cusco,2010,15.23
+Perú,Urbano,Huancavelica,1999,--
+Perú,Urbano,Huancavelica,2003,22.99
+Perú,Urbano,Huancavelica,2006,13.74
+Perú,Urbano,Huancavelica,2010,--
+Perú,Urbano,Huancayo,1999,--
+Perú,Urbano,Huancayo,2003,10.72
+Perú,Urbano,Huancayo,2006,13.07
+Perú,Urbano,Huancayo,2010,8.52
+Perú,Urbano,Huanuco,1999,--
+Perú,Urbano,Huanuco,2003,9.03
+Perú,Urbano,Huanuco,2006,15.2
+Perú,Urbano,Huanuco,2010,--
+Perú,Urbano,Ica,1999,--
+Perú,Urbano,Ica,2003,6.90
+Perú,Urbano,Ica,2006,7.01
+Perú,Urbano,Ica,2010,6.90
+Perú,Urbano,Ilo,1999,--
+Perú,Urbano,Ilo,2003,12.19
+Perú,Urbano,Ilo,2006,19.24
+Perú,Urbano,Ilo,2010,11.35
+Perú,Urbano,Iquitos,1999,--
+Perú,Urbano,Iquitos,2003,11.20
+Perú,Urbano,Iquitos,2006,15.54
+Perú,Urbano,Iquitos,2010,16.76
+Perú,Urbano,Juliaca,1999,--
+Perú,Urbano,Juliaca,2003,18.67
+Perú,Urbano,Juliaca,2006,9.11
+Perú,Urbano,Juliaca,2010,11.09
+Perú,Urbano,Lapeca,1999,--
+Perú,Urbano,Lapeca,2003,--
+Perú,Urbano,Lapeca,2006,12.35
+Perú,Urbano,Lapeca,2010,13.49
+Perú,Urbano,Lima,1999,26.95
+Perú,Urbano,Lima,2003,24.09
+Perú,Urbano,Lima,2006,13.27
+Perú,Urbano,Lima,2010,12.83
+Perú,Urbano,Moquegua,1999,--
+Perú,Urbano,Moquegua,2003,17.09
+Perú,Urbano,Moquegua,2006,16.94
+Perú,Urbano,Moquegua,2010,12.22
+Perú,Urbano,Moyobamba,1999,--
+Perú,Urbano,Moyobamba,2003,--
+Perú,Urbano,Moyobamba,2006,16.41
+Perú,Urbano,Moyobamba,2010,12.22
+Perú,Urbano,Piura,1999,--
+Perú,Urbano,Piura,2003,16.68
+Perú,Urbano,Piura,2006,12.21
+Perú,Urbano,Piura,2010,12.38
+Perú,Urbano,Pucallpa,1999,--
+Perú,Urbano,Pucallpa,2003,11.49
+Perú,Urbano,Pucallpa,2006,9.50
+Perú,Urbano,Pucallpa,2010,7.37
+Perú,Urbano,Sullana,1999,--
+Perú,Urbano,Sullana,2003,13.30
+Perú,Urbano,Sullana,2006,8.72
+Perú,Urbano,Sullana,2010,7.31
+Perú,Urbano,Tacna,1999,--
+Perú,Urbano,Tacna,2003,20.08
+Perú,Urbano,Tacna,2006,12.30
+Perú,Urbano,Tacna,2010,10.31
+Perú,Urbano,Tambo Pata,1999,--
+Perú,Urbano,Tambo Pata,2003,9.12
+Perú,Urbano,Tambo Pata,2006,11.32
+Perú,Urbano,Tambo Pata,2010,8.65
+Perú,Urbano,Tarapoto,1999,--
+Perú,Urbano,Tarapoto,2003,11.54
+Perú,Urbano,Tarapoto,2006,16.82
+Perú,Urbano,Tarapoto,2010,13.79
+Perú,Urbano,Trujillo,1999,--
+Perú,Urbano,Trujillo,2003,13.53
+Perú,Urbano,Trujillo,2006,12.23
+Perú,Urbano,Trujillo,2010,11.87
+Perú,Urbano,Tumbes,1999,--
+Perú,Urbano,Tumbes,2003,8.76
+Perú,Urbano,Tumbes,2006,7.70
+Perú,Urbano,Tumbes,2010,7.21
+Uruguay,Urbano,Montevideo,1990,24.27
+Uruguay,Urbano,Montevideo,1994,14.82
+Uruguay,Urbano,Montevideo,1999,19.01
+Uruguay,Urbano,Montevideo,2002,19.58
+Uruguay,Urbano,Montevideo,2005,22.49
+Uruguay,Urbano,Montevideo,2010,17.38
+Venezuela (República Bolivariana de),Urbano,Caracas,1990,16.14
+Venezuela (República Bolivariana de),Urbano,Caracas,1994,17.79
+Venezuela (República Bolivariana de),Urbano,Caracas,1999,24.85
+Venezuela (República Bolivariana de),Urbano,Caracas,2002,27.06
+Venezuela (República Bolivariana de),Urbano,Caracas,2005,27.84
+Venezuela (República Bolivariana de),Urbano,Caracas,2010,15.25
