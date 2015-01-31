@@ -1,4 +1,4 @@
-/* Gini chart */
+/*
 gini-path { 
   stroke: steelblue;
   stroke-width: 2;
@@ -16,7 +16,7 @@ gini-path {
   shape-rendering: crispEdges;
 }
 
-/* */
+
 .chart rect {
   fill: steelblue;
 }
@@ -27,7 +27,7 @@ gini-path {
   text-anchor: middle;
 }
 
-/* Income chart style */
+ Income chart style
 
 linechartpath { 
   stroke: steelblue;
@@ -45,19 +45,22 @@ linechartpath {
   stroke-width: 1;
   shape-rendering: crispEdges;
 }
+*/
 
-/* Map edges */
-.axis path {
-  display: none;
-}
 
-.axis line {
+/* Gini chart */
+#chart1a path { 
+  stroke: steelblue;
+  stroke-width: 2;
   fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+}
+  
+#chart1a .axis path {
+ stroke: lightgrey;
 }
 
-.group-label {
-  font-weight: bold;
-  text-anchor: end;
+#chart1a .axis line {
+ stroke: lightgrey;
+ stroke-width: 1;
+ shape-rendering: crispEdges;
 }

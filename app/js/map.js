@@ -17,6 +17,18 @@ var svg = d3.select(".map").append("svg")
 	.attr("width", width)
 	.attr("height", height);
 
+// Map legend
+svg.append("circle").attr("cx",40).attr("cy",300).attr("r", 4).attr("class","c1");
+svg.append("text").attr("x",55).attr("y",304).attr("class","legend").text("D1");
+svg.append("circle").attr("cx",40).attr("cy",315).attr("r", 4).attr("class","c2");
+svg.append("text").attr("x",55).attr("y",319).attr("class","legend").text("D2");
+svg.append("circle").attr("cx",40).attr("cy",330).attr("r", 4).attr("class","c3");
+svg.append("text").attr("x",55).attr("y",334).attr("class","legend").text("D3");
+svg.append("circle").attr("cx",40).attr("cy",345).attr("r", 4).attr("class","c4");
+svg.append("text").attr("x",55).attr("y",349).attr("class","legend").text("D4");
+svg.append("circle").attr("cx",40).attr("cy",360).attr("r", 4).attr("class","c5");
+svg.append("text").attr("x",55).attr("y",364).attr("class","legend").text("D5");
+
 svg.append("rect")
     .attr("class", "background")
 	.attr("width", width)
@@ -30,8 +42,7 @@ var compareFlag = false;
 var cityView = false;
 var current;
 
-var dropDown = d3.selectAll(".map").append("select").attr("name", "country-list");
-
+//var dropDown = d3.selectAll(".map").append("select").attr("name", "country-list");
 
 d3.json("../data/la.json", function(error, la) {
 	var countries = topojson.feature(la, la.objects.countries);
@@ -85,17 +96,15 @@ d3.json("../data/la.json", function(error, la) {
 		.attr("visibility", "hidden")
 		.on("click", onCityClick);
 
+
 	g.selectAll(".city-label")
 		.data(cities.features)
-		.enter().append("text")
-		.attr("class", "city-label")
+		.enter().append("text")		
 		.attr("transform", function(d, i) { 
-			return "translate(90," + i * 6 + ")"; 
+			d3.select("#city-selector").append("option").text(d.properties.name);
+			return;
+			//return "translate(90," + i * 6 + ")"; 
 		})
-		.attr("x", 100)
-		.attr("y", 1)
-		.attr("dy", 1)
-		.attr("visibility", "hidden")
 		.on("click", onCityClick);
 	
 });
@@ -166,6 +175,10 @@ function closeRightPanel() {
 }
 
 function onCountryClick(d) {
+	d3.select("#chart1a").selectAll("*").remove();
+	country = d.properties.name;
+	graphgini("../data/indicegini.csv",country,country);
+
 	current = document.getElementById('current').innerHTML;
 	//var current_chart = "";
 	//current_chart = current_chart.concat("chart",current,"a");
@@ -322,8 +335,7 @@ function prev() {
 }
 
 function reset() {
-	hideCities();
-
+	
 	if(compareFlag == false) {
 		//hideLeftPanel();
 		//hideRightPanel();

@@ -1,11 +1,17 @@
 /* ********** */
 /* Map styles */
 /* ********** */
-.country.c1 { fill: #eff3ff; }
-.country.c2 { fill: #bdd7e7; }
-.country.c3 { fill: #6baed6; }
-.country.c4 { fill: #3182bd; }
-.country.c5 { fill: #08519c; }
+.c1 { fill: #eff3ff; }
+.c2 { fill: #bdd7e7; }
+.c3 { fill: #6baed6; }
+.c4 { fill: #3182bd; }
+.c5 { fill: #08519c; }
+
+.legend {
+  fill: #666;
+  font-size: 0.75em;
+  font-weight: 300;
+}
 
 .country-boundary {
 	fill: none;
@@ -42,7 +48,7 @@
 	stroke-width:2px;
 } */
 
-/* Map edges */
+/* Map edges 
 .axis path {
   display: none;
 }
@@ -52,6 +58,7 @@
   stroke: #000;
   shape-rendering: crispEdges;
 }
+*/
 
 text {
 	font-family: 'Open Sans', sans-serif;
@@ -92,3 +99,20 @@ div.tooltip {
     background: yellow;
     border-radius: 8px;  
     pointer-events: none;
+
+/* Map edges 
+.axis path {
+  display: none;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.group-label {
+  font-weight: bold;
+  text-anchor: end;
+}
+*/
