@@ -42,6 +42,10 @@
   /*visibility: hidden; */
 }
 
+.city-hover {
+  fill: #fd8d3c;
+}
+
 /* .states {
 	fill: #e5e5e5;
 	stroke: #fff;

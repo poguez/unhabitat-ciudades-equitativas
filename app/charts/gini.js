@@ -1,4 +1,4 @@
-function graphgini(data,pais,ciudad) {
+function graphgini(panel,data,pais,ciudad) {
     var giniCityData = [];
     var giniNacionalData = [];
  
@@ -75,8 +75,11 @@ function graphgini(data,pais,ciudad) {
         .y(function(d) { return y(d["gini"]); });
  
     // Adds the svg canvas
- 
-    var canvas = d3.select("#chart1a");
+    if(panel == "left") {
+        var canvas = d3.select("#chart1a");
+    } else if (panel == "right") {
+        var canvas = d3.select("#chart1b");
+    }
  
     var svg = canvas
         .append("svg")

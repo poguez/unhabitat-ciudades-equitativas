@@ -74,7 +74,10 @@ d3.json("../data/la.json", function(error, la) {
 		.data(countries.features)
 		.enter().append("text")
 		.attr("class", function(d) { return "country-label " + d.id; })
-		.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+		.attr("transform", function(d) { 
+			d3.select("#country-selector").append("option").text(d.properties.name);
+			return "translate(" + path.centroid(d) + ")"; }
+		)
 		.attr("dy", ".35em")
 		.text(function(d) { return d.properties.name; });
 	
@@ -86,6 +89,7 @@ d3.json("../data/la.json", function(error, la) {
 		.attr("d", path)
 		.attr("visibility", "hidden")
 		.on("mouseover", function(d) {
+			d3.select(this).attr("class", "city-hover");
 		})
 		.on("click", onCityClick);
 
@@ -103,7 +107,6 @@ d3.json("../data/la.json", function(error, la) {
 		.attr("transform", function(d, i) { 
 			d3.select("#city-selector").append("option").text(d.properties.name);
 			return;
-			//return "translate(90," + i * 6 + ")"; 
 		})
 		.on("click", onCityClick);
 	
@@ -174,10 +177,23 @@ function closeRightPanel() {
 	document.getElementById('panel-right').style.visibility="hidden";
 }
 
+function addPanel(type, title) {
+	console.log("adding panel");
+	if(type == "left") {
+		document.getElementById("entity-a").innerHTML = title;
+		showLeftPanel();
+	} else if (type == "right") {
+		document.getElementById("entity-b").innerHTML = title;
+		showRightPanel();
+	}
+	graphgini("right", "../data/indicegini.csv",title,title);
+}
+
+
 function onCountryClick(d) {
 	d3.select("#chart1a").selectAll("*").remove();
 	country = d.properties.name;
-	graphgini("../data/indicegini.csv",country,country);
+	graphgini("left","../data/indicegini.csv",country,country);
 
 	current = document.getElementById('current').innerHTML;
 	//var current_chart = "";
@@ -285,6 +301,16 @@ function onCityClick(d) {
 	}
 }
 
+function compareWith() {
+	entity = document.getElementById("city-selector").value;
+	compareEntity(entity);
+}
+
+function compareEntity(entity) {
+	addPanel("right", entity);
+}
+
+// Function for iterating to the next graph in the panel.
 function next() {
 	current = document.getElementById('current').innerHTML;
 	total = document.getElementById('total').innerHTML;
@@ -292,8 +318,16 @@ function next() {
 	if(current < total) {
 		current++;
 		current = parseInt(document.getElementById('current').innerHTML = current);
+	} else if(current == total) {
+		current = 1;
+		current = parseInt(document.getElementById('current').innerHTML = current);
 	}
+	// Changes the chart that is displayed in the panel.
 	switch(current) {
+		case 1:
+			document.getElementById('chart4a').style.display = "none";
+			document.getElementById('chart1a').style.display = "block";
+			break;
 		case 2:
 			document.getElementById('chart1a').style.display = "none";
 			document.getElementById('chart2a').style.display = "block";
@@ -311,11 +345,16 @@ function next() {
 	}
 }
 
+// Function for iterating to the previous graph in the panel.
 function prev() {
 	if(current > 1) {
 		current--;
 		current = parseInt(document.getElementById('current').innerHTML = current);
+	} else if(current == 1) {
+		current = 4;
+		current = parseInt(document.getElementById('current').innerHTML = current);
 	}
+	// Changes the chart that is displayed in the panel.
 	switch(current) {
 		case 1:
 			document.getElementById('chart2a').style.display = "none";
@@ -329,22 +368,16 @@ function prev() {
 			document.getElementById('chart4a').style.display = "none";
 			document.getElementById('chart3a').style.display = "block";
 			break;
+		case 4:
+			document.getElementById('chart1a').style.display = "none";
+			document.getElementById('chart4a').style.display = "block";
+			break;
 		default:
 			break;
 	}
 }
 
 function reset() {
-	
-	if(compareFlag == false) {
-		//hideLeftPanel();
-		//hideRightPanel();
-		//document.getElementById('entity-a').innerHTML="";
-	} 
-	else if(compareFlag == true) {
-		//hideRightPanel();
-	}
-
 	active.classed("active", false);
 	active = d3.select(null);
 
@@ -362,13 +395,8 @@ function reset() {
 	showCountryLabels();
 }
 
-function toggleCompareFlag() {
-	if(compareFlag == true) compareFlag = false;
-	else if (compareFlag == false) compareFlag = true;
-}
-
 function compare() {
-	toggleCompareFlag();
+
 }
 
 d3.select(self.frameElement).style("height", height + "px");
