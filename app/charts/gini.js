@@ -48,10 +48,7 @@ function graphgini(panel,data,pais,ciudad) {
                     }
                 }
             }
-    //console.log(giniCityData)
-    //console.log(giniNacionalData)
- 
-
+    
     var margin = {top: 10, right: 15, bottom: 80, left: 30};
     var width = 250 - margin.left - margin.right;
     var height = 250 - margin.top - margin.bottom;
@@ -70,7 +67,6 @@ function graphgini(panel,data,pais,ciudad) {
     // Define the line
     var valueline = d3.svg.line()
         .x(function(d) { 
-            console.log(d["year"])
             return x(d["year"]); })
         .y(function(d) { return y(d["gini"]); });
  
@@ -147,7 +143,6 @@ function graphgini(panel,data,pais,ciudad) {
     circles
         .enter()
         .append('svg:circle')
-        
         .attr('class', 'dot')
         .attr('fill', function() { return "steelblue"; })
         .attr('cx', function(d) { return x(d["year"]); })

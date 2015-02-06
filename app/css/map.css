@@ -21,48 +21,38 @@
 }
 
 .country-label {
-	fill: #666;
-	fill-opacity: .5;
-	font-size: 0.8em;
+	paint-order: stroke;
+  fill: #fff;
+	font-size: 0.7em;
 	font-weight: 300;
 	text-anchor: middle;
   pointer-events: none;
+  stroke: #999;
+  stroke-width: 1px;
+  stroke-linecap: butt;  
+}
+
+.country-label-hover {
+  fill: red;
 }
 
 .country-hover {
-	fill: #fd8d3c;
+	fill: #2b3c4a;
 }
 
 .city {
   fill: #444;
+  pointer-events: all;
 }
 
 .city-label {
 	fill: #444;
-  /*visibility: hidden; */
 }
 
 .city-hover {
-  fill: #fd8d3c;
+  fill: #fff;
+  pointer-events: all;
 }
-
-/* .states {
-	fill: #e5e5e5;
-	stroke: #fff;
-	stroke-width:2px;
-} */
-
-/* Map edges 
-.axis path {
-  display: none;
-}
-
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-*/
 
 text {
 	font-family: 'Open Sans', sans-serif;

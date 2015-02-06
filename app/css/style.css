@@ -19,6 +19,31 @@
   display: inline-block;
 }
 
+#intro {
+  overflow: hidden;
+  visibility: visible;
+  float: left;
+  padding: 15px 20px 15px 20px;
+}
+
+#intro h1 {
+  font-size: 1.7em;
+  color: #3082be;
+  text-align: center;
+}
+
+#intro h2 {
+ font-size: 1.2em;
+  color: #3082be;
+  text-align: left; 
+}
+
+#intro p {
+  font-size: 0.8em;
+  text-align: left;
+  color: #888;
+}
+
 .entity-title {
   height: 65px;
   width: 100%;
@@ -67,11 +92,6 @@
   padding: 0;
   display: inline-block;
   border-right: 1px solid #ebecec;
-}
-
-#intro {
-  visibility: visible;
-  float: left;
 }
 
 #panel-left {

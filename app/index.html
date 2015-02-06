@@ -36,7 +36,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!--<a class="navbar-brand" href="#">UN Habitat - Construcción de ciudades más equitativas</a> -->
-					<img src="img/un-habitat.jpg" />
+					<img src="img/construccion-ciudades-mas-equitativas-caf.png" width="353" height="60"/>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
@@ -54,19 +54,17 @@
 				</div>
 			</div>
 			<div class="panels">
-				<!-- <div class="entity-panel" id="intro">
-					<div class="intro">
-						<h1>Construcción de ciudades más equitativas</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<h2>Title 2</h2>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-					</div> 	
-				</div>-->
+				<div id="intro">
+					<h1>Construcción de ciudades más equitativas</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2>Subtitle</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+				</div> 
 				<div class="entity-panel" id="panel-left">
 					<div class="panel-close">
 						<a id="closeLeftPanel" title="Close left panel" href"#" onclick="closeLeftPanel(); return false;">X</a>
@@ -85,11 +83,17 @@
 					<div id="chart4a" class="chart"></div>
 
 					<div class="compare">
-						<select id="country-selector">
+						<label>Ciudad: </label><select id="local-city-selector" onchange="compareWithCountry()">
+						</select>
+					</div>
+
+					<p>Comparar con: </p>
+					<div class="compare">
+						<label>País: </label><select id="country-selector" onchange="compareWithCountry()">
 						</select>
 					</div>
 					<div class="compare">
-						<select id="city-selector" onchange="compareWith()">
+						<label>Ciudad: </label><select id="city-selector" onchange="compareWithCity()">
 						</select>
 					</div>	
 				</div>
@@ -102,7 +106,7 @@
 						<h1 id="entity-b"></h1>
 					</div>
 					<h2 id="title2">Distribución per cápita</h2>
-					<h2><a id="left_next" title="Show next graph" onclick="prev(); return false;">&lt;</a>  <span id="current">1</span> / <span id="total">4</span>   <a id="left_next" title="Show next graph" onclick="next(); return false;">&gt;</a></h2>
+					<h2><a id="right_prev" title="Show next graph" onclick="prev(); return false;">&lt;</a>  <span id="current">1</span> / <span id="total">4</span>   <a id="right_next" title="Show next graph" onclick="next(); return false;">&gt;</a></h2>
 					<div id="chart1b" class="chart">
 						<script src="charts/gini.js">
 						</script>
