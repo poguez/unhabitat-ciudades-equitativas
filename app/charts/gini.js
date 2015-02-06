@@ -234,7 +234,7 @@ function graphgini(panel,data,pais,ciudad) {
         .attr('height', 20)
         .attr('x', 0.03*width+width/2)
         .attr('y', height+height*.3);  
-    } else {
+    } /* else {
         svg.append('text')
         .attr('fill', 'black')
         .attr('x', 0.35*width+24)
@@ -249,7 +249,7 @@ function graphgini(panel,data,pais,ciudad) {
         .attr('x', 0.35*width)
         .attr('y', height+height*.3);  
  
-    }
+    } */
     
     });
 }

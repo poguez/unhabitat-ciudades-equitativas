@@ -1,0 +1,5 @@
+grafica,div,nombrearchivo,funcion,dataset
+gini,chart1a,gini.js,"graphgini(panel,data,pais,ciudad)",indicegini.csv
+ingreso,chart2a,chartingreso.js,"graphingreso(data,ciudad)",contribucionesporcentualessalarioygini
+consumo,chart3a,chartconsumo.js,"graphconsumo(data,ciudad,decil)",consumopordecil.csv
+relacionentreD1D10,chart4a,graphratio.js,"graphratio(data,ciudad)",relaciond1d10.csv
