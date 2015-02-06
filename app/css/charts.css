@@ -64,3 +64,62 @@ linechartpath {
  stroke-width: 1;
  shape-rendering: crispEdges;
 }
+
+
+/* Ingreso chart */
+
+#chart2a .axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+#chart2a .axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+/*consumo chart */
+
+#chart3a .axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+#chart3a .axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+/*tooltip style for chart2a and chart3a (ingreso and consumo)*/
+
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* gini ratio chart */
+
+#chart4a { 
+  font: bold 36px Verdana, Helvetica, Arial, sans-serif;
+}

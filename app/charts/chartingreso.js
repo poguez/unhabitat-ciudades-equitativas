@@ -88,7 +88,7 @@ var dataset = dataset.map(function (group) {
 });
 
 
-    svg = d3.select('div.chart3a')
+    svg = d3.select('div.chart2a')
         .append('svg')
         .attr('width', width + margins.left + margins.right + legendPanel.width)
         .attr('height', height + margins.top + margins.bottom)
