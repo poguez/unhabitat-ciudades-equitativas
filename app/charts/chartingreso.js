@@ -1,4 +1,5 @@
-function graphingreso(data,ciudad) {
+function graphingreso(panel,data,ciudad) {
+    console.log(panel + data + ciudad);
     d3.csv(data, function(error, csv) {
 
         var margins = {
@@ -87,8 +88,15 @@ var dataset = dataset.map(function (group) {
 
 });
 
+    var canvas;
+    // Adds the svg canvas
+    if(panel == "left") {
+        canvas = d3.select("#chart2a");
+    } else if (panel == "right") {
+        canvas = d3.select("#chart2b");
+    }
 
-    svg = d3.select('div.chart2a')
+    svg = canvas
         .append('svg')
         .attr('width', width + margins.left + margins.right + legendPanel.width)
         .attr('height', height + margins.top + margins.bottom)

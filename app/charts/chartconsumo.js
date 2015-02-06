@@ -1,4 +1,4 @@
-function graphconsumo(data,ciudad,decil) {
+function graphconsumo(panel,data,ciudad,decil) {
     d3.csv(data, function(error, csv) {
 
         var rubros = []
@@ -76,8 +76,15 @@ var dataset = dataset.map(function (group) {
 
 });
 
-
-    svg = d3.select('div.chart3a')
+    var canvas;
+    // Adds the svg canvas
+    if(panel == "left") {
+        canvas = d3.select("#chart3a");
+    } else if (panel == "right") {
+        canvas = d3.select("#chart3b");
+    }
+ 
+    svg = canvas
         .append('svg')
         .attr('width', width + margins.left + margins.right + legendPanel.width)
         .attr('height', height + margins.top + margins.bottom)

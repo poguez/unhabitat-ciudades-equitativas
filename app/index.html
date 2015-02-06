@@ -72,18 +72,27 @@
 					<div class="entity-title">
 						<h1 id="entity-a"></h1>
 					</div>
-					<h2 id="title1">Distribución per cápita</h2>
+					<h2 id="chart-title-left"></h2>
 					<h2><a id="left_next" title="Show next graph" onclick="prev(); return false;">&lt;</a>  <span id="current">1</span> / <span id="total">4</span>   <a id="left_next" title="Show next graph" onclick="next(); return false;">&gt;</a></h2>
 					<div id="chart1a" class="chart">
 						<script src="charts/gini.js">
 						</script>
 					</div>
-					<div id="chart2a" class="chart"></div>
-					<div id="chart3a" class="chart"></div>
-					<div id="chart4a" class="chart"></div>
+					<div id="chart2a" class="chart">
+						<script src="charts/chartingreso.js">
+						</script>
+					</div>
+					<div id="chart3a" class="chart">
+						<script src="charts/chartconsumo.js">
+						</script>
+					</div>
+					<div id="chart4a" class="chart">
+						<script src="charts/graphratio.js">
+						</script>
+					</div>
 
 					<div class="compare">
-						<label>Ciudad: </label><select id="local-city-selector" onchange="compareWithCountry()">
+						<label>Ciudad: </label><select id="local-city-selector" onchange="switchCity()">
 						</select>
 					</div>
 
@@ -105,7 +114,7 @@
 					<div class="entity-title">
 						<h1 id="entity-b"></h1>
 					</div>
-					<h2 id="title2">Distribución per cápita</h2>
+					<h2 id="chart-title-right"></h2>
 					<h2><a id="right_prev" title="Show next graph" onclick="prev(); return false;">&lt;</a>  <span id="current">1</span> / <span id="total">4</span>   <a id="right_next" title="Show next graph" onclick="next(); return false;">&gt;</a></h2>
 					<div id="chart1b" class="chart">
 						<script src="charts/gini.js">

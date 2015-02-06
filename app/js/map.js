@@ -40,8 +40,10 @@ var g = svg.append("g")
 
 var compareFlag = false;
 var cityView = false;
-var current;
+var current = 0;
 var activeCountry;
+var currentEntityA;
+var currentEntityB;
 var countries;
 var cities;
 var capitals;
@@ -129,8 +131,7 @@ function showCities() {
 		.on("mouseout", function() {
 			d3.select(this).attr("class", ".city");
 		});
-	*/
-
+	
 	d3.selectAll(".city-label")
 		.text(function(d) {
 			
@@ -144,6 +145,7 @@ function showCities() {
 			var nodeSelection = d3.select(this).style("fill", "#444");
 			nodeSelection.select("text").style("fill", "#444");
 		});
+	*/
 }
 
 function hideCities() {
@@ -172,33 +174,60 @@ function showRightPanel() {
 function closeLeftPanel() {
 	closeRightPanel();
 	document.getElementById('panel-left').style.display = "none";
-	document.getElementById('intro').style.display = "inline";
-	
+	document.getElementById('intro').style.display = "";
 }
 
 function closeRightPanel() {
 	document.getElementById('panel-right').style.display="none";
+	currentEntityB = "";
 }
 
-function addPanel(type, title) {
-	if(type == "left") {
+function addPanel(side, title) {
+	if(side == "left") {
 		d3.select("#chart1a").selectAll("*").remove();
 		document.getElementById("entity-a").innerHTML = title;
 		showLeftPanel();
-	} else if (type == "right") {
+	} else if (side == "right") {
 		d3.select("#chart1b").selectAll("*").remove();
 		document.getElementById("entity-b").innerHTML = title;
 		showRightPanel();
 	}
-	graphgini("right", "../data/indicegini.csv",title,title);
+	loadGraph("gini","right");
+}
+
+function loadGraph(chart, side, entity, decil) {
+	var data;
+	switch(chart) {
+		case 'gini':
+			data = "../data/indicegini.csv";
+			graphgini(side,data,entity,entity);
+			break;
+		case 'ingreso':
+			data = "../data/contribucionesporcentualessalarioygini.csv";
+			graphingreso(side,data,entity);
+			break;
+		case 'consumo':
+			data = "../data/consumopordecil.csv";
+			graphconsumo(side,data,entity,decil);
+			break;
+		case 'relacion':
+			data = "../data/relaciond1d10.csv";
+			graphratio(side,data,entity);
+			break;
+		default:
+			break;
+	}
 }
 
 function onCountryClick(d) {
 	document.getElementById('intro').style.display = "none";
 	d3.select("#chart1a").selectAll("*").remove();
+	document.getElementById('panel-left').style.display = "block";
 	document.getElementById('chart1a').style.display = "visible";
 	activeCountry = d.id;
-	country = d.properties.name;
+	currentEntityA = d.properties.name;
+	//hideCountryLabels();
+	showCities();
 
 	for(i = 0; i < countries.features.length; i++) {
 		d3.select("#country-selector").append("option").text(countries.features[i].properties.name);
@@ -213,8 +242,10 @@ function onCountryClick(d) {
 			d3.select("#local-city-selector").append("option").text(cities.features[i].properties.name);
 		}
 	}
+	next();
 
-	graphgini("left","../data/indicegini.csv",country,country);	
+	//graphgini("left","../data/indicegini.csv",country,country);	
+	//loadGraph("left","gini",currentEntityA,null);
 	current = document.getElementById('current').innerHTML;
 	
 	document.getElementById('current').innerHTML = 1;
@@ -245,9 +276,6 @@ function onCountryClick(d) {
         	d3.select(this).attr("class", function(d) { return "country " + d.properties.category; });
 	});
 
-	hideCountryLabels();
-	showCities();
-
 	if (active.node() === this) {
 		document.getElementById('entity-a').innerHTML='';
 		hideLeftPanel();
@@ -275,6 +303,15 @@ function onCountryClick(d) {
 	
 }
 
+function switchCity() {
+	entity = document.getElementById("local-city-selector").value;
+	d3.select("#chart1a").selectAll("*").remove();
+	currentEntityA = entity;
+	current = 0;
+	next();
+	document.getElementById("entity-a").innerHTML = entity;
+}
+
 function compareWithCity() {
 	entity = document.getElementById("city-selector").value;
 	compareWithEntity(entity);
@@ -286,12 +323,17 @@ function compareWithCountry() {
 }
 
 function compareWithEntity(entity) {
+	currentEntityB = entity;
 	addPanel("right", entity);
 }
 
 // Function for iterating to the next graph in the panel.
 function next() {
-	current = document.getElementById('current').innerHTML;
+	console.log(currentEntityA);
+	if(current != 0) {
+		current = document.getElementById('current').innerHTML;
+	}
+
 	total = document.getElementById('total').innerHTML;
 
 	if(current < total) {
@@ -307,18 +349,26 @@ function next() {
 		case 1:
 			document.getElementById('chart4a').style.display = "none";
 			document.getElementById('chart1a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Distribución per cápita";
+			loadGraph("gini","left",currentEntityA,null);
 			break;
 		case 2:
 			document.getElementById('chart1a').style.display = "none";
 			document.getElementById('chart2a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Contribuciones porcentuales salario y gini";
+			loadGraph("left","ingreso",currentEntityA,null);
 			break;
 		case 3:
 			document.getElementById('chart2a').style.display = "none";
 			document.getElementById('chart3a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Consumo por decil";
+			loadGraph("left","consumo",currentEntityA,null);
 			break;
 		case 4:
 			document.getElementById('chart3a').style.display = "none";
 			document.getElementById('chart4a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Relación D1/D10";
+			loadGraph("left","relacion",currentEntityA,null);
 			break;
 		default:
 			break;
@@ -340,18 +390,22 @@ function prev() {
 		case 1:
 			document.getElementById('chart2a').style.display = "none";
 			document.getElementById('chart1a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Distribución per cápita";
 			break;
 		case 2:
 			document.getElementById('chart3a').style.display = "none";
 			document.getElementById('chart2a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Contribuciones porcentuales salario y gini";
 			break;
 		case 3:
 			document.getElementById('chart4a').style.display = "none";
 			document.getElementById('chart3a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Consumo por decil";
 			break;
 		case 4:
 			document.getElementById('chart1a').style.display = "none";
 			document.getElementById('chart4a').style.display = "block";
+			document.getElementById('chart-title-left').innerHTML = "Relación D1/D10";
 			break;
 		default:
 			break;
@@ -359,6 +413,10 @@ function prev() {
 }
 
 function reset() {
+	current = 0;
+	currentEntityA = "";
+	currentEntityB = "";
+
 	active.classed("active", false);
 	active = d3.select(null);
 
@@ -372,12 +430,8 @@ function reset() {
         	d3.select(this).attr("class", "country-hover");
 	});
 
-	hideCities();
-	showCountryLabels();
-}
-
-function compare() {
-
+	//hideCities();
+	//showCountryLabels();
 }
 
 d3.select(self.frameElement).style("height", height + "px");

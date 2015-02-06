@@ -82,7 +82,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .entity-panel {
@@ -95,7 +95,7 @@
 }
 
 #panel-left {
-  visibility: hidden;
+  display: none;
   float: left;
 }
 
@@ -157,17 +157,15 @@
 
 #chart2a {
   display: none;
-  background-color: red;
+
 }
 
 #chart3a {
   display: none;
-  background-color: green;
 }
 
 #chart4a {
   display: none;
-  background-color: blue;
 }
 
 .compare {

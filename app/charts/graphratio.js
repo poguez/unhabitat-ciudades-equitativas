@@ -1,4 +1,4 @@
-function graphratio(data,ciudad) {
+function graphratio(panel,data,ciudad) {
 	// Set the dimensions of the canvas / graph
 
 	 d3.csv(data, function(error, csv) {
@@ -52,8 +52,16 @@ function graphratio(data,ciudad) {
 	var transbolita 
 
 
+	var canvas;
 	// Adds the svg canvas
-	var	svg = d3.select("div.chart4a")
+    if(panel == "left") {
+        canvas = d3.select("#chart1a");
+    } else if (panel == "right") {
+        canvas = d3.select("#chart1b");
+    }
+
+	// Adds the svg canvas
+	var	svg = canvas
 		.append("svg")
 			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + margin.top + margin.bottom)
